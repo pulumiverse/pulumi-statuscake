@@ -1,0 +1,29 @@
+{
+    "name": "@pulumiverse/statuscake",
+    "version": "${VERSION}",
+    "description": "A Pulumi package for creating and managing Statuscake resources.",
+    "keywords": [
+        "pulumi",
+        "statuscake",
+        "category/cloud"
+    ],
+    "homepage": "https://github.com/pulumiverse",
+    "repository": "https://github.com/pulumiverse/pulumi-statuscake",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "tsc",
+        "install": "node scripts/install-pulumi-plugin.js resource statuscake ${VERSION}"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/mime": "^2.0.0",
+        "@types/node": "^10.0.0",
+        "typescript": "^4.3.5"
+    },
+    "pulumi": {
+        "resource": true,
+        "server": "github://api.github.com/pulumiverse"
+    }
+}
