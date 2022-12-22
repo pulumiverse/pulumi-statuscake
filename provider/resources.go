@@ -115,19 +115,19 @@ func Provider() tfbridge.ProviderInfo {
 			// 		"tags": {Type: tfbridge.MakeType(mainPkg, "Tags")},
 			// 	},
 			// },
-			"statuscake_contact_group":      {Tok: tfbridge.MakeResource(mainPkg, mainMod, "StatuscakeContactGroup")},
-			"statuscake_maintenance_window": {Tok: tfbridge.MakeResource(mainPkg, mainMod, "StatuscakeMaintenanceWindow")},
-			"statuscake_pagespeed_check":    {Tok: tfbridge.MakeResource(mainPkg, mainMod, "StatuscakePagespeedCheck")},
-			"statuscake_ssl_check":          {Tok: tfbridge.MakeResource(mainPkg, mainMod, "StatuscakeSslCheck")},
-			"statuscake_uptime_check":       {Tok: tfbridge.MakeResource(mainPkg, mainMod, "StatuscakeUptimeCheck")},
+			"statuscake_contact_group":      {Tok: tfbridge.MakeResource(mainPkg, mainMod, "ContactGroup")},
+			"statuscake_maintenance_window": {Tok: tfbridge.MakeResource(mainPkg, mainMod, "MaintenanceWindow")},
+			"statuscake_pagespeed_check":    {Tok: tfbridge.MakeResource(mainPkg, mainMod, "PagespeedCheck")},
+			"statuscake_ssl_check":          {Tok: tfbridge.MakeResource(mainPkg, mainMod, "SslCheck")},
+			"statuscake_uptime_check":       {Tok: tfbridge.MakeResource(mainPkg, mainMod, "UptimeCheck")},
 		},
 		DataSources: map[string]*tfbridge.DataSourceInfo{
 			// Map each resource in the Terraform provider to a Pulumi function. An example
 			// is below.
 			// "aws_ami": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getAmi")},
-			"statuscake_contact_group":                  {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getStatuscakeContactGroup")},
-			"statuscake_pagespeed_monitoring_locations": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getStatuscakePagespeedMonitoringLocations")},
-			"statuscake_uptime_monitoring_locations":    {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getStatuscakeUptimeMonitoringLocations")},
+			"statuscake_contact_group":                  {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getContactGroup")},
+			"statuscake_pagespeed_monitoring_locations": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getPagespeedMonitoringLocations")},
+			"statuscake_uptime_monitoring_locations":    {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getUptimeMonitoringLocations")},
 		},
 		JavaScript: &tfbridge.JavaScriptInfo{
 			PackageName: "@pulumiverse/statuscake",

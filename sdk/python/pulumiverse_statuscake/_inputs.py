@@ -10,23 +10,23 @@ from typing import Any, Mapping, Optional, Sequence, Union, overload
 from . import _utilities
 
 __all__ = [
-    'StatuscakePagespeedCheckAlertConfigArgs',
-    'StatuscakePagespeedCheckMonitoredResourceArgs',
-    'StatuscakeSslCheckAlertConfigArgs',
-    'StatuscakeSslCheckMonitoredResourceArgs',
-    'StatuscakeUptimeCheckDnsCheckArgs',
-    'StatuscakeUptimeCheckHttpCheckArgs',
-    'StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs',
-    'StatuscakeUptimeCheckHttpCheckContentMatchersArgs',
-    'StatuscakeUptimeCheckIcmpCheckArgs',
-    'StatuscakeUptimeCheckLocationArgs',
-    'StatuscakeUptimeCheckMonitoredResourceArgs',
-    'StatuscakeUptimeCheckTcpCheckArgs',
-    'StatuscakeUptimeCheckTcpCheckAuthenticationArgs',
+    'PagespeedCheckAlertConfigArgs',
+    'PagespeedCheckMonitoredResourceArgs',
+    'SslCheckAlertConfigArgs',
+    'SslCheckMonitoredResourceArgs',
+    'UptimeCheckDnsCheckArgs',
+    'UptimeCheckHttpCheckArgs',
+    'UptimeCheckHttpCheckBasicAuthenticationArgs',
+    'UptimeCheckHttpCheckContentMatchersArgs',
+    'UptimeCheckIcmpCheckArgs',
+    'UptimeCheckLocationArgs',
+    'UptimeCheckMonitoredResourceArgs',
+    'UptimeCheckTcpCheckArgs',
+    'UptimeCheckTcpCheckAuthenticationArgs',
 ]
 
 @pulumi.input_type
-class StatuscakePagespeedCheckAlertConfigArgs:
+class PagespeedCheckAlertConfigArgs:
     def __init__(__self__, *,
                  alert_bigger: Optional[pulumi.Input[int]] = None,
                  alert_slower: Optional[pulumi.Input[int]] = None,
@@ -67,7 +67,7 @@ class StatuscakePagespeedCheckAlertConfigArgs:
 
 
 @pulumi.input_type
-class StatuscakePagespeedCheckMonitoredResourceArgs:
+class PagespeedCheckMonitoredResourceArgs:
     def __init__(__self__, *,
                  address: pulumi.Input[str]):
         pulumi.set(__self__, "address", address)
@@ -83,7 +83,7 @@ class StatuscakePagespeedCheckMonitoredResourceArgs:
 
 
 @pulumi.input_type
-class StatuscakeSslCheckAlertConfigArgs:
+class SslCheckAlertConfigArgs:
     def __init__(__self__, *,
                  alert_ats: pulumi.Input[Sequence[pulumi.Input[int]]],
                  on_broken: Optional[pulumi.Input[bool]] = None,
@@ -147,7 +147,7 @@ class StatuscakeSslCheckAlertConfigArgs:
 
 
 @pulumi.input_type
-class StatuscakeSslCheckMonitoredResourceArgs:
+class SslCheckMonitoredResourceArgs:
     def __init__(__self__, *,
                  address: pulumi.Input[str],
                  hostname: Optional[pulumi.Input[str]] = None):
@@ -175,7 +175,7 @@ class StatuscakeSslCheckMonitoredResourceArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckDnsCheckArgs:
+class UptimeCheckDnsCheckArgs:
     def __init__(__self__, *,
                  dns_ips: pulumi.Input[Sequence[pulumi.Input[str]]],
                  dns_server: Optional[pulumi.Input[str]] = None):
@@ -203,11 +203,11 @@ class StatuscakeUptimeCheckDnsCheckArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckHttpCheckArgs:
+class UptimeCheckHttpCheckArgs:
     def __init__(__self__, *,
                  status_codes: pulumi.Input[Sequence[pulumi.Input[str]]],
-                 basic_authentication: Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs']] = None,
-                 content_matchers: Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckContentMatchersArgs']] = None,
+                 basic_authentication: Optional[pulumi.Input['UptimeCheckHttpCheckBasicAuthenticationArgs']] = None,
+                 content_matchers: Optional[pulumi.Input['UptimeCheckHttpCheckContentMatchersArgs']] = None,
                  enable_cookies: Optional[pulumi.Input[bool]] = None,
                  final_endpoint: Optional[pulumi.Input[str]] = None,
                  follow_redirects: Optional[pulumi.Input[bool]] = None,
@@ -255,20 +255,20 @@ class StatuscakeUptimeCheckHttpCheckArgs:
 
     @property
     @pulumi.getter(name="basicAuthentication")
-    def basic_authentication(self) -> Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs']]:
+    def basic_authentication(self) -> Optional[pulumi.Input['UptimeCheckHttpCheckBasicAuthenticationArgs']]:
         return pulumi.get(self, "basic_authentication")
 
     @basic_authentication.setter
-    def basic_authentication(self, value: Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs']]):
+    def basic_authentication(self, value: Optional[pulumi.Input['UptimeCheckHttpCheckBasicAuthenticationArgs']]):
         pulumi.set(self, "basic_authentication", value)
 
     @property
     @pulumi.getter(name="contentMatchers")
-    def content_matchers(self) -> Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckContentMatchersArgs']]:
+    def content_matchers(self) -> Optional[pulumi.Input['UptimeCheckHttpCheckContentMatchersArgs']]:
         return pulumi.get(self, "content_matchers")
 
     @content_matchers.setter
-    def content_matchers(self, value: Optional[pulumi.Input['StatuscakeUptimeCheckHttpCheckContentMatchersArgs']]):
+    def content_matchers(self, value: Optional[pulumi.Input['UptimeCheckHttpCheckContentMatchersArgs']]):
         pulumi.set(self, "content_matchers", value)
 
     @property
@@ -363,7 +363,7 @@ class StatuscakeUptimeCheckHttpCheckArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs:
+class UptimeCheckHttpCheckBasicAuthenticationArgs:
     def __init__(__self__, *,
                  password: pulumi.Input[str],
                  username: pulumi.Input[str]):
@@ -390,7 +390,7 @@ class StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckHttpCheckContentMatchersArgs:
+class UptimeCheckHttpCheckContentMatchersArgs:
     def __init__(__self__, *,
                  content: pulumi.Input[str],
                  include_headers: Optional[pulumi.Input[bool]] = None,
@@ -430,7 +430,7 @@ class StatuscakeUptimeCheckHttpCheckContentMatchersArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckIcmpCheckArgs:
+class UptimeCheckIcmpCheckArgs:
     def __init__(__self__, *,
                  enabled: Optional[pulumi.Input[bool]] = None):
         if enabled is not None:
@@ -447,7 +447,7 @@ class StatuscakeUptimeCheckIcmpCheckArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckLocationArgs:
+class UptimeCheckLocationArgs:
     def __init__(__self__, *,
                  description: Optional[pulumi.Input[str]] = None,
                  ipv4: Optional[pulumi.Input[str]] = None,
@@ -524,7 +524,7 @@ class StatuscakeUptimeCheckLocationArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckMonitoredResourceArgs:
+class UptimeCheckMonitoredResourceArgs:
     def __init__(__self__, *,
                  address: pulumi.Input[str],
                  host: Optional[pulumi.Input[str]] = None):
@@ -552,10 +552,10 @@ class StatuscakeUptimeCheckMonitoredResourceArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckTcpCheckArgs:
+class UptimeCheckTcpCheckArgs:
     def __init__(__self__, *,
                  port: pulumi.Input[int],
-                 authentication: Optional[pulumi.Input['StatuscakeUptimeCheckTcpCheckAuthenticationArgs']] = None,
+                 authentication: Optional[pulumi.Input['UptimeCheckTcpCheckAuthenticationArgs']] = None,
                  protocol: Optional[pulumi.Input[str]] = None,
                  timeout: Optional[pulumi.Input[int]] = None):
         pulumi.set(__self__, "port", port)
@@ -577,11 +577,11 @@ class StatuscakeUptimeCheckTcpCheckArgs:
 
     @property
     @pulumi.getter
-    def authentication(self) -> Optional[pulumi.Input['StatuscakeUptimeCheckTcpCheckAuthenticationArgs']]:
+    def authentication(self) -> Optional[pulumi.Input['UptimeCheckTcpCheckAuthenticationArgs']]:
         return pulumi.get(self, "authentication")
 
     @authentication.setter
-    def authentication(self, value: Optional[pulumi.Input['StatuscakeUptimeCheckTcpCheckAuthenticationArgs']]):
+    def authentication(self, value: Optional[pulumi.Input['UptimeCheckTcpCheckAuthenticationArgs']]):
         pulumi.set(self, "authentication", value)
 
     @property
@@ -604,7 +604,7 @@ class StatuscakeUptimeCheckTcpCheckArgs:
 
 
 @pulumi.input_type
-class StatuscakeUptimeCheckTcpCheckAuthenticationArgs:
+class UptimeCheckTcpCheckAuthenticationArgs:
     def __init__(__self__, *,
                  password: pulumi.Input[str],
                  username: pulumi.Input[str]):

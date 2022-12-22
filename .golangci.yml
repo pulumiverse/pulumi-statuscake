@@ -17,9 +17,6 @@ linters:
     - unconvert
     - varcheck
   enable-all: false
-linters-settings:
-  lll:
-    line-length: 160
 run:
   skip-files:
     - schema.go

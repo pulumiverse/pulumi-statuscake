@@ -5,15 +5,15 @@
 from . import _utilities
 import typing
 # Export this package's modules as members:
-from .get_statuscake_contact_group import *
-from .get_statuscake_pagespeed_monitoring_locations import *
-from .get_statuscake_uptime_monitoring_locations import *
+from .contact_group import *
+from .get_contact_group import *
+from .get_pagespeed_monitoring_locations import *
+from .get_uptime_monitoring_locations import *
+from .maintenance_window import *
+from .pagespeed_check import *
 from .provider import *
-from .statuscake_contact_group import *
-from .statuscake_maintenance_window import *
-from .statuscake_pagespeed_check import *
-from .statuscake_ssl_check import *
-from .statuscake_uptime_check import *
+from .ssl_check import *
+from .uptime_check import *
 from ._inputs import *
 from . import outputs
 
@@ -29,42 +29,42 @@ _utilities.register(
 [
  {
   "pkg": "statuscake",
-  "mod": "index/statuscakeContactGroup",
+  "mod": "index/contactGroup",
   "fqn": "pulumiverse_statuscake",
   "classes": {
-   "statuscake:index/statuscakeContactGroup:StatuscakeContactGroup": "StatuscakeContactGroup"
+   "statuscake:index/contactGroup:ContactGroup": "ContactGroup"
   }
  },
  {
   "pkg": "statuscake",
-  "mod": "index/statuscakeMaintenanceWindow",
+  "mod": "index/maintenanceWindow",
   "fqn": "pulumiverse_statuscake",
   "classes": {
-   "statuscake:index/statuscakeMaintenanceWindow:StatuscakeMaintenanceWindow": "StatuscakeMaintenanceWindow"
+   "statuscake:index/maintenanceWindow:MaintenanceWindow": "MaintenanceWindow"
   }
  },
  {
   "pkg": "statuscake",
-  "mod": "index/statuscakePagespeedCheck",
+  "mod": "index/pagespeedCheck",
   "fqn": "pulumiverse_statuscake",
   "classes": {
-   "statuscake:index/statuscakePagespeedCheck:StatuscakePagespeedCheck": "StatuscakePagespeedCheck"
+   "statuscake:index/pagespeedCheck:PagespeedCheck": "PagespeedCheck"
   }
  },
  {
   "pkg": "statuscake",
-  "mod": "index/statuscakeSslCheck",
+  "mod": "index/sslCheck",
   "fqn": "pulumiverse_statuscake",
   "classes": {
-   "statuscake:index/statuscakeSslCheck:StatuscakeSslCheck": "StatuscakeSslCheck"
+   "statuscake:index/sslCheck:SslCheck": "SslCheck"
   }
  },
  {
   "pkg": "statuscake",
-  "mod": "index/statuscakeUptimeCheck",
+  "mod": "index/uptimeCheck",
   "fqn": "pulumiverse_statuscake",
   "classes": {
-   "statuscake:index/statuscakeUptimeCheck:StatuscakeUptimeCheck": "StatuscakeUptimeCheck"
+   "statuscake:index/uptimeCheck:UptimeCheck": "UptimeCheck"
   }
  }
 ]

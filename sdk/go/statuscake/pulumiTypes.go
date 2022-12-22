@@ -10,144 +10,144 @@ import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
-type StatuscakePagespeedCheckAlertConfig struct {
+type PagespeedCheckAlertConfig struct {
 	AlertBigger  *int `pulumi:"alertBigger"`
 	AlertSlower  *int `pulumi:"alertSlower"`
 	AlertSmaller *int `pulumi:"alertSmaller"`
 }
 
-// StatuscakePagespeedCheckAlertConfigInput is an input type that accepts StatuscakePagespeedCheckAlertConfigArgs and StatuscakePagespeedCheckAlertConfigOutput values.
-// You can construct a concrete instance of `StatuscakePagespeedCheckAlertConfigInput` via:
+// PagespeedCheckAlertConfigInput is an input type that accepts PagespeedCheckAlertConfigArgs and PagespeedCheckAlertConfigOutput values.
+// You can construct a concrete instance of `PagespeedCheckAlertConfigInput` via:
 //
-//	StatuscakePagespeedCheckAlertConfigArgs{...}
-type StatuscakePagespeedCheckAlertConfigInput interface {
+//	PagespeedCheckAlertConfigArgs{...}
+type PagespeedCheckAlertConfigInput interface {
 	pulumi.Input
 
-	ToStatuscakePagespeedCheckAlertConfigOutput() StatuscakePagespeedCheckAlertConfigOutput
-	ToStatuscakePagespeedCheckAlertConfigOutputWithContext(context.Context) StatuscakePagespeedCheckAlertConfigOutput
+	ToPagespeedCheckAlertConfigOutput() PagespeedCheckAlertConfigOutput
+	ToPagespeedCheckAlertConfigOutputWithContext(context.Context) PagespeedCheckAlertConfigOutput
 }
 
-type StatuscakePagespeedCheckAlertConfigArgs struct {
+type PagespeedCheckAlertConfigArgs struct {
 	AlertBigger  pulumi.IntPtrInput `pulumi:"alertBigger"`
 	AlertSlower  pulumi.IntPtrInput `pulumi:"alertSlower"`
 	AlertSmaller pulumi.IntPtrInput `pulumi:"alertSmaller"`
 }
 
-func (StatuscakePagespeedCheckAlertConfigArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakePagespeedCheckAlertConfig)(nil)).Elem()
+func (PagespeedCheckAlertConfigArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*PagespeedCheckAlertConfig)(nil)).Elem()
 }
 
-func (i StatuscakePagespeedCheckAlertConfigArgs) ToStatuscakePagespeedCheckAlertConfigOutput() StatuscakePagespeedCheckAlertConfigOutput {
-	return i.ToStatuscakePagespeedCheckAlertConfigOutputWithContext(context.Background())
+func (i PagespeedCheckAlertConfigArgs) ToPagespeedCheckAlertConfigOutput() PagespeedCheckAlertConfigOutput {
+	return i.ToPagespeedCheckAlertConfigOutputWithContext(context.Background())
 }
 
-func (i StatuscakePagespeedCheckAlertConfigArgs) ToStatuscakePagespeedCheckAlertConfigOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckAlertConfigOutput)
+func (i PagespeedCheckAlertConfigArgs) ToPagespeedCheckAlertConfigOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckAlertConfigOutput)
 }
 
-func (i StatuscakePagespeedCheckAlertConfigArgs) ToStatuscakePagespeedCheckAlertConfigPtrOutput() StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return i.ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
+func (i PagespeedCheckAlertConfigArgs) ToPagespeedCheckAlertConfigPtrOutput() PagespeedCheckAlertConfigPtrOutput {
+	return i.ToPagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakePagespeedCheckAlertConfigArgs) ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckAlertConfigOutput).ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(ctx)
+func (i PagespeedCheckAlertConfigArgs) ToPagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckAlertConfigOutput).ToPagespeedCheckAlertConfigPtrOutputWithContext(ctx)
 }
 
-// StatuscakePagespeedCheckAlertConfigPtrInput is an input type that accepts StatuscakePagespeedCheckAlertConfigArgs, StatuscakePagespeedCheckAlertConfigPtr and StatuscakePagespeedCheckAlertConfigPtrOutput values.
-// You can construct a concrete instance of `StatuscakePagespeedCheckAlertConfigPtrInput` via:
+// PagespeedCheckAlertConfigPtrInput is an input type that accepts PagespeedCheckAlertConfigArgs, PagespeedCheckAlertConfigPtr and PagespeedCheckAlertConfigPtrOutput values.
+// You can construct a concrete instance of `PagespeedCheckAlertConfigPtrInput` via:
 //
-//	        StatuscakePagespeedCheckAlertConfigArgs{...}
+//	        PagespeedCheckAlertConfigArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakePagespeedCheckAlertConfigPtrInput interface {
+type PagespeedCheckAlertConfigPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakePagespeedCheckAlertConfigPtrOutput() StatuscakePagespeedCheckAlertConfigPtrOutput
-	ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(context.Context) StatuscakePagespeedCheckAlertConfigPtrOutput
+	ToPagespeedCheckAlertConfigPtrOutput() PagespeedCheckAlertConfigPtrOutput
+	ToPagespeedCheckAlertConfigPtrOutputWithContext(context.Context) PagespeedCheckAlertConfigPtrOutput
 }
 
-type statuscakePagespeedCheckAlertConfigPtrType StatuscakePagespeedCheckAlertConfigArgs
+type pagespeedCheckAlertConfigPtrType PagespeedCheckAlertConfigArgs
 
-func StatuscakePagespeedCheckAlertConfigPtr(v *StatuscakePagespeedCheckAlertConfigArgs) StatuscakePagespeedCheckAlertConfigPtrInput {
-	return (*statuscakePagespeedCheckAlertConfigPtrType)(v)
+func PagespeedCheckAlertConfigPtr(v *PagespeedCheckAlertConfigArgs) PagespeedCheckAlertConfigPtrInput {
+	return (*pagespeedCheckAlertConfigPtrType)(v)
 }
 
-func (*statuscakePagespeedCheckAlertConfigPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakePagespeedCheckAlertConfig)(nil)).Elem()
+func (*pagespeedCheckAlertConfigPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**PagespeedCheckAlertConfig)(nil)).Elem()
 }
 
-func (i *statuscakePagespeedCheckAlertConfigPtrType) ToStatuscakePagespeedCheckAlertConfigPtrOutput() StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return i.ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
+func (i *pagespeedCheckAlertConfigPtrType) ToPagespeedCheckAlertConfigPtrOutput() PagespeedCheckAlertConfigPtrOutput {
+	return i.ToPagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakePagespeedCheckAlertConfigPtrType) ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckAlertConfigPtrOutput)
+func (i *pagespeedCheckAlertConfigPtrType) ToPagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckAlertConfigPtrOutput)
 }
 
-type StatuscakePagespeedCheckAlertConfigOutput struct{ *pulumi.OutputState }
+type PagespeedCheckAlertConfigOutput struct{ *pulumi.OutputState }
 
-func (StatuscakePagespeedCheckAlertConfigOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakePagespeedCheckAlertConfig)(nil)).Elem()
+func (PagespeedCheckAlertConfigOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*PagespeedCheckAlertConfig)(nil)).Elem()
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) ToStatuscakePagespeedCheckAlertConfigOutput() StatuscakePagespeedCheckAlertConfigOutput {
+func (o PagespeedCheckAlertConfigOutput) ToPagespeedCheckAlertConfigOutput() PagespeedCheckAlertConfigOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) ToStatuscakePagespeedCheckAlertConfigOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigOutput {
+func (o PagespeedCheckAlertConfigOutput) ToPagespeedCheckAlertConfigOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) ToStatuscakePagespeedCheckAlertConfigPtrOutput() StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return o.ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
+func (o PagespeedCheckAlertConfigOutput) ToPagespeedCheckAlertConfigPtrOutput() PagespeedCheckAlertConfigPtrOutput {
+	return o.ToPagespeedCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakePagespeedCheckAlertConfig) *StatuscakePagespeedCheckAlertConfig {
+func (o PagespeedCheckAlertConfigOutput) ToPagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v PagespeedCheckAlertConfig) *PagespeedCheckAlertConfig {
 		return &v
-	}).(StatuscakePagespeedCheckAlertConfigPtrOutput)
+	}).(PagespeedCheckAlertConfigPtrOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) AlertBigger() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v StatuscakePagespeedCheckAlertConfig) *int { return v.AlertBigger }).(pulumi.IntPtrOutput)
+func (o PagespeedCheckAlertConfigOutput) AlertBigger() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v PagespeedCheckAlertConfig) *int { return v.AlertBigger }).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) AlertSlower() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v StatuscakePagespeedCheckAlertConfig) *int { return v.AlertSlower }).(pulumi.IntPtrOutput)
+func (o PagespeedCheckAlertConfigOutput) AlertSlower() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v PagespeedCheckAlertConfig) *int { return v.AlertSlower }).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigOutput) AlertSmaller() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v StatuscakePagespeedCheckAlertConfig) *int { return v.AlertSmaller }).(pulumi.IntPtrOutput)
+func (o PagespeedCheckAlertConfigOutput) AlertSmaller() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v PagespeedCheckAlertConfig) *int { return v.AlertSmaller }).(pulumi.IntPtrOutput)
 }
 
-type StatuscakePagespeedCheckAlertConfigPtrOutput struct{ *pulumi.OutputState }
+type PagespeedCheckAlertConfigPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakePagespeedCheckAlertConfigPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakePagespeedCheckAlertConfig)(nil)).Elem()
+func (PagespeedCheckAlertConfigPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**PagespeedCheckAlertConfig)(nil)).Elem()
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) ToStatuscakePagespeedCheckAlertConfigPtrOutput() StatuscakePagespeedCheckAlertConfigPtrOutput {
+func (o PagespeedCheckAlertConfigPtrOutput) ToPagespeedCheckAlertConfigPtrOutput() PagespeedCheckAlertConfigPtrOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) ToStatuscakePagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckAlertConfigPtrOutput {
+func (o PagespeedCheckAlertConfigPtrOutput) ToPagespeedCheckAlertConfigPtrOutputWithContext(ctx context.Context) PagespeedCheckAlertConfigPtrOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) Elem() StatuscakePagespeedCheckAlertConfigOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckAlertConfig) StatuscakePagespeedCheckAlertConfig {
+func (o PagespeedCheckAlertConfigPtrOutput) Elem() PagespeedCheckAlertConfigOutput {
+	return o.ApplyT(func(v *PagespeedCheckAlertConfig) PagespeedCheckAlertConfig {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakePagespeedCheckAlertConfig
+		var ret PagespeedCheckAlertConfig
 		return ret
-	}).(StatuscakePagespeedCheckAlertConfigOutput)
+	}).(PagespeedCheckAlertConfigOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertBigger() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckAlertConfig) *int {
+func (o PagespeedCheckAlertConfigPtrOutput) AlertBigger() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *PagespeedCheckAlertConfig) *int {
 		if v == nil {
 			return nil
 		}
@@ -155,8 +155,8 @@ func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertBigger() pulumi.IntPt
 	}).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertSlower() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckAlertConfig) *int {
+func (o PagespeedCheckAlertConfigPtrOutput) AlertSlower() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *PagespeedCheckAlertConfig) *int {
 		if v == nil {
 			return nil
 		}
@@ -164,8 +164,8 @@ func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertSlower() pulumi.IntPt
 	}).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertSmaller() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckAlertConfig) *int {
+func (o PagespeedCheckAlertConfigPtrOutput) AlertSmaller() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *PagespeedCheckAlertConfig) *int {
 		if v == nil {
 			return nil
 		}
@@ -173,132 +173,132 @@ func (o StatuscakePagespeedCheckAlertConfigPtrOutput) AlertSmaller() pulumi.IntP
 	}).(pulumi.IntPtrOutput)
 }
 
-type StatuscakePagespeedCheckMonitoredResource struct {
+type PagespeedCheckMonitoredResource struct {
 	Address string `pulumi:"address"`
 }
 
-// StatuscakePagespeedCheckMonitoredResourceInput is an input type that accepts StatuscakePagespeedCheckMonitoredResourceArgs and StatuscakePagespeedCheckMonitoredResourceOutput values.
-// You can construct a concrete instance of `StatuscakePagespeedCheckMonitoredResourceInput` via:
+// PagespeedCheckMonitoredResourceInput is an input type that accepts PagespeedCheckMonitoredResourceArgs and PagespeedCheckMonitoredResourceOutput values.
+// You can construct a concrete instance of `PagespeedCheckMonitoredResourceInput` via:
 //
-//	StatuscakePagespeedCheckMonitoredResourceArgs{...}
-type StatuscakePagespeedCheckMonitoredResourceInput interface {
+//	PagespeedCheckMonitoredResourceArgs{...}
+type PagespeedCheckMonitoredResourceInput interface {
 	pulumi.Input
 
-	ToStatuscakePagespeedCheckMonitoredResourceOutput() StatuscakePagespeedCheckMonitoredResourceOutput
-	ToStatuscakePagespeedCheckMonitoredResourceOutputWithContext(context.Context) StatuscakePagespeedCheckMonitoredResourceOutput
+	ToPagespeedCheckMonitoredResourceOutput() PagespeedCheckMonitoredResourceOutput
+	ToPagespeedCheckMonitoredResourceOutputWithContext(context.Context) PagespeedCheckMonitoredResourceOutput
 }
 
-type StatuscakePagespeedCheckMonitoredResourceArgs struct {
+type PagespeedCheckMonitoredResourceArgs struct {
 	Address pulumi.StringInput `pulumi:"address"`
 }
 
-func (StatuscakePagespeedCheckMonitoredResourceArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakePagespeedCheckMonitoredResource)(nil)).Elem()
+func (PagespeedCheckMonitoredResourceArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*PagespeedCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i StatuscakePagespeedCheckMonitoredResourceArgs) ToStatuscakePagespeedCheckMonitoredResourceOutput() StatuscakePagespeedCheckMonitoredResourceOutput {
-	return i.ToStatuscakePagespeedCheckMonitoredResourceOutputWithContext(context.Background())
+func (i PagespeedCheckMonitoredResourceArgs) ToPagespeedCheckMonitoredResourceOutput() PagespeedCheckMonitoredResourceOutput {
+	return i.ToPagespeedCheckMonitoredResourceOutputWithContext(context.Background())
 }
 
-func (i StatuscakePagespeedCheckMonitoredResourceArgs) ToStatuscakePagespeedCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourceOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckMonitoredResourceOutput)
+func (i PagespeedCheckMonitoredResourceArgs) ToPagespeedCheckMonitoredResourceOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourceOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckMonitoredResourceOutput)
 }
 
-func (i StatuscakePagespeedCheckMonitoredResourceArgs) ToStatuscakePagespeedCheckMonitoredResourcePtrOutput() StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i PagespeedCheckMonitoredResourceArgs) ToPagespeedCheckMonitoredResourcePtrOutput() PagespeedCheckMonitoredResourcePtrOutput {
+	return i.ToPagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakePagespeedCheckMonitoredResourceArgs) ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckMonitoredResourceOutput).ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(ctx)
+func (i PagespeedCheckMonitoredResourceArgs) ToPagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckMonitoredResourceOutput).ToPagespeedCheckMonitoredResourcePtrOutputWithContext(ctx)
 }
 
-// StatuscakePagespeedCheckMonitoredResourcePtrInput is an input type that accepts StatuscakePagespeedCheckMonitoredResourceArgs, StatuscakePagespeedCheckMonitoredResourcePtr and StatuscakePagespeedCheckMonitoredResourcePtrOutput values.
-// You can construct a concrete instance of `StatuscakePagespeedCheckMonitoredResourcePtrInput` via:
+// PagespeedCheckMonitoredResourcePtrInput is an input type that accepts PagespeedCheckMonitoredResourceArgs, PagespeedCheckMonitoredResourcePtr and PagespeedCheckMonitoredResourcePtrOutput values.
+// You can construct a concrete instance of `PagespeedCheckMonitoredResourcePtrInput` via:
 //
-//	        StatuscakePagespeedCheckMonitoredResourceArgs{...}
+//	        PagespeedCheckMonitoredResourceArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakePagespeedCheckMonitoredResourcePtrInput interface {
+type PagespeedCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
-	ToStatuscakePagespeedCheckMonitoredResourcePtrOutput() StatuscakePagespeedCheckMonitoredResourcePtrOutput
-	ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(context.Context) StatuscakePagespeedCheckMonitoredResourcePtrOutput
+	ToPagespeedCheckMonitoredResourcePtrOutput() PagespeedCheckMonitoredResourcePtrOutput
+	ToPagespeedCheckMonitoredResourcePtrOutputWithContext(context.Context) PagespeedCheckMonitoredResourcePtrOutput
 }
 
-type statuscakePagespeedCheckMonitoredResourcePtrType StatuscakePagespeedCheckMonitoredResourceArgs
+type pagespeedCheckMonitoredResourcePtrType PagespeedCheckMonitoredResourceArgs
 
-func StatuscakePagespeedCheckMonitoredResourcePtr(v *StatuscakePagespeedCheckMonitoredResourceArgs) StatuscakePagespeedCheckMonitoredResourcePtrInput {
-	return (*statuscakePagespeedCheckMonitoredResourcePtrType)(v)
+func PagespeedCheckMonitoredResourcePtr(v *PagespeedCheckMonitoredResourceArgs) PagespeedCheckMonitoredResourcePtrInput {
+	return (*pagespeedCheckMonitoredResourcePtrType)(v)
 }
 
-func (*statuscakePagespeedCheckMonitoredResourcePtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakePagespeedCheckMonitoredResource)(nil)).Elem()
+func (*pagespeedCheckMonitoredResourcePtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**PagespeedCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i *statuscakePagespeedCheckMonitoredResourcePtrType) ToStatuscakePagespeedCheckMonitoredResourcePtrOutput() StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i *pagespeedCheckMonitoredResourcePtrType) ToPagespeedCheckMonitoredResourcePtrOutput() PagespeedCheckMonitoredResourcePtrOutput {
+	return i.ToPagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakePagespeedCheckMonitoredResourcePtrType) ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakePagespeedCheckMonitoredResourcePtrOutput)
+func (i *pagespeedCheckMonitoredResourcePtrType) ToPagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(PagespeedCheckMonitoredResourcePtrOutput)
 }
 
-type StatuscakePagespeedCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
+type PagespeedCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
 
-func (StatuscakePagespeedCheckMonitoredResourceOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakePagespeedCheckMonitoredResource)(nil)).Elem()
+func (PagespeedCheckMonitoredResourceOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*PagespeedCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourceOutput) ToStatuscakePagespeedCheckMonitoredResourceOutput() StatuscakePagespeedCheckMonitoredResourceOutput {
+func (o PagespeedCheckMonitoredResourceOutput) ToPagespeedCheckMonitoredResourceOutput() PagespeedCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourceOutput) ToStatuscakePagespeedCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourceOutput {
+func (o PagespeedCheckMonitoredResourceOutput) ToPagespeedCheckMonitoredResourceOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourceOutput) ToStatuscakePagespeedCheckMonitoredResourcePtrOutput() StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return o.ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (o PagespeedCheckMonitoredResourceOutput) ToPagespeedCheckMonitoredResourcePtrOutput() PagespeedCheckMonitoredResourcePtrOutput {
+	return o.ToPagespeedCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourceOutput) ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourcePtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakePagespeedCheckMonitoredResource) *StatuscakePagespeedCheckMonitoredResource {
+func (o PagespeedCheckMonitoredResourceOutput) ToPagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourcePtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v PagespeedCheckMonitoredResource) *PagespeedCheckMonitoredResource {
 		return &v
-	}).(StatuscakePagespeedCheckMonitoredResourcePtrOutput)
+	}).(PagespeedCheckMonitoredResourcePtrOutput)
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakePagespeedCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
+func (o PagespeedCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
+	return o.ApplyT(func(v PagespeedCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
 }
 
-type StatuscakePagespeedCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
+type PagespeedCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakePagespeedCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakePagespeedCheckMonitoredResource)(nil)).Elem()
+func (PagespeedCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**PagespeedCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourcePtrOutput) ToStatuscakePagespeedCheckMonitoredResourcePtrOutput() StatuscakePagespeedCheckMonitoredResourcePtrOutput {
+func (o PagespeedCheckMonitoredResourcePtrOutput) ToPagespeedCheckMonitoredResourcePtrOutput() PagespeedCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourcePtrOutput) ToStatuscakePagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakePagespeedCheckMonitoredResourcePtrOutput {
+func (o PagespeedCheckMonitoredResourcePtrOutput) ToPagespeedCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) PagespeedCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourcePtrOutput) Elem() StatuscakePagespeedCheckMonitoredResourceOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckMonitoredResource) StatuscakePagespeedCheckMonitoredResource {
+func (o PagespeedCheckMonitoredResourcePtrOutput) Elem() PagespeedCheckMonitoredResourceOutput {
+	return o.ApplyT(func(v *PagespeedCheckMonitoredResource) PagespeedCheckMonitoredResource {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakePagespeedCheckMonitoredResource
+		var ret PagespeedCheckMonitoredResource
 		return ret
-	}).(StatuscakePagespeedCheckMonitoredResourceOutput)
+	}).(PagespeedCheckMonitoredResourceOutput)
 }
 
-func (o StatuscakePagespeedCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakePagespeedCheckMonitoredResource) *string {
+func (o PagespeedCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *PagespeedCheckMonitoredResource) *string {
 		if v == nil {
 			return nil
 		}
@@ -306,7 +306,7 @@ func (o StatuscakePagespeedCheckMonitoredResourcePtrOutput) Address() pulumi.Str
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeSslCheckAlertConfig struct {
+type SslCheckAlertConfig struct {
 	AlertAts   []int `pulumi:"alertAts"`
 	OnBroken   *bool `pulumi:"onBroken"`
 	OnExpiry   *bool `pulumi:"onExpiry"`
@@ -314,18 +314,18 @@ type StatuscakeSslCheckAlertConfig struct {
 	OnReminder *bool `pulumi:"onReminder"`
 }
 
-// StatuscakeSslCheckAlertConfigInput is an input type that accepts StatuscakeSslCheckAlertConfigArgs and StatuscakeSslCheckAlertConfigOutput values.
-// You can construct a concrete instance of `StatuscakeSslCheckAlertConfigInput` via:
+// SslCheckAlertConfigInput is an input type that accepts SslCheckAlertConfigArgs and SslCheckAlertConfigOutput values.
+// You can construct a concrete instance of `SslCheckAlertConfigInput` via:
 //
-//	StatuscakeSslCheckAlertConfigArgs{...}
-type StatuscakeSslCheckAlertConfigInput interface {
+//	SslCheckAlertConfigArgs{...}
+type SslCheckAlertConfigInput interface {
 	pulumi.Input
 
-	ToStatuscakeSslCheckAlertConfigOutput() StatuscakeSslCheckAlertConfigOutput
-	ToStatuscakeSslCheckAlertConfigOutputWithContext(context.Context) StatuscakeSslCheckAlertConfigOutput
+	ToSslCheckAlertConfigOutput() SslCheckAlertConfigOutput
+	ToSslCheckAlertConfigOutputWithContext(context.Context) SslCheckAlertConfigOutput
 }
 
-type StatuscakeSslCheckAlertConfigArgs struct {
+type SslCheckAlertConfigArgs struct {
 	AlertAts   pulumi.IntArrayInput `pulumi:"alertAts"`
 	OnBroken   pulumi.BoolPtrInput  `pulumi:"onBroken"`
 	OnExpiry   pulumi.BoolPtrInput  `pulumi:"onExpiry"`
@@ -333,129 +333,129 @@ type StatuscakeSslCheckAlertConfigArgs struct {
 	OnReminder pulumi.BoolPtrInput  `pulumi:"onReminder"`
 }
 
-func (StatuscakeSslCheckAlertConfigArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeSslCheckAlertConfig)(nil)).Elem()
+func (SslCheckAlertConfigArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*SslCheckAlertConfig)(nil)).Elem()
 }
 
-func (i StatuscakeSslCheckAlertConfigArgs) ToStatuscakeSslCheckAlertConfigOutput() StatuscakeSslCheckAlertConfigOutput {
-	return i.ToStatuscakeSslCheckAlertConfigOutputWithContext(context.Background())
+func (i SslCheckAlertConfigArgs) ToSslCheckAlertConfigOutput() SslCheckAlertConfigOutput {
+	return i.ToSslCheckAlertConfigOutputWithContext(context.Background())
 }
 
-func (i StatuscakeSslCheckAlertConfigArgs) ToStatuscakeSslCheckAlertConfigOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckAlertConfigOutput)
+func (i SslCheckAlertConfigArgs) ToSslCheckAlertConfigOutputWithContext(ctx context.Context) SslCheckAlertConfigOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckAlertConfigOutput)
 }
 
-func (i StatuscakeSslCheckAlertConfigArgs) ToStatuscakeSslCheckAlertConfigPtrOutput() StatuscakeSslCheckAlertConfigPtrOutput {
-	return i.ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(context.Background())
+func (i SslCheckAlertConfigArgs) ToSslCheckAlertConfigPtrOutput() SslCheckAlertConfigPtrOutput {
+	return i.ToSslCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeSslCheckAlertConfigArgs) ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckAlertConfigOutput).ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(ctx)
+func (i SslCheckAlertConfigArgs) ToSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) SslCheckAlertConfigPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckAlertConfigOutput).ToSslCheckAlertConfigPtrOutputWithContext(ctx)
 }
 
-// StatuscakeSslCheckAlertConfigPtrInput is an input type that accepts StatuscakeSslCheckAlertConfigArgs, StatuscakeSslCheckAlertConfigPtr and StatuscakeSslCheckAlertConfigPtrOutput values.
-// You can construct a concrete instance of `StatuscakeSslCheckAlertConfigPtrInput` via:
+// SslCheckAlertConfigPtrInput is an input type that accepts SslCheckAlertConfigArgs, SslCheckAlertConfigPtr and SslCheckAlertConfigPtrOutput values.
+// You can construct a concrete instance of `SslCheckAlertConfigPtrInput` via:
 //
-//	        StatuscakeSslCheckAlertConfigArgs{...}
+//	        SslCheckAlertConfigArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeSslCheckAlertConfigPtrInput interface {
+type SslCheckAlertConfigPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeSslCheckAlertConfigPtrOutput() StatuscakeSslCheckAlertConfigPtrOutput
-	ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(context.Context) StatuscakeSslCheckAlertConfigPtrOutput
+	ToSslCheckAlertConfigPtrOutput() SslCheckAlertConfigPtrOutput
+	ToSslCheckAlertConfigPtrOutputWithContext(context.Context) SslCheckAlertConfigPtrOutput
 }
 
-type statuscakeSslCheckAlertConfigPtrType StatuscakeSslCheckAlertConfigArgs
+type sslCheckAlertConfigPtrType SslCheckAlertConfigArgs
 
-func StatuscakeSslCheckAlertConfigPtr(v *StatuscakeSslCheckAlertConfigArgs) StatuscakeSslCheckAlertConfigPtrInput {
-	return (*statuscakeSslCheckAlertConfigPtrType)(v)
+func SslCheckAlertConfigPtr(v *SslCheckAlertConfigArgs) SslCheckAlertConfigPtrInput {
+	return (*sslCheckAlertConfigPtrType)(v)
 }
 
-func (*statuscakeSslCheckAlertConfigPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeSslCheckAlertConfig)(nil)).Elem()
+func (*sslCheckAlertConfigPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**SslCheckAlertConfig)(nil)).Elem()
 }
 
-func (i *statuscakeSslCheckAlertConfigPtrType) ToStatuscakeSslCheckAlertConfigPtrOutput() StatuscakeSslCheckAlertConfigPtrOutput {
-	return i.ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(context.Background())
+func (i *sslCheckAlertConfigPtrType) ToSslCheckAlertConfigPtrOutput() SslCheckAlertConfigPtrOutput {
+	return i.ToSslCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeSslCheckAlertConfigPtrType) ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckAlertConfigPtrOutput)
+func (i *sslCheckAlertConfigPtrType) ToSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) SslCheckAlertConfigPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckAlertConfigPtrOutput)
 }
 
-type StatuscakeSslCheckAlertConfigOutput struct{ *pulumi.OutputState }
+type SslCheckAlertConfigOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeSslCheckAlertConfigOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeSslCheckAlertConfig)(nil)).Elem()
+func (SslCheckAlertConfigOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*SslCheckAlertConfig)(nil)).Elem()
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) ToStatuscakeSslCheckAlertConfigOutput() StatuscakeSslCheckAlertConfigOutput {
+func (o SslCheckAlertConfigOutput) ToSslCheckAlertConfigOutput() SslCheckAlertConfigOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) ToStatuscakeSslCheckAlertConfigOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigOutput {
+func (o SslCheckAlertConfigOutput) ToSslCheckAlertConfigOutputWithContext(ctx context.Context) SslCheckAlertConfigOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) ToStatuscakeSslCheckAlertConfigPtrOutput() StatuscakeSslCheckAlertConfigPtrOutput {
-	return o.ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(context.Background())
+func (o SslCheckAlertConfigOutput) ToSslCheckAlertConfigPtrOutput() SslCheckAlertConfigPtrOutput {
+	return o.ToSslCheckAlertConfigPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeSslCheckAlertConfig) *StatuscakeSslCheckAlertConfig {
+func (o SslCheckAlertConfigOutput) ToSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) SslCheckAlertConfigPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v SslCheckAlertConfig) *SslCheckAlertConfig {
 		return &v
-	}).(StatuscakeSslCheckAlertConfigPtrOutput)
+	}).(SslCheckAlertConfigPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) AlertAts() pulumi.IntArrayOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckAlertConfig) []int { return v.AlertAts }).(pulumi.IntArrayOutput)
+func (o SslCheckAlertConfigOutput) AlertAts() pulumi.IntArrayOutput {
+	return o.ApplyT(func(v SslCheckAlertConfig) []int { return v.AlertAts }).(pulumi.IntArrayOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) OnBroken() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckAlertConfig) *bool { return v.OnBroken }).(pulumi.BoolPtrOutput)
+func (o SslCheckAlertConfigOutput) OnBroken() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v SslCheckAlertConfig) *bool { return v.OnBroken }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) OnExpiry() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckAlertConfig) *bool { return v.OnExpiry }).(pulumi.BoolPtrOutput)
+func (o SslCheckAlertConfigOutput) OnExpiry() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v SslCheckAlertConfig) *bool { return v.OnExpiry }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) OnMixed() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckAlertConfig) *bool { return v.OnMixed }).(pulumi.BoolPtrOutput)
+func (o SslCheckAlertConfigOutput) OnMixed() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v SslCheckAlertConfig) *bool { return v.OnMixed }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigOutput) OnReminder() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckAlertConfig) *bool { return v.OnReminder }).(pulumi.BoolPtrOutput)
+func (o SslCheckAlertConfigOutput) OnReminder() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v SslCheckAlertConfig) *bool { return v.OnReminder }).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeSslCheckAlertConfigPtrOutput struct{ *pulumi.OutputState }
+type SslCheckAlertConfigPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeSslCheckAlertConfigPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeSslCheckAlertConfig)(nil)).Elem()
+func (SslCheckAlertConfigPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**SslCheckAlertConfig)(nil)).Elem()
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) ToStatuscakeSslCheckAlertConfigPtrOutput() StatuscakeSslCheckAlertConfigPtrOutput {
+func (o SslCheckAlertConfigPtrOutput) ToSslCheckAlertConfigPtrOutput() SslCheckAlertConfigPtrOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) ToStatuscakeSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) StatuscakeSslCheckAlertConfigPtrOutput {
+func (o SslCheckAlertConfigPtrOutput) ToSslCheckAlertConfigPtrOutputWithContext(ctx context.Context) SslCheckAlertConfigPtrOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) Elem() StatuscakeSslCheckAlertConfigOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) StatuscakeSslCheckAlertConfig {
+func (o SslCheckAlertConfigPtrOutput) Elem() SslCheckAlertConfigOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) SslCheckAlertConfig {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeSslCheckAlertConfig
+		var ret SslCheckAlertConfig
 		return ret
-	}).(StatuscakeSslCheckAlertConfigOutput)
+	}).(SslCheckAlertConfigOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) AlertAts() pulumi.IntArrayOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) []int {
+func (o SslCheckAlertConfigPtrOutput) AlertAts() pulumi.IntArrayOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) []int {
 		if v == nil {
 			return nil
 		}
@@ -463,8 +463,8 @@ func (o StatuscakeSslCheckAlertConfigPtrOutput) AlertAts() pulumi.IntArrayOutput
 	}).(pulumi.IntArrayOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) OnBroken() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) *bool {
+func (o SslCheckAlertConfigPtrOutput) OnBroken() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) *bool {
 		if v == nil {
 			return nil
 		}
@@ -472,8 +472,8 @@ func (o StatuscakeSslCheckAlertConfigPtrOutput) OnBroken() pulumi.BoolPtrOutput 
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) OnExpiry() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) *bool {
+func (o SslCheckAlertConfigPtrOutput) OnExpiry() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) *bool {
 		if v == nil {
 			return nil
 		}
@@ -481,8 +481,8 @@ func (o StatuscakeSslCheckAlertConfigPtrOutput) OnExpiry() pulumi.BoolPtrOutput 
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) OnMixed() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) *bool {
+func (o SslCheckAlertConfigPtrOutput) OnMixed() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) *bool {
 		if v == nil {
 			return nil
 		}
@@ -490,8 +490,8 @@ func (o StatuscakeSslCheckAlertConfigPtrOutput) OnMixed() pulumi.BoolPtrOutput {
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeSslCheckAlertConfigPtrOutput) OnReminder() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckAlertConfig) *bool {
+func (o SslCheckAlertConfigPtrOutput) OnReminder() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *SslCheckAlertConfig) *bool {
 		if v == nil {
 			return nil
 		}
@@ -499,138 +499,138 @@ func (o StatuscakeSslCheckAlertConfigPtrOutput) OnReminder() pulumi.BoolPtrOutpu
 	}).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeSslCheckMonitoredResource struct {
+type SslCheckMonitoredResource struct {
 	Address  string  `pulumi:"address"`
 	Hostname *string `pulumi:"hostname"`
 }
 
-// StatuscakeSslCheckMonitoredResourceInput is an input type that accepts StatuscakeSslCheckMonitoredResourceArgs and StatuscakeSslCheckMonitoredResourceOutput values.
-// You can construct a concrete instance of `StatuscakeSslCheckMonitoredResourceInput` via:
+// SslCheckMonitoredResourceInput is an input type that accepts SslCheckMonitoredResourceArgs and SslCheckMonitoredResourceOutput values.
+// You can construct a concrete instance of `SslCheckMonitoredResourceInput` via:
 //
-//	StatuscakeSslCheckMonitoredResourceArgs{...}
-type StatuscakeSslCheckMonitoredResourceInput interface {
+//	SslCheckMonitoredResourceArgs{...}
+type SslCheckMonitoredResourceInput interface {
 	pulumi.Input
 
-	ToStatuscakeSslCheckMonitoredResourceOutput() StatuscakeSslCheckMonitoredResourceOutput
-	ToStatuscakeSslCheckMonitoredResourceOutputWithContext(context.Context) StatuscakeSslCheckMonitoredResourceOutput
+	ToSslCheckMonitoredResourceOutput() SslCheckMonitoredResourceOutput
+	ToSslCheckMonitoredResourceOutputWithContext(context.Context) SslCheckMonitoredResourceOutput
 }
 
-type StatuscakeSslCheckMonitoredResourceArgs struct {
+type SslCheckMonitoredResourceArgs struct {
 	Address  pulumi.StringInput    `pulumi:"address"`
 	Hostname pulumi.StringPtrInput `pulumi:"hostname"`
 }
 
-func (StatuscakeSslCheckMonitoredResourceArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeSslCheckMonitoredResource)(nil)).Elem()
+func (SslCheckMonitoredResourceArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*SslCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i StatuscakeSslCheckMonitoredResourceArgs) ToStatuscakeSslCheckMonitoredResourceOutput() StatuscakeSslCheckMonitoredResourceOutput {
-	return i.ToStatuscakeSslCheckMonitoredResourceOutputWithContext(context.Background())
+func (i SslCheckMonitoredResourceArgs) ToSslCheckMonitoredResourceOutput() SslCheckMonitoredResourceOutput {
+	return i.ToSslCheckMonitoredResourceOutputWithContext(context.Background())
 }
 
-func (i StatuscakeSslCheckMonitoredResourceArgs) ToStatuscakeSslCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourceOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckMonitoredResourceOutput)
+func (i SslCheckMonitoredResourceArgs) ToSslCheckMonitoredResourceOutputWithContext(ctx context.Context) SslCheckMonitoredResourceOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckMonitoredResourceOutput)
 }
 
-func (i StatuscakeSslCheckMonitoredResourceArgs) ToStatuscakeSslCheckMonitoredResourcePtrOutput() StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i SslCheckMonitoredResourceArgs) ToSslCheckMonitoredResourcePtrOutput() SslCheckMonitoredResourcePtrOutput {
+	return i.ToSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeSslCheckMonitoredResourceArgs) ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckMonitoredResourceOutput).ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(ctx)
+func (i SslCheckMonitoredResourceArgs) ToSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) SslCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckMonitoredResourceOutput).ToSslCheckMonitoredResourcePtrOutputWithContext(ctx)
 }
 
-// StatuscakeSslCheckMonitoredResourcePtrInput is an input type that accepts StatuscakeSslCheckMonitoredResourceArgs, StatuscakeSslCheckMonitoredResourcePtr and StatuscakeSslCheckMonitoredResourcePtrOutput values.
-// You can construct a concrete instance of `StatuscakeSslCheckMonitoredResourcePtrInput` via:
+// SslCheckMonitoredResourcePtrInput is an input type that accepts SslCheckMonitoredResourceArgs, SslCheckMonitoredResourcePtr and SslCheckMonitoredResourcePtrOutput values.
+// You can construct a concrete instance of `SslCheckMonitoredResourcePtrInput` via:
 //
-//	        StatuscakeSslCheckMonitoredResourceArgs{...}
+//	        SslCheckMonitoredResourceArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeSslCheckMonitoredResourcePtrInput interface {
+type SslCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeSslCheckMonitoredResourcePtrOutput() StatuscakeSslCheckMonitoredResourcePtrOutput
-	ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(context.Context) StatuscakeSslCheckMonitoredResourcePtrOutput
+	ToSslCheckMonitoredResourcePtrOutput() SslCheckMonitoredResourcePtrOutput
+	ToSslCheckMonitoredResourcePtrOutputWithContext(context.Context) SslCheckMonitoredResourcePtrOutput
 }
 
-type statuscakeSslCheckMonitoredResourcePtrType StatuscakeSslCheckMonitoredResourceArgs
+type sslCheckMonitoredResourcePtrType SslCheckMonitoredResourceArgs
 
-func StatuscakeSslCheckMonitoredResourcePtr(v *StatuscakeSslCheckMonitoredResourceArgs) StatuscakeSslCheckMonitoredResourcePtrInput {
-	return (*statuscakeSslCheckMonitoredResourcePtrType)(v)
+func SslCheckMonitoredResourcePtr(v *SslCheckMonitoredResourceArgs) SslCheckMonitoredResourcePtrInput {
+	return (*sslCheckMonitoredResourcePtrType)(v)
 }
 
-func (*statuscakeSslCheckMonitoredResourcePtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeSslCheckMonitoredResource)(nil)).Elem()
+func (*sslCheckMonitoredResourcePtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**SslCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i *statuscakeSslCheckMonitoredResourcePtrType) ToStatuscakeSslCheckMonitoredResourcePtrOutput() StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i *sslCheckMonitoredResourcePtrType) ToSslCheckMonitoredResourcePtrOutput() SslCheckMonitoredResourcePtrOutput {
+	return i.ToSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeSslCheckMonitoredResourcePtrType) ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeSslCheckMonitoredResourcePtrOutput)
+func (i *sslCheckMonitoredResourcePtrType) ToSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) SslCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(SslCheckMonitoredResourcePtrOutput)
 }
 
-type StatuscakeSslCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
+type SslCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeSslCheckMonitoredResourceOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeSslCheckMonitoredResource)(nil)).Elem()
+func (SslCheckMonitoredResourceOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*SslCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) ToStatuscakeSslCheckMonitoredResourceOutput() StatuscakeSslCheckMonitoredResourceOutput {
+func (o SslCheckMonitoredResourceOutput) ToSslCheckMonitoredResourceOutput() SslCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) ToStatuscakeSslCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourceOutput {
+func (o SslCheckMonitoredResourceOutput) ToSslCheckMonitoredResourceOutputWithContext(ctx context.Context) SslCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) ToStatuscakeSslCheckMonitoredResourcePtrOutput() StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return o.ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (o SslCheckMonitoredResourceOutput) ToSslCheckMonitoredResourcePtrOutput() SslCheckMonitoredResourcePtrOutput {
+	return o.ToSslCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourcePtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeSslCheckMonitoredResource) *StatuscakeSslCheckMonitoredResource {
+func (o SslCheckMonitoredResourceOutput) ToSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) SslCheckMonitoredResourcePtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v SslCheckMonitoredResource) *SslCheckMonitoredResource {
 		return &v
-	}).(StatuscakeSslCheckMonitoredResourcePtrOutput)
+	}).(SslCheckMonitoredResourcePtrOutput)
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
+func (o SslCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
+	return o.ApplyT(func(v SslCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
 }
 
-func (o StatuscakeSslCheckMonitoredResourceOutput) Hostname() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeSslCheckMonitoredResource) *string { return v.Hostname }).(pulumi.StringPtrOutput)
+func (o SslCheckMonitoredResourceOutput) Hostname() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v SslCheckMonitoredResource) *string { return v.Hostname }).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeSslCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
+type SslCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeSslCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeSslCheckMonitoredResource)(nil)).Elem()
+func (SslCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**SslCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakeSslCheckMonitoredResourcePtrOutput) ToStatuscakeSslCheckMonitoredResourcePtrOutput() StatuscakeSslCheckMonitoredResourcePtrOutput {
+func (o SslCheckMonitoredResourcePtrOutput) ToSslCheckMonitoredResourcePtrOutput() SslCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckMonitoredResourcePtrOutput) ToStatuscakeSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeSslCheckMonitoredResourcePtrOutput {
+func (o SslCheckMonitoredResourcePtrOutput) ToSslCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) SslCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakeSslCheckMonitoredResourcePtrOutput) Elem() StatuscakeSslCheckMonitoredResourceOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckMonitoredResource) StatuscakeSslCheckMonitoredResource {
+func (o SslCheckMonitoredResourcePtrOutput) Elem() SslCheckMonitoredResourceOutput {
+	return o.ApplyT(func(v *SslCheckMonitoredResource) SslCheckMonitoredResource {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeSslCheckMonitoredResource
+		var ret SslCheckMonitoredResource
 		return ret
-	}).(StatuscakeSslCheckMonitoredResourceOutput)
+	}).(SslCheckMonitoredResourceOutput)
 }
 
-func (o StatuscakeSslCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckMonitoredResource) *string {
+func (o SslCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *SslCheckMonitoredResource) *string {
 		if v == nil {
 			return nil
 		}
@@ -638,8 +638,8 @@ func (o StatuscakeSslCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtr
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeSslCheckMonitoredResourcePtrOutput) Hostname() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeSslCheckMonitoredResource) *string {
+func (o SslCheckMonitoredResourcePtrOutput) Hostname() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *SslCheckMonitoredResource) *string {
 		if v == nil {
 			return nil
 		}
@@ -647,138 +647,138 @@ func (o StatuscakeSslCheckMonitoredResourcePtrOutput) Hostname() pulumi.StringPt
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckDnsCheck struct {
+type UptimeCheckDnsCheck struct {
 	DnsIps    []string `pulumi:"dnsIps"`
 	DnsServer *string  `pulumi:"dnsServer"`
 }
 
-// StatuscakeUptimeCheckDnsCheckInput is an input type that accepts StatuscakeUptimeCheckDnsCheckArgs and StatuscakeUptimeCheckDnsCheckOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckDnsCheckInput` via:
+// UptimeCheckDnsCheckInput is an input type that accepts UptimeCheckDnsCheckArgs and UptimeCheckDnsCheckOutput values.
+// You can construct a concrete instance of `UptimeCheckDnsCheckInput` via:
 //
-//	StatuscakeUptimeCheckDnsCheckArgs{...}
-type StatuscakeUptimeCheckDnsCheckInput interface {
+//	UptimeCheckDnsCheckArgs{...}
+type UptimeCheckDnsCheckInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckDnsCheckOutput() StatuscakeUptimeCheckDnsCheckOutput
-	ToStatuscakeUptimeCheckDnsCheckOutputWithContext(context.Context) StatuscakeUptimeCheckDnsCheckOutput
+	ToUptimeCheckDnsCheckOutput() UptimeCheckDnsCheckOutput
+	ToUptimeCheckDnsCheckOutputWithContext(context.Context) UptimeCheckDnsCheckOutput
 }
 
-type StatuscakeUptimeCheckDnsCheckArgs struct {
+type UptimeCheckDnsCheckArgs struct {
 	DnsIps    pulumi.StringArrayInput `pulumi:"dnsIps"`
 	DnsServer pulumi.StringPtrInput   `pulumi:"dnsServer"`
 }
 
-func (StatuscakeUptimeCheckDnsCheckArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckDnsCheck)(nil)).Elem()
+func (UptimeCheckDnsCheckArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckDnsCheck)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckDnsCheckArgs) ToStatuscakeUptimeCheckDnsCheckOutput() StatuscakeUptimeCheckDnsCheckOutput {
-	return i.ToStatuscakeUptimeCheckDnsCheckOutputWithContext(context.Background())
+func (i UptimeCheckDnsCheckArgs) ToUptimeCheckDnsCheckOutput() UptimeCheckDnsCheckOutput {
+	return i.ToUptimeCheckDnsCheckOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckDnsCheckArgs) ToStatuscakeUptimeCheckDnsCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckDnsCheckOutput)
+func (i UptimeCheckDnsCheckArgs) ToUptimeCheckDnsCheckOutputWithContext(ctx context.Context) UptimeCheckDnsCheckOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckDnsCheckOutput)
 }
 
-func (i StatuscakeUptimeCheckDnsCheckArgs) ToStatuscakeUptimeCheckDnsCheckPtrOutput() StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
+func (i UptimeCheckDnsCheckArgs) ToUptimeCheckDnsCheckPtrOutput() UptimeCheckDnsCheckPtrOutput {
+	return i.ToUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckDnsCheckArgs) ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckDnsCheckOutput).ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(ctx)
+func (i UptimeCheckDnsCheckArgs) ToUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) UptimeCheckDnsCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckDnsCheckOutput).ToUptimeCheckDnsCheckPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckDnsCheckPtrInput is an input type that accepts StatuscakeUptimeCheckDnsCheckArgs, StatuscakeUptimeCheckDnsCheckPtr and StatuscakeUptimeCheckDnsCheckPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckDnsCheckPtrInput` via:
+// UptimeCheckDnsCheckPtrInput is an input type that accepts UptimeCheckDnsCheckArgs, UptimeCheckDnsCheckPtr and UptimeCheckDnsCheckPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckDnsCheckPtrInput` via:
 //
-//	        StatuscakeUptimeCheckDnsCheckArgs{...}
+//	        UptimeCheckDnsCheckArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckDnsCheckPtrInput interface {
+type UptimeCheckDnsCheckPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckDnsCheckPtrOutput() StatuscakeUptimeCheckDnsCheckPtrOutput
-	ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(context.Context) StatuscakeUptimeCheckDnsCheckPtrOutput
+	ToUptimeCheckDnsCheckPtrOutput() UptimeCheckDnsCheckPtrOutput
+	ToUptimeCheckDnsCheckPtrOutputWithContext(context.Context) UptimeCheckDnsCheckPtrOutput
 }
 
-type statuscakeUptimeCheckDnsCheckPtrType StatuscakeUptimeCheckDnsCheckArgs
+type uptimeCheckDnsCheckPtrType UptimeCheckDnsCheckArgs
 
-func StatuscakeUptimeCheckDnsCheckPtr(v *StatuscakeUptimeCheckDnsCheckArgs) StatuscakeUptimeCheckDnsCheckPtrInput {
-	return (*statuscakeUptimeCheckDnsCheckPtrType)(v)
+func UptimeCheckDnsCheckPtr(v *UptimeCheckDnsCheckArgs) UptimeCheckDnsCheckPtrInput {
+	return (*uptimeCheckDnsCheckPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckDnsCheckPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckDnsCheck)(nil)).Elem()
+func (*uptimeCheckDnsCheckPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckDnsCheck)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckDnsCheckPtrType) ToStatuscakeUptimeCheckDnsCheckPtrOutput() StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
+func (i *uptimeCheckDnsCheckPtrType) ToUptimeCheckDnsCheckPtrOutput() UptimeCheckDnsCheckPtrOutput {
+	return i.ToUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckDnsCheckPtrType) ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckDnsCheckPtrOutput)
+func (i *uptimeCheckDnsCheckPtrType) ToUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) UptimeCheckDnsCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckDnsCheckPtrOutput)
 }
 
-type StatuscakeUptimeCheckDnsCheckOutput struct{ *pulumi.OutputState }
+type UptimeCheckDnsCheckOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckDnsCheckOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckDnsCheck)(nil)).Elem()
+func (UptimeCheckDnsCheckOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckDnsCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) ToStatuscakeUptimeCheckDnsCheckOutput() StatuscakeUptimeCheckDnsCheckOutput {
+func (o UptimeCheckDnsCheckOutput) ToUptimeCheckDnsCheckOutput() UptimeCheckDnsCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) ToStatuscakeUptimeCheckDnsCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckOutput {
+func (o UptimeCheckDnsCheckOutput) ToUptimeCheckDnsCheckOutputWithContext(ctx context.Context) UptimeCheckDnsCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) ToStatuscakeUptimeCheckDnsCheckPtrOutput() StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return o.ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
+func (o UptimeCheckDnsCheckOutput) ToUptimeCheckDnsCheckPtrOutput() UptimeCheckDnsCheckPtrOutput {
+	return o.ToUptimeCheckDnsCheckPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckDnsCheck) *StatuscakeUptimeCheckDnsCheck {
+func (o UptimeCheckDnsCheckOutput) ToUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) UptimeCheckDnsCheckPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckDnsCheck) *UptimeCheckDnsCheck {
 		return &v
-	}).(StatuscakeUptimeCheckDnsCheckPtrOutput)
+	}).(UptimeCheckDnsCheckPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) DnsIps() pulumi.StringArrayOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckDnsCheck) []string { return v.DnsIps }).(pulumi.StringArrayOutput)
+func (o UptimeCheckDnsCheckOutput) DnsIps() pulumi.StringArrayOutput {
+	return o.ApplyT(func(v UptimeCheckDnsCheck) []string { return v.DnsIps }).(pulumi.StringArrayOutput)
 }
 
-func (o StatuscakeUptimeCheckDnsCheckOutput) DnsServer() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckDnsCheck) *string { return v.DnsServer }).(pulumi.StringPtrOutput)
+func (o UptimeCheckDnsCheckOutput) DnsServer() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckDnsCheck) *string { return v.DnsServer }).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckDnsCheckPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckDnsCheckPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckDnsCheckPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckDnsCheck)(nil)).Elem()
+func (UptimeCheckDnsCheckPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckDnsCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckDnsCheckPtrOutput) ToStatuscakeUptimeCheckDnsCheckPtrOutput() StatuscakeUptimeCheckDnsCheckPtrOutput {
+func (o UptimeCheckDnsCheckPtrOutput) ToUptimeCheckDnsCheckPtrOutput() UptimeCheckDnsCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckDnsCheckPtrOutput) ToStatuscakeUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckDnsCheckPtrOutput {
+func (o UptimeCheckDnsCheckPtrOutput) ToUptimeCheckDnsCheckPtrOutputWithContext(ctx context.Context) UptimeCheckDnsCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckDnsCheckPtrOutput) Elem() StatuscakeUptimeCheckDnsCheckOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckDnsCheck) StatuscakeUptimeCheckDnsCheck {
+func (o UptimeCheckDnsCheckPtrOutput) Elem() UptimeCheckDnsCheckOutput {
+	return o.ApplyT(func(v *UptimeCheckDnsCheck) UptimeCheckDnsCheck {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckDnsCheck
+		var ret UptimeCheckDnsCheck
 		return ret
-	}).(StatuscakeUptimeCheckDnsCheckOutput)
+	}).(UptimeCheckDnsCheckOutput)
 }
 
-func (o StatuscakeUptimeCheckDnsCheckPtrOutput) DnsIps() pulumi.StringArrayOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckDnsCheck) []string {
+func (o UptimeCheckDnsCheckPtrOutput) DnsIps() pulumi.StringArrayOutput {
+	return o.ApplyT(func(v *UptimeCheckDnsCheck) []string {
 		if v == nil {
 			return nil
 		}
@@ -786,8 +786,8 @@ func (o StatuscakeUptimeCheckDnsCheckPtrOutput) DnsIps() pulumi.StringArrayOutpu
 	}).(pulumi.StringArrayOutput)
 }
 
-func (o StatuscakeUptimeCheckDnsCheckPtrOutput) DnsServer() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckDnsCheck) *string {
+func (o UptimeCheckDnsCheckPtrOutput) DnsServer() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckDnsCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -795,226 +795,222 @@ func (o StatuscakeUptimeCheckDnsCheckPtrOutput) DnsServer() pulumi.StringPtrOutp
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheck struct {
-	BasicAuthentication *StatuscakeUptimeCheckHttpCheckBasicAuthentication `pulumi:"basicAuthentication"`
-	ContentMatchers     *StatuscakeUptimeCheckHttpCheckContentMatchers     `pulumi:"contentMatchers"`
-	EnableCookies       *bool                                              `pulumi:"enableCookies"`
-	FinalEndpoint       *string                                            `pulumi:"finalEndpoint"`
-	FollowRedirects     *bool                                              `pulumi:"followRedirects"`
-	RequestHeaders      map[string]string                                  `pulumi:"requestHeaders"`
-	RequestMethod       *string                                            `pulumi:"requestMethod"`
-	RequestPayload      map[string]string                                  `pulumi:"requestPayload"`
-	RequestPayloadRaw   *string                                            `pulumi:"requestPayloadRaw"`
-	StatusCodes         []string                                           `pulumi:"statusCodes"`
-	Timeout             *int                                               `pulumi:"timeout"`
-	UserAgent           *string                                            `pulumi:"userAgent"`
-	ValidateSsl         *bool                                              `pulumi:"validateSsl"`
+type UptimeCheckHttpCheck struct {
+	BasicAuthentication *UptimeCheckHttpCheckBasicAuthentication `pulumi:"basicAuthentication"`
+	ContentMatchers     *UptimeCheckHttpCheckContentMatchers     `pulumi:"contentMatchers"`
+	EnableCookies       *bool                                    `pulumi:"enableCookies"`
+	FinalEndpoint       *string                                  `pulumi:"finalEndpoint"`
+	FollowRedirects     *bool                                    `pulumi:"followRedirects"`
+	RequestHeaders      map[string]string                        `pulumi:"requestHeaders"`
+	RequestMethod       *string                                  `pulumi:"requestMethod"`
+	RequestPayload      map[string]string                        `pulumi:"requestPayload"`
+	RequestPayloadRaw   *string                                  `pulumi:"requestPayloadRaw"`
+	StatusCodes         []string                                 `pulumi:"statusCodes"`
+	Timeout             *int                                     `pulumi:"timeout"`
+	UserAgent           *string                                  `pulumi:"userAgent"`
+	ValidateSsl         *bool                                    `pulumi:"validateSsl"`
 }
 
-// StatuscakeUptimeCheckHttpCheckInput is an input type that accepts StatuscakeUptimeCheckHttpCheckArgs and StatuscakeUptimeCheckHttpCheckOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckInput` via:
+// UptimeCheckHttpCheckInput is an input type that accepts UptimeCheckHttpCheckArgs and UptimeCheckHttpCheckOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckInput` via:
 //
-//	StatuscakeUptimeCheckHttpCheckArgs{...}
-type StatuscakeUptimeCheckHttpCheckInput interface {
+//	UptimeCheckHttpCheckArgs{...}
+type UptimeCheckHttpCheckInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckOutput() StatuscakeUptimeCheckHttpCheckOutput
-	ToStatuscakeUptimeCheckHttpCheckOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckOutput
+	ToUptimeCheckHttpCheckOutput() UptimeCheckHttpCheckOutput
+	ToUptimeCheckHttpCheckOutputWithContext(context.Context) UptimeCheckHttpCheckOutput
 }
 
-type StatuscakeUptimeCheckHttpCheckArgs struct {
-	BasicAuthentication StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput `pulumi:"basicAuthentication"`
-	ContentMatchers     StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput     `pulumi:"contentMatchers"`
-	EnableCookies       pulumi.BoolPtrInput                                       `pulumi:"enableCookies"`
-	FinalEndpoint       pulumi.StringPtrInput                                     `pulumi:"finalEndpoint"`
-	FollowRedirects     pulumi.BoolPtrInput                                       `pulumi:"followRedirects"`
-	RequestHeaders      pulumi.StringMapInput                                     `pulumi:"requestHeaders"`
-	RequestMethod       pulumi.StringPtrInput                                     `pulumi:"requestMethod"`
-	RequestPayload      pulumi.StringMapInput                                     `pulumi:"requestPayload"`
-	RequestPayloadRaw   pulumi.StringPtrInput                                     `pulumi:"requestPayloadRaw"`
-	StatusCodes         pulumi.StringArrayInput                                   `pulumi:"statusCodes"`
-	Timeout             pulumi.IntPtrInput                                        `pulumi:"timeout"`
-	UserAgent           pulumi.StringPtrInput                                     `pulumi:"userAgent"`
-	ValidateSsl         pulumi.BoolPtrInput                                       `pulumi:"validateSsl"`
+type UptimeCheckHttpCheckArgs struct {
+	BasicAuthentication UptimeCheckHttpCheckBasicAuthenticationPtrInput `pulumi:"basicAuthentication"`
+	ContentMatchers     UptimeCheckHttpCheckContentMatchersPtrInput     `pulumi:"contentMatchers"`
+	EnableCookies       pulumi.BoolPtrInput                             `pulumi:"enableCookies"`
+	FinalEndpoint       pulumi.StringPtrInput                           `pulumi:"finalEndpoint"`
+	FollowRedirects     pulumi.BoolPtrInput                             `pulumi:"followRedirects"`
+	RequestHeaders      pulumi.StringMapInput                           `pulumi:"requestHeaders"`
+	RequestMethod       pulumi.StringPtrInput                           `pulumi:"requestMethod"`
+	RequestPayload      pulumi.StringMapInput                           `pulumi:"requestPayload"`
+	RequestPayloadRaw   pulumi.StringPtrInput                           `pulumi:"requestPayloadRaw"`
+	StatusCodes         pulumi.StringArrayInput                         `pulumi:"statusCodes"`
+	Timeout             pulumi.IntPtrInput                              `pulumi:"timeout"`
+	UserAgent           pulumi.StringPtrInput                           `pulumi:"userAgent"`
+	ValidateSsl         pulumi.BoolPtrInput                             `pulumi:"validateSsl"`
 }
 
-func (StatuscakeUptimeCheckHttpCheckArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheck)(nil)).Elem()
+func (UptimeCheckHttpCheckArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheck)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckHttpCheckArgs) ToStatuscakeUptimeCheckHttpCheckOutput() StatuscakeUptimeCheckHttpCheckOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckArgs) ToUptimeCheckHttpCheckOutput() UptimeCheckHttpCheckOutput {
+	return i.ToUptimeCheckHttpCheckOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckArgs) ToStatuscakeUptimeCheckHttpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckOutput)
+func (i UptimeCheckHttpCheckArgs) ToUptimeCheckHttpCheckOutputWithContext(ctx context.Context) UptimeCheckHttpCheckOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckOutput)
 }
 
-func (i StatuscakeUptimeCheckHttpCheckArgs) ToStatuscakeUptimeCheckHttpCheckPtrOutput() StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckArgs) ToUptimeCheckHttpCheckPtrOutput() UptimeCheckHttpCheckPtrOutput {
+	return i.ToUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckArgs) ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckOutput).ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(ctx)
+func (i UptimeCheckHttpCheckArgs) ToUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckOutput).ToUptimeCheckHttpCheckPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckHttpCheckPtrInput is an input type that accepts StatuscakeUptimeCheckHttpCheckArgs, StatuscakeUptimeCheckHttpCheckPtr and StatuscakeUptimeCheckHttpCheckPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckPtrInput` via:
+// UptimeCheckHttpCheckPtrInput is an input type that accepts UptimeCheckHttpCheckArgs, UptimeCheckHttpCheckPtr and UptimeCheckHttpCheckPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckPtrInput` via:
 //
-//	        StatuscakeUptimeCheckHttpCheckArgs{...}
+//	        UptimeCheckHttpCheckArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckHttpCheckPtrInput interface {
+type UptimeCheckHttpCheckPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckPtrOutput() StatuscakeUptimeCheckHttpCheckPtrOutput
-	ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckPtrOutput
+	ToUptimeCheckHttpCheckPtrOutput() UptimeCheckHttpCheckPtrOutput
+	ToUptimeCheckHttpCheckPtrOutputWithContext(context.Context) UptimeCheckHttpCheckPtrOutput
 }
 
-type statuscakeUptimeCheckHttpCheckPtrType StatuscakeUptimeCheckHttpCheckArgs
+type uptimeCheckHttpCheckPtrType UptimeCheckHttpCheckArgs
 
-func StatuscakeUptimeCheckHttpCheckPtr(v *StatuscakeUptimeCheckHttpCheckArgs) StatuscakeUptimeCheckHttpCheckPtrInput {
-	return (*statuscakeUptimeCheckHttpCheckPtrType)(v)
+func UptimeCheckHttpCheckPtr(v *UptimeCheckHttpCheckArgs) UptimeCheckHttpCheckPtrInput {
+	return (*uptimeCheckHttpCheckPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckHttpCheckPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheck)(nil)).Elem()
+func (*uptimeCheckHttpCheckPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheck)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckHttpCheckPtrType) ToStatuscakeUptimeCheckHttpCheckPtrOutput() StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
+func (i *uptimeCheckHttpCheckPtrType) ToUptimeCheckHttpCheckPtrOutput() UptimeCheckHttpCheckPtrOutput {
+	return i.ToUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckHttpCheckPtrType) ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckPtrOutput)
+func (i *uptimeCheckHttpCheckPtrType) ToUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheck)(nil)).Elem()
+func (UptimeCheckHttpCheckOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ToStatuscakeUptimeCheckHttpCheckOutput() StatuscakeUptimeCheckHttpCheckOutput {
+func (o UptimeCheckHttpCheckOutput) ToUptimeCheckHttpCheckOutput() UptimeCheckHttpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ToStatuscakeUptimeCheckHttpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckOutput {
+func (o UptimeCheckHttpCheckOutput) ToUptimeCheckHttpCheckOutputWithContext(ctx context.Context) UptimeCheckHttpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ToStatuscakeUptimeCheckHttpCheckPtrOutput() StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return o.ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
+func (o UptimeCheckHttpCheckOutput) ToUptimeCheckHttpCheckPtrOutput() UptimeCheckHttpCheckPtrOutput {
+	return o.ToUptimeCheckHttpCheckPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckHttpCheck) *StatuscakeUptimeCheckHttpCheck {
+func (o UptimeCheckHttpCheckOutput) ToUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckHttpCheck) *UptimeCheckHttpCheck {
 		return &v
-	}).(StatuscakeUptimeCheckHttpCheckPtrOutput)
+	}).(UptimeCheckHttpCheckPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) BasicAuthentication() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *StatuscakeUptimeCheckHttpCheckBasicAuthentication {
-		return v.BasicAuthentication
-	}).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput)
+func (o UptimeCheckHttpCheckOutput) BasicAuthentication() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *UptimeCheckHttpCheckBasicAuthentication { return v.BasicAuthentication }).(UptimeCheckHttpCheckBasicAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ContentMatchers() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *StatuscakeUptimeCheckHttpCheckContentMatchers {
-		return v.ContentMatchers
-	}).(StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput)
+func (o UptimeCheckHttpCheckOutput) ContentMatchers() UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *UptimeCheckHttpCheckContentMatchers { return v.ContentMatchers }).(UptimeCheckHttpCheckContentMatchersPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) EnableCookies() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *bool { return v.EnableCookies }).(pulumi.BoolPtrOutput)
+func (o UptimeCheckHttpCheckOutput) EnableCookies() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *bool { return v.EnableCookies }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) FinalEndpoint() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *string { return v.FinalEndpoint }).(pulumi.StringPtrOutput)
+func (o UptimeCheckHttpCheckOutput) FinalEndpoint() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *string { return v.FinalEndpoint }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) FollowRedirects() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *bool { return v.FollowRedirects }).(pulumi.BoolPtrOutput)
+func (o UptimeCheckHttpCheckOutput) FollowRedirects() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *bool { return v.FollowRedirects }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) RequestHeaders() pulumi.StringMapOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) map[string]string { return v.RequestHeaders }).(pulumi.StringMapOutput)
+func (o UptimeCheckHttpCheckOutput) RequestHeaders() pulumi.StringMapOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) map[string]string { return v.RequestHeaders }).(pulumi.StringMapOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) RequestMethod() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *string { return v.RequestMethod }).(pulumi.StringPtrOutput)
+func (o UptimeCheckHttpCheckOutput) RequestMethod() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *string { return v.RequestMethod }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) RequestPayload() pulumi.StringMapOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) map[string]string { return v.RequestPayload }).(pulumi.StringMapOutput)
+func (o UptimeCheckHttpCheckOutput) RequestPayload() pulumi.StringMapOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) map[string]string { return v.RequestPayload }).(pulumi.StringMapOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) RequestPayloadRaw() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *string { return v.RequestPayloadRaw }).(pulumi.StringPtrOutput)
+func (o UptimeCheckHttpCheckOutput) RequestPayloadRaw() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *string { return v.RequestPayloadRaw }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) StatusCodes() pulumi.StringArrayOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) []string { return v.StatusCodes }).(pulumi.StringArrayOutput)
+func (o UptimeCheckHttpCheckOutput) StatusCodes() pulumi.StringArrayOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) []string { return v.StatusCodes }).(pulumi.StringArrayOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) Timeout() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *int { return v.Timeout }).(pulumi.IntPtrOutput)
+func (o UptimeCheckHttpCheckOutput) Timeout() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *int { return v.Timeout }).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) UserAgent() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *string { return v.UserAgent }).(pulumi.StringPtrOutput)
+func (o UptimeCheckHttpCheckOutput) UserAgent() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *string { return v.UserAgent }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckOutput) ValidateSsl() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheck) *bool { return v.ValidateSsl }).(pulumi.BoolPtrOutput)
+func (o UptimeCheckHttpCheckOutput) ValidateSsl() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheck) *bool { return v.ValidateSsl }).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheck)(nil)).Elem()
+func (UptimeCheckHttpCheckPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) ToStatuscakeUptimeCheckHttpCheckPtrOutput() StatuscakeUptimeCheckHttpCheckPtrOutput {
+func (o UptimeCheckHttpCheckPtrOutput) ToUptimeCheckHttpCheckPtrOutput() UptimeCheckHttpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) ToStatuscakeUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckPtrOutput {
+func (o UptimeCheckHttpCheckPtrOutput) ToUptimeCheckHttpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) Elem() StatuscakeUptimeCheckHttpCheckOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) StatuscakeUptimeCheckHttpCheck {
+func (o UptimeCheckHttpCheckPtrOutput) Elem() UptimeCheckHttpCheckOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) UptimeCheckHttpCheck {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckHttpCheck
+		var ret UptimeCheckHttpCheck
 		return ret
-	}).(StatuscakeUptimeCheckHttpCheckOutput)
+	}).(UptimeCheckHttpCheckOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) BasicAuthentication() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *StatuscakeUptimeCheckHttpCheckBasicAuthentication {
+func (o UptimeCheckHttpCheckPtrOutput) BasicAuthentication() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *UptimeCheckHttpCheckBasicAuthentication {
 		if v == nil {
 			return nil
 		}
 		return v.BasicAuthentication
-	}).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput)
+	}).(UptimeCheckHttpCheckBasicAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) ContentMatchers() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *StatuscakeUptimeCheckHttpCheckContentMatchers {
+func (o UptimeCheckHttpCheckPtrOutput) ContentMatchers() UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *UptimeCheckHttpCheckContentMatchers {
 		if v == nil {
 			return nil
 		}
 		return v.ContentMatchers
-	}).(StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput)
+	}).(UptimeCheckHttpCheckContentMatchersPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) EnableCookies() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *bool {
+func (o UptimeCheckHttpCheckPtrOutput) EnableCookies() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *bool {
 		if v == nil {
 			return nil
 		}
@@ -1022,8 +1018,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) EnableCookies() pulumi.BoolPtrO
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) FinalEndpoint() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *string {
+func (o UptimeCheckHttpCheckPtrOutput) FinalEndpoint() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -1031,8 +1027,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) FinalEndpoint() pulumi.StringPt
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) FollowRedirects() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *bool {
+func (o UptimeCheckHttpCheckPtrOutput) FollowRedirects() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *bool {
 		if v == nil {
 			return nil
 		}
@@ -1040,8 +1036,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) FollowRedirects() pulumi.BoolPt
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestHeaders() pulumi.StringMapOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) map[string]string {
+func (o UptimeCheckHttpCheckPtrOutput) RequestHeaders() pulumi.StringMapOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) map[string]string {
 		if v == nil {
 			return nil
 		}
@@ -1049,8 +1045,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestHeaders() pulumi.StringM
 	}).(pulumi.StringMapOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestMethod() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *string {
+func (o UptimeCheckHttpCheckPtrOutput) RequestMethod() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -1058,8 +1054,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestMethod() pulumi.StringPt
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestPayload() pulumi.StringMapOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) map[string]string {
+func (o UptimeCheckHttpCheckPtrOutput) RequestPayload() pulumi.StringMapOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) map[string]string {
 		if v == nil {
 			return nil
 		}
@@ -1067,8 +1063,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestPayload() pulumi.StringM
 	}).(pulumi.StringMapOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestPayloadRaw() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *string {
+func (o UptimeCheckHttpCheckPtrOutput) RequestPayloadRaw() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -1076,8 +1072,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) RequestPayloadRaw() pulumi.Stri
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) StatusCodes() pulumi.StringArrayOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) []string {
+func (o UptimeCheckHttpCheckPtrOutput) StatusCodes() pulumi.StringArrayOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) []string {
 		if v == nil {
 			return nil
 		}
@@ -1085,8 +1081,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) StatusCodes() pulumi.StringArra
 	}).(pulumi.StringArrayOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *int {
+func (o UptimeCheckHttpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *int {
 		if v == nil {
 			return nil
 		}
@@ -1094,8 +1090,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
 	}).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) UserAgent() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *string {
+func (o UptimeCheckHttpCheckPtrOutput) UserAgent() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -1103,8 +1099,8 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) UserAgent() pulumi.StringPtrOut
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckPtrOutput) ValidateSsl() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheck) *bool {
+func (o UptimeCheckHttpCheckPtrOutput) ValidateSsl() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheck) *bool {
 		if v == nil {
 			return nil
 		}
@@ -1112,138 +1108,138 @@ func (o StatuscakeUptimeCheckHttpCheckPtrOutput) ValidateSsl() pulumi.BoolPtrOut
 	}).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckBasicAuthentication struct {
+type UptimeCheckHttpCheckBasicAuthentication struct {
 	Password string `pulumi:"password"`
 	Username string `pulumi:"username"`
 }
 
-// StatuscakeUptimeCheckHttpCheckBasicAuthenticationInput is an input type that accepts StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs and StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckBasicAuthenticationInput` via:
+// UptimeCheckHttpCheckBasicAuthenticationInput is an input type that accepts UptimeCheckHttpCheckBasicAuthenticationArgs and UptimeCheckHttpCheckBasicAuthenticationOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckBasicAuthenticationInput` via:
 //
-//	StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs{...}
-type StatuscakeUptimeCheckHttpCheckBasicAuthenticationInput interface {
+//	UptimeCheckHttpCheckBasicAuthenticationArgs{...}
+type UptimeCheckHttpCheckBasicAuthenticationInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput
-	ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput
+	ToUptimeCheckHttpCheckBasicAuthenticationOutput() UptimeCheckHttpCheckBasicAuthenticationOutput
+	ToUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(context.Context) UptimeCheckHttpCheckBasicAuthenticationOutput
 }
 
-type StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs struct {
+type UptimeCheckHttpCheckBasicAuthenticationArgs struct {
 	Password pulumi.StringInput `pulumi:"password"`
 	Username pulumi.StringInput `pulumi:"username"`
 }
 
-func (StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
+func (UptimeCheckHttpCheckBasicAuthenticationArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckBasicAuthenticationArgs) ToUptimeCheckHttpCheckBasicAuthenticationOutput() UptimeCheckHttpCheckBasicAuthenticationOutput {
+	return i.ToUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput)
+func (i UptimeCheckHttpCheckBasicAuthenticationArgs) ToUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckBasicAuthenticationOutput)
 }
 
-func (i StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckBasicAuthenticationArgs) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutput() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return i.ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput).ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx)
+func (i UptimeCheckHttpCheckBasicAuthenticationArgs) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckBasicAuthenticationOutput).ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput is an input type that accepts StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs, StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtr and StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput` via:
+// UptimeCheckHttpCheckBasicAuthenticationPtrInput is an input type that accepts UptimeCheckHttpCheckBasicAuthenticationArgs, UptimeCheckHttpCheckBasicAuthenticationPtr and UptimeCheckHttpCheckBasicAuthenticationPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckBasicAuthenticationPtrInput` via:
 //
-//	        StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs{...}
+//	        UptimeCheckHttpCheckBasicAuthenticationArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput interface {
+type UptimeCheckHttpCheckBasicAuthenticationPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput
-	ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput
+	ToUptimeCheckHttpCheckBasicAuthenticationPtrOutput() UptimeCheckHttpCheckBasicAuthenticationPtrOutput
+	ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Context) UptimeCheckHttpCheckBasicAuthenticationPtrOutput
 }
 
-type statuscakeUptimeCheckHttpCheckBasicAuthenticationPtrType StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs
+type uptimeCheckHttpCheckBasicAuthenticationPtrType UptimeCheckHttpCheckBasicAuthenticationArgs
 
-func StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtr(v *StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput {
-	return (*statuscakeUptimeCheckHttpCheckBasicAuthenticationPtrType)(v)
+func UptimeCheckHttpCheckBasicAuthenticationPtr(v *UptimeCheckHttpCheckBasicAuthenticationArgs) UptimeCheckHttpCheckBasicAuthenticationPtrInput {
+	return (*uptimeCheckHttpCheckBasicAuthenticationPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckHttpCheckBasicAuthenticationPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
+func (*uptimeCheckHttpCheckBasicAuthenticationPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckHttpCheckBasicAuthenticationPtrType) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
+func (i *uptimeCheckHttpCheckBasicAuthenticationPtrType) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutput() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return i.ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckHttpCheckBasicAuthenticationPtrType) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput)
+func (i *uptimeCheckHttpCheckBasicAuthenticationPtrType) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckBasicAuthenticationPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckBasicAuthenticationOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
+func (UptimeCheckHttpCheckBasicAuthenticationOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput {
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) ToUptimeCheckHttpCheckBasicAuthenticationOutput() UptimeCheckHttpCheckBasicAuthenticationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput {
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) ToUptimeCheckHttpCheckBasicAuthenticationOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return o.ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutput() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return o.ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckHttpCheckBasicAuthentication) *StatuscakeUptimeCheckHttpCheckBasicAuthentication {
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckHttpCheckBasicAuthentication) *UptimeCheckHttpCheckBasicAuthentication {
 		return &v
-	}).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput)
+	}).(UptimeCheckHttpCheckBasicAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) Password() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheckBasicAuthentication) string { return v.Password }).(pulumi.StringOutput)
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) Password() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheckBasicAuthentication) string { return v.Password }).(pulumi.StringOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput) Username() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheckBasicAuthentication) string { return v.Username }).(pulumi.StringOutput)
+func (o UptimeCheckHttpCheckBasicAuthenticationOutput) Username() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheckBasicAuthentication) string { return v.Username }).(pulumi.StringOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckBasicAuthenticationPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
+func (UptimeCheckHttpCheckBasicAuthenticationPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheckBasicAuthentication)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput() StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+func (o UptimeCheckHttpCheckBasicAuthenticationPtrOutput) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutput() UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) ToStatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput {
+func (o UptimeCheckHttpCheckBasicAuthenticationPtrOutput) ToUptimeCheckHttpCheckBasicAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckBasicAuthenticationPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) Elem() StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckBasicAuthentication) StatuscakeUptimeCheckHttpCheckBasicAuthentication {
+func (o UptimeCheckHttpCheckBasicAuthenticationPtrOutput) Elem() UptimeCheckHttpCheckBasicAuthenticationOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckBasicAuthentication) UptimeCheckHttpCheckBasicAuthentication {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckHttpCheckBasicAuthentication
+		var ret UptimeCheckHttpCheckBasicAuthentication
 		return ret
-	}).(StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput)
+	}).(UptimeCheckHttpCheckBasicAuthenticationOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) Password() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckBasicAuthentication) *string {
+func (o UptimeCheckHttpCheckBasicAuthenticationPtrOutput) Password() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckBasicAuthentication) *string {
 		if v == nil {
 			return nil
 		}
@@ -1251,8 +1247,8 @@ func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) Password() p
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) Username() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckBasicAuthentication) *string {
+func (o UptimeCheckHttpCheckBasicAuthenticationPtrOutput) Username() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckBasicAuthentication) *string {
 		if v == nil {
 			return nil
 		}
@@ -1260,144 +1256,144 @@ func (o StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput) Username() p
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckContentMatchers struct {
+type UptimeCheckHttpCheckContentMatchers struct {
 	Content        string  `pulumi:"content"`
 	IncludeHeaders *bool   `pulumi:"includeHeaders"`
 	Matcher        *string `pulumi:"matcher"`
 }
 
-// StatuscakeUptimeCheckHttpCheckContentMatchersInput is an input type that accepts StatuscakeUptimeCheckHttpCheckContentMatchersArgs and StatuscakeUptimeCheckHttpCheckContentMatchersOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckContentMatchersInput` via:
+// UptimeCheckHttpCheckContentMatchersInput is an input type that accepts UptimeCheckHttpCheckContentMatchersArgs and UptimeCheckHttpCheckContentMatchersOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckContentMatchersInput` via:
 //
-//	StatuscakeUptimeCheckHttpCheckContentMatchersArgs{...}
-type StatuscakeUptimeCheckHttpCheckContentMatchersInput interface {
+//	UptimeCheckHttpCheckContentMatchersArgs{...}
+type UptimeCheckHttpCheckContentMatchersInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckContentMatchersOutput() StatuscakeUptimeCheckHttpCheckContentMatchersOutput
-	ToStatuscakeUptimeCheckHttpCheckContentMatchersOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersOutput
+	ToUptimeCheckHttpCheckContentMatchersOutput() UptimeCheckHttpCheckContentMatchersOutput
+	ToUptimeCheckHttpCheckContentMatchersOutputWithContext(context.Context) UptimeCheckHttpCheckContentMatchersOutput
 }
 
-type StatuscakeUptimeCheckHttpCheckContentMatchersArgs struct {
+type UptimeCheckHttpCheckContentMatchersArgs struct {
 	Content        pulumi.StringInput    `pulumi:"content"`
 	IncludeHeaders pulumi.BoolPtrInput   `pulumi:"includeHeaders"`
 	Matcher        pulumi.StringPtrInput `pulumi:"matcher"`
 }
 
-func (StatuscakeUptimeCheckHttpCheckContentMatchersArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckContentMatchers)(nil)).Elem()
+func (UptimeCheckHttpCheckContentMatchersArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheckContentMatchers)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckHttpCheckContentMatchersArgs) ToStatuscakeUptimeCheckHttpCheckContentMatchersOutput() StatuscakeUptimeCheckHttpCheckContentMatchersOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckContentMatchersOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckContentMatchersArgs) ToUptimeCheckHttpCheckContentMatchersOutput() UptimeCheckHttpCheckContentMatchersOutput {
+	return i.ToUptimeCheckHttpCheckContentMatchersOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckContentMatchersArgs) ToStatuscakeUptimeCheckHttpCheckContentMatchersOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckContentMatchersOutput)
+func (i UptimeCheckHttpCheckContentMatchersArgs) ToUptimeCheckHttpCheckContentMatchersOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckContentMatchersOutput)
 }
 
-func (i StatuscakeUptimeCheckHttpCheckContentMatchersArgs) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
+func (i UptimeCheckHttpCheckContentMatchersArgs) ToUptimeCheckHttpCheckContentMatchersPtrOutput() UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return i.ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckHttpCheckContentMatchersArgs) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckContentMatchersOutput).ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx)
+func (i UptimeCheckHttpCheckContentMatchersArgs) ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckContentMatchersOutput).ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput is an input type that accepts StatuscakeUptimeCheckHttpCheckContentMatchersArgs, StatuscakeUptimeCheckHttpCheckContentMatchersPtr and StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput` via:
+// UptimeCheckHttpCheckContentMatchersPtrInput is an input type that accepts UptimeCheckHttpCheckContentMatchersArgs, UptimeCheckHttpCheckContentMatchersPtr and UptimeCheckHttpCheckContentMatchersPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckHttpCheckContentMatchersPtrInput` via:
 //
-//	        StatuscakeUptimeCheckHttpCheckContentMatchersArgs{...}
+//	        UptimeCheckHttpCheckContentMatchersArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput interface {
+type UptimeCheckHttpCheckContentMatchersPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput
-	ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput
+	ToUptimeCheckHttpCheckContentMatchersPtrOutput() UptimeCheckHttpCheckContentMatchersPtrOutput
+	ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Context) UptimeCheckHttpCheckContentMatchersPtrOutput
 }
 
-type statuscakeUptimeCheckHttpCheckContentMatchersPtrType StatuscakeUptimeCheckHttpCheckContentMatchersArgs
+type uptimeCheckHttpCheckContentMatchersPtrType UptimeCheckHttpCheckContentMatchersArgs
 
-func StatuscakeUptimeCheckHttpCheckContentMatchersPtr(v *StatuscakeUptimeCheckHttpCheckContentMatchersArgs) StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput {
-	return (*statuscakeUptimeCheckHttpCheckContentMatchersPtrType)(v)
+func UptimeCheckHttpCheckContentMatchersPtr(v *UptimeCheckHttpCheckContentMatchersArgs) UptimeCheckHttpCheckContentMatchersPtrInput {
+	return (*uptimeCheckHttpCheckContentMatchersPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckHttpCheckContentMatchersPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheckContentMatchers)(nil)).Elem()
+func (*uptimeCheckHttpCheckContentMatchersPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheckContentMatchers)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckHttpCheckContentMatchersPtrType) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return i.ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
+func (i *uptimeCheckHttpCheckContentMatchersPtrType) ToUptimeCheckHttpCheckContentMatchersPtrOutput() UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return i.ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckHttpCheckContentMatchersPtrType) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput)
+func (i *uptimeCheckHttpCheckContentMatchersPtrType) ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckHttpCheckContentMatchersPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckContentMatchersOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckContentMatchersOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckContentMatchersOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckContentMatchers)(nil)).Elem()
+func (UptimeCheckHttpCheckContentMatchersOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckHttpCheckContentMatchers)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersOutput() StatuscakeUptimeCheckHttpCheckContentMatchersOutput {
+func (o UptimeCheckHttpCheckContentMatchersOutput) ToUptimeCheckHttpCheckContentMatchersOutput() UptimeCheckHttpCheckContentMatchersOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersOutput {
+func (o UptimeCheckHttpCheckContentMatchersOutput) ToUptimeCheckHttpCheckContentMatchersOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return o.ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
+func (o UptimeCheckHttpCheckContentMatchersOutput) ToUptimeCheckHttpCheckContentMatchersPtrOutput() UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return o.ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckHttpCheckContentMatchers) *StatuscakeUptimeCheckHttpCheckContentMatchers {
+func (o UptimeCheckHttpCheckContentMatchersOutput) ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckHttpCheckContentMatchers) *UptimeCheckHttpCheckContentMatchers {
 		return &v
-	}).(StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput)
+	}).(UptimeCheckHttpCheckContentMatchersPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) Content() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheckContentMatchers) string { return v.Content }).(pulumi.StringOutput)
+func (o UptimeCheckHttpCheckContentMatchersOutput) Content() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheckContentMatchers) string { return v.Content }).(pulumi.StringOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) IncludeHeaders() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheckContentMatchers) *bool { return v.IncludeHeaders }).(pulumi.BoolPtrOutput)
+func (o UptimeCheckHttpCheckContentMatchersOutput) IncludeHeaders() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheckContentMatchers) *bool { return v.IncludeHeaders }).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersOutput) Matcher() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckHttpCheckContentMatchers) *string { return v.Matcher }).(pulumi.StringPtrOutput)
+func (o UptimeCheckHttpCheckContentMatchersOutput) Matcher() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckHttpCheckContentMatchers) *string { return v.Matcher }).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckHttpCheckContentMatchersPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckHttpCheckContentMatchers)(nil)).Elem()
+func (UptimeCheckHttpCheckContentMatchersPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckHttpCheckContentMatchers)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput() StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) ToUptimeCheckHttpCheckContentMatchersPtrOutput() UptimeCheckHttpCheckContentMatchersPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) ToStatuscakeUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) ToUptimeCheckHttpCheckContentMatchersPtrOutputWithContext(ctx context.Context) UptimeCheckHttpCheckContentMatchersPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) Elem() StatuscakeUptimeCheckHttpCheckContentMatchersOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckContentMatchers) StatuscakeUptimeCheckHttpCheckContentMatchers {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) Elem() UptimeCheckHttpCheckContentMatchersOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckContentMatchers) UptimeCheckHttpCheckContentMatchers {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckHttpCheckContentMatchers
+		var ret UptimeCheckHttpCheckContentMatchers
 		return ret
-	}).(StatuscakeUptimeCheckHttpCheckContentMatchersOutput)
+	}).(UptimeCheckHttpCheckContentMatchersOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) Content() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckContentMatchers) *string {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) Content() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckContentMatchers) *string {
 		if v == nil {
 			return nil
 		}
@@ -1405,8 +1401,8 @@ func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) Content() pulumi
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) IncludeHeaders() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckContentMatchers) *bool {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) IncludeHeaders() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckContentMatchers) *bool {
 		if v == nil {
 			return nil
 		}
@@ -1414,8 +1410,8 @@ func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) IncludeHeaders()
 	}).(pulumi.BoolPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) Matcher() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckHttpCheckContentMatchers) *string {
+func (o UptimeCheckHttpCheckContentMatchersPtrOutput) Matcher() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckHttpCheckContentMatchers) *string {
 		if v == nil {
 			return nil
 		}
@@ -1423,132 +1419,132 @@ func (o StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput) Matcher() pulumi
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckIcmpCheck struct {
+type UptimeCheckIcmpCheck struct {
 	Enabled *bool `pulumi:"enabled"`
 }
 
-// StatuscakeUptimeCheckIcmpCheckInput is an input type that accepts StatuscakeUptimeCheckIcmpCheckArgs and StatuscakeUptimeCheckIcmpCheckOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckIcmpCheckInput` via:
+// UptimeCheckIcmpCheckInput is an input type that accepts UptimeCheckIcmpCheckArgs and UptimeCheckIcmpCheckOutput values.
+// You can construct a concrete instance of `UptimeCheckIcmpCheckInput` via:
 //
-//	StatuscakeUptimeCheckIcmpCheckArgs{...}
-type StatuscakeUptimeCheckIcmpCheckInput interface {
+//	UptimeCheckIcmpCheckArgs{...}
+type UptimeCheckIcmpCheckInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckIcmpCheckOutput() StatuscakeUptimeCheckIcmpCheckOutput
-	ToStatuscakeUptimeCheckIcmpCheckOutputWithContext(context.Context) StatuscakeUptimeCheckIcmpCheckOutput
+	ToUptimeCheckIcmpCheckOutput() UptimeCheckIcmpCheckOutput
+	ToUptimeCheckIcmpCheckOutputWithContext(context.Context) UptimeCheckIcmpCheckOutput
 }
 
-type StatuscakeUptimeCheckIcmpCheckArgs struct {
+type UptimeCheckIcmpCheckArgs struct {
 	Enabled pulumi.BoolPtrInput `pulumi:"enabled"`
 }
 
-func (StatuscakeUptimeCheckIcmpCheckArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckIcmpCheck)(nil)).Elem()
+func (UptimeCheckIcmpCheckArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckIcmpCheck)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckIcmpCheckArgs) ToStatuscakeUptimeCheckIcmpCheckOutput() StatuscakeUptimeCheckIcmpCheckOutput {
-	return i.ToStatuscakeUptimeCheckIcmpCheckOutputWithContext(context.Background())
+func (i UptimeCheckIcmpCheckArgs) ToUptimeCheckIcmpCheckOutput() UptimeCheckIcmpCheckOutput {
+	return i.ToUptimeCheckIcmpCheckOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckIcmpCheckArgs) ToStatuscakeUptimeCheckIcmpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckIcmpCheckOutput)
+func (i UptimeCheckIcmpCheckArgs) ToUptimeCheckIcmpCheckOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckIcmpCheckOutput)
 }
 
-func (i StatuscakeUptimeCheckIcmpCheckArgs) ToStatuscakeUptimeCheckIcmpCheckPtrOutput() StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
+func (i UptimeCheckIcmpCheckArgs) ToUptimeCheckIcmpCheckPtrOutput() UptimeCheckIcmpCheckPtrOutput {
+	return i.ToUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckIcmpCheckArgs) ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckIcmpCheckOutput).ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(ctx)
+func (i UptimeCheckIcmpCheckArgs) ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckIcmpCheckOutput).ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckIcmpCheckPtrInput is an input type that accepts StatuscakeUptimeCheckIcmpCheckArgs, StatuscakeUptimeCheckIcmpCheckPtr and StatuscakeUptimeCheckIcmpCheckPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckIcmpCheckPtrInput` via:
+// UptimeCheckIcmpCheckPtrInput is an input type that accepts UptimeCheckIcmpCheckArgs, UptimeCheckIcmpCheckPtr and UptimeCheckIcmpCheckPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckIcmpCheckPtrInput` via:
 //
-//	        StatuscakeUptimeCheckIcmpCheckArgs{...}
+//	        UptimeCheckIcmpCheckArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckIcmpCheckPtrInput interface {
+type UptimeCheckIcmpCheckPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckIcmpCheckPtrOutput() StatuscakeUptimeCheckIcmpCheckPtrOutput
-	ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(context.Context) StatuscakeUptimeCheckIcmpCheckPtrOutput
+	ToUptimeCheckIcmpCheckPtrOutput() UptimeCheckIcmpCheckPtrOutput
+	ToUptimeCheckIcmpCheckPtrOutputWithContext(context.Context) UptimeCheckIcmpCheckPtrOutput
 }
 
-type statuscakeUptimeCheckIcmpCheckPtrType StatuscakeUptimeCheckIcmpCheckArgs
+type uptimeCheckIcmpCheckPtrType UptimeCheckIcmpCheckArgs
 
-func StatuscakeUptimeCheckIcmpCheckPtr(v *StatuscakeUptimeCheckIcmpCheckArgs) StatuscakeUptimeCheckIcmpCheckPtrInput {
-	return (*statuscakeUptimeCheckIcmpCheckPtrType)(v)
+func UptimeCheckIcmpCheckPtr(v *UptimeCheckIcmpCheckArgs) UptimeCheckIcmpCheckPtrInput {
+	return (*uptimeCheckIcmpCheckPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckIcmpCheckPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckIcmpCheck)(nil)).Elem()
+func (*uptimeCheckIcmpCheckPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckIcmpCheck)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckIcmpCheckPtrType) ToStatuscakeUptimeCheckIcmpCheckPtrOutput() StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
+func (i *uptimeCheckIcmpCheckPtrType) ToUptimeCheckIcmpCheckPtrOutput() UptimeCheckIcmpCheckPtrOutput {
+	return i.ToUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckIcmpCheckPtrType) ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckIcmpCheckPtrOutput)
+func (i *uptimeCheckIcmpCheckPtrType) ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckIcmpCheckPtrOutput)
 }
 
-type StatuscakeUptimeCheckIcmpCheckOutput struct{ *pulumi.OutputState }
+type UptimeCheckIcmpCheckOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckIcmpCheckOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckIcmpCheck)(nil)).Elem()
+func (UptimeCheckIcmpCheckOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckIcmpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckOutput) ToStatuscakeUptimeCheckIcmpCheckOutput() StatuscakeUptimeCheckIcmpCheckOutput {
+func (o UptimeCheckIcmpCheckOutput) ToUptimeCheckIcmpCheckOutput() UptimeCheckIcmpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckOutput) ToStatuscakeUptimeCheckIcmpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckOutput {
+func (o UptimeCheckIcmpCheckOutput) ToUptimeCheckIcmpCheckOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckOutput) ToStatuscakeUptimeCheckIcmpCheckPtrOutput() StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return o.ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
+func (o UptimeCheckIcmpCheckOutput) ToUptimeCheckIcmpCheckPtrOutput() UptimeCheckIcmpCheckPtrOutput {
+	return o.ToUptimeCheckIcmpCheckPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckOutput) ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckIcmpCheck) *StatuscakeUptimeCheckIcmpCheck {
+func (o UptimeCheckIcmpCheckOutput) ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckIcmpCheck) *UptimeCheckIcmpCheck {
 		return &v
-	}).(StatuscakeUptimeCheckIcmpCheckPtrOutput)
+	}).(UptimeCheckIcmpCheckPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckOutput) Enabled() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckIcmpCheck) *bool { return v.Enabled }).(pulumi.BoolPtrOutput)
+func (o UptimeCheckIcmpCheckOutput) Enabled() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v UptimeCheckIcmpCheck) *bool { return v.Enabled }).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeUptimeCheckIcmpCheckPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckIcmpCheckPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckIcmpCheckPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckIcmpCheck)(nil)).Elem()
+func (UptimeCheckIcmpCheckPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckIcmpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckPtrOutput) ToStatuscakeUptimeCheckIcmpCheckPtrOutput() StatuscakeUptimeCheckIcmpCheckPtrOutput {
+func (o UptimeCheckIcmpCheckPtrOutput) ToUptimeCheckIcmpCheckPtrOutput() UptimeCheckIcmpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckPtrOutput) ToStatuscakeUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckIcmpCheckPtrOutput {
+func (o UptimeCheckIcmpCheckPtrOutput) ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckIcmpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckPtrOutput) Elem() StatuscakeUptimeCheckIcmpCheckOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckIcmpCheck) StatuscakeUptimeCheckIcmpCheck {
+func (o UptimeCheckIcmpCheckPtrOutput) Elem() UptimeCheckIcmpCheckOutput {
+	return o.ApplyT(func(v *UptimeCheckIcmpCheck) UptimeCheckIcmpCheck {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckIcmpCheck
+		var ret UptimeCheckIcmpCheck
 		return ret
-	}).(StatuscakeUptimeCheckIcmpCheckOutput)
+	}).(UptimeCheckIcmpCheckOutput)
 }
 
-func (o StatuscakeUptimeCheckIcmpCheckPtrOutput) Enabled() pulumi.BoolPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckIcmpCheck) *bool {
+func (o UptimeCheckIcmpCheckPtrOutput) Enabled() pulumi.BoolPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckIcmpCheck) *bool {
 		if v == nil {
 			return nil
 		}
@@ -1556,7 +1552,7 @@ func (o StatuscakeUptimeCheckIcmpCheckPtrOutput) Enabled() pulumi.BoolPtrOutput 
 	}).(pulumi.BoolPtrOutput)
 }
 
-type StatuscakeUptimeCheckLocation struct {
+type UptimeCheckLocation struct {
 	Description *string `pulumi:"description"`
 	Ipv4        *string `pulumi:"ipv4"`
 	Ipv6        *string `pulumi:"ipv6"`
@@ -1565,18 +1561,18 @@ type StatuscakeUptimeCheckLocation struct {
 	Status      *string `pulumi:"status"`
 }
 
-// StatuscakeUptimeCheckLocationInput is an input type that accepts StatuscakeUptimeCheckLocationArgs and StatuscakeUptimeCheckLocationOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckLocationInput` via:
+// UptimeCheckLocationInput is an input type that accepts UptimeCheckLocationArgs and UptimeCheckLocationOutput values.
+// You can construct a concrete instance of `UptimeCheckLocationInput` via:
 //
-//	StatuscakeUptimeCheckLocationArgs{...}
-type StatuscakeUptimeCheckLocationInput interface {
+//	UptimeCheckLocationArgs{...}
+type UptimeCheckLocationInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckLocationOutput() StatuscakeUptimeCheckLocationOutput
-	ToStatuscakeUptimeCheckLocationOutputWithContext(context.Context) StatuscakeUptimeCheckLocationOutput
+	ToUptimeCheckLocationOutput() UptimeCheckLocationOutput
+	ToUptimeCheckLocationOutputWithContext(context.Context) UptimeCheckLocationOutput
 }
 
-type StatuscakeUptimeCheckLocationArgs struct {
+type UptimeCheckLocationArgs struct {
 	Description pulumi.StringPtrInput `pulumi:"description"`
 	Ipv4        pulumi.StringPtrInput `pulumi:"ipv4"`
 	Ipv6        pulumi.StringPtrInput `pulumi:"ipv6"`
@@ -1585,233 +1581,233 @@ type StatuscakeUptimeCheckLocationArgs struct {
 	Status      pulumi.StringPtrInput `pulumi:"status"`
 }
 
-func (StatuscakeUptimeCheckLocationArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckLocation)(nil)).Elem()
+func (UptimeCheckLocationArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckLocation)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckLocationArgs) ToStatuscakeUptimeCheckLocationOutput() StatuscakeUptimeCheckLocationOutput {
-	return i.ToStatuscakeUptimeCheckLocationOutputWithContext(context.Background())
+func (i UptimeCheckLocationArgs) ToUptimeCheckLocationOutput() UptimeCheckLocationOutput {
+	return i.ToUptimeCheckLocationOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckLocationArgs) ToStatuscakeUptimeCheckLocationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckLocationOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckLocationOutput)
+func (i UptimeCheckLocationArgs) ToUptimeCheckLocationOutputWithContext(ctx context.Context) UptimeCheckLocationOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckLocationOutput)
 }
 
-// StatuscakeUptimeCheckLocationArrayInput is an input type that accepts StatuscakeUptimeCheckLocationArray and StatuscakeUptimeCheckLocationArrayOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckLocationArrayInput` via:
+// UptimeCheckLocationArrayInput is an input type that accepts UptimeCheckLocationArray and UptimeCheckLocationArrayOutput values.
+// You can construct a concrete instance of `UptimeCheckLocationArrayInput` via:
 //
-//	StatuscakeUptimeCheckLocationArray{ StatuscakeUptimeCheckLocationArgs{...} }
-type StatuscakeUptimeCheckLocationArrayInput interface {
+//	UptimeCheckLocationArray{ UptimeCheckLocationArgs{...} }
+type UptimeCheckLocationArrayInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckLocationArrayOutput() StatuscakeUptimeCheckLocationArrayOutput
-	ToStatuscakeUptimeCheckLocationArrayOutputWithContext(context.Context) StatuscakeUptimeCheckLocationArrayOutput
+	ToUptimeCheckLocationArrayOutput() UptimeCheckLocationArrayOutput
+	ToUptimeCheckLocationArrayOutputWithContext(context.Context) UptimeCheckLocationArrayOutput
 }
 
-type StatuscakeUptimeCheckLocationArray []StatuscakeUptimeCheckLocationInput
+type UptimeCheckLocationArray []UptimeCheckLocationInput
 
-func (StatuscakeUptimeCheckLocationArray) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]StatuscakeUptimeCheckLocation)(nil)).Elem()
+func (UptimeCheckLocationArray) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]UptimeCheckLocation)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckLocationArray) ToStatuscakeUptimeCheckLocationArrayOutput() StatuscakeUptimeCheckLocationArrayOutput {
-	return i.ToStatuscakeUptimeCheckLocationArrayOutputWithContext(context.Background())
+func (i UptimeCheckLocationArray) ToUptimeCheckLocationArrayOutput() UptimeCheckLocationArrayOutput {
+	return i.ToUptimeCheckLocationArrayOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckLocationArray) ToStatuscakeUptimeCheckLocationArrayOutputWithContext(ctx context.Context) StatuscakeUptimeCheckLocationArrayOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckLocationArrayOutput)
+func (i UptimeCheckLocationArray) ToUptimeCheckLocationArrayOutputWithContext(ctx context.Context) UptimeCheckLocationArrayOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckLocationArrayOutput)
 }
 
-type StatuscakeUptimeCheckLocationOutput struct{ *pulumi.OutputState }
+type UptimeCheckLocationOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckLocationOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckLocation)(nil)).Elem()
+func (UptimeCheckLocationOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckLocation)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) ToStatuscakeUptimeCheckLocationOutput() StatuscakeUptimeCheckLocationOutput {
+func (o UptimeCheckLocationOutput) ToUptimeCheckLocationOutput() UptimeCheckLocationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) ToStatuscakeUptimeCheckLocationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckLocationOutput {
+func (o UptimeCheckLocationOutput) ToUptimeCheckLocationOutputWithContext(ctx context.Context) UptimeCheckLocationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) Description() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.Description }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) Description() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.Description }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) Ipv4() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.Ipv4 }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) Ipv4() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.Ipv4 }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) Ipv6() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.Ipv6 }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) Ipv6() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.Ipv6 }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) Region() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.Region }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) Region() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.Region }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) RegionCode() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.RegionCode }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) RegionCode() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.RegionCode }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckLocationOutput) Status() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckLocation) *string { return v.Status }).(pulumi.StringPtrOutput)
+func (o UptimeCheckLocationOutput) Status() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckLocation) *string { return v.Status }).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckLocationArrayOutput struct{ *pulumi.OutputState }
+type UptimeCheckLocationArrayOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckLocationArrayOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]StatuscakeUptimeCheckLocation)(nil)).Elem()
+func (UptimeCheckLocationArrayOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]UptimeCheckLocation)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckLocationArrayOutput) ToStatuscakeUptimeCheckLocationArrayOutput() StatuscakeUptimeCheckLocationArrayOutput {
+func (o UptimeCheckLocationArrayOutput) ToUptimeCheckLocationArrayOutput() UptimeCheckLocationArrayOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckLocationArrayOutput) ToStatuscakeUptimeCheckLocationArrayOutputWithContext(ctx context.Context) StatuscakeUptimeCheckLocationArrayOutput {
+func (o UptimeCheckLocationArrayOutput) ToUptimeCheckLocationArrayOutputWithContext(ctx context.Context) UptimeCheckLocationArrayOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckLocationArrayOutput) Index(i pulumi.IntInput) StatuscakeUptimeCheckLocationOutput {
-	return pulumi.All(o, i).ApplyT(func(vs []interface{}) StatuscakeUptimeCheckLocation {
-		return vs[0].([]StatuscakeUptimeCheckLocation)[vs[1].(int)]
-	}).(StatuscakeUptimeCheckLocationOutput)
+func (o UptimeCheckLocationArrayOutput) Index(i pulumi.IntInput) UptimeCheckLocationOutput {
+	return pulumi.All(o, i).ApplyT(func(vs []interface{}) UptimeCheckLocation {
+		return vs[0].([]UptimeCheckLocation)[vs[1].(int)]
+	}).(UptimeCheckLocationOutput)
 }
 
-type StatuscakeUptimeCheckMonitoredResource struct {
+type UptimeCheckMonitoredResource struct {
 	Address string  `pulumi:"address"`
 	Host    *string `pulumi:"host"`
 }
 
-// StatuscakeUptimeCheckMonitoredResourceInput is an input type that accepts StatuscakeUptimeCheckMonitoredResourceArgs and StatuscakeUptimeCheckMonitoredResourceOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckMonitoredResourceInput` via:
+// UptimeCheckMonitoredResourceInput is an input type that accepts UptimeCheckMonitoredResourceArgs and UptimeCheckMonitoredResourceOutput values.
+// You can construct a concrete instance of `UptimeCheckMonitoredResourceInput` via:
 //
-//	StatuscakeUptimeCheckMonitoredResourceArgs{...}
-type StatuscakeUptimeCheckMonitoredResourceInput interface {
+//	UptimeCheckMonitoredResourceArgs{...}
+type UptimeCheckMonitoredResourceInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckMonitoredResourceOutput() StatuscakeUptimeCheckMonitoredResourceOutput
-	ToStatuscakeUptimeCheckMonitoredResourceOutputWithContext(context.Context) StatuscakeUptimeCheckMonitoredResourceOutput
+	ToUptimeCheckMonitoredResourceOutput() UptimeCheckMonitoredResourceOutput
+	ToUptimeCheckMonitoredResourceOutputWithContext(context.Context) UptimeCheckMonitoredResourceOutput
 }
 
-type StatuscakeUptimeCheckMonitoredResourceArgs struct {
+type UptimeCheckMonitoredResourceArgs struct {
 	Address pulumi.StringInput    `pulumi:"address"`
 	Host    pulumi.StringPtrInput `pulumi:"host"`
 }
 
-func (StatuscakeUptimeCheckMonitoredResourceArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckMonitoredResource)(nil)).Elem()
+func (UptimeCheckMonitoredResourceArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckMonitoredResourceArgs) ToStatuscakeUptimeCheckMonitoredResourceOutput() StatuscakeUptimeCheckMonitoredResourceOutput {
-	return i.ToStatuscakeUptimeCheckMonitoredResourceOutputWithContext(context.Background())
+func (i UptimeCheckMonitoredResourceArgs) ToUptimeCheckMonitoredResourceOutput() UptimeCheckMonitoredResourceOutput {
+	return i.ToUptimeCheckMonitoredResourceOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckMonitoredResourceArgs) ToStatuscakeUptimeCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourceOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckMonitoredResourceOutput)
+func (i UptimeCheckMonitoredResourceArgs) ToUptimeCheckMonitoredResourceOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourceOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckMonitoredResourceOutput)
 }
 
-func (i StatuscakeUptimeCheckMonitoredResourceArgs) ToStatuscakeUptimeCheckMonitoredResourcePtrOutput() StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i UptimeCheckMonitoredResourceArgs) ToUptimeCheckMonitoredResourcePtrOutput() UptimeCheckMonitoredResourcePtrOutput {
+	return i.ToUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckMonitoredResourceArgs) ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckMonitoredResourceOutput).ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(ctx)
+func (i UptimeCheckMonitoredResourceArgs) ToUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckMonitoredResourceOutput).ToUptimeCheckMonitoredResourcePtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckMonitoredResourcePtrInput is an input type that accepts StatuscakeUptimeCheckMonitoredResourceArgs, StatuscakeUptimeCheckMonitoredResourcePtr and StatuscakeUptimeCheckMonitoredResourcePtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckMonitoredResourcePtrInput` via:
+// UptimeCheckMonitoredResourcePtrInput is an input type that accepts UptimeCheckMonitoredResourceArgs, UptimeCheckMonitoredResourcePtr and UptimeCheckMonitoredResourcePtrOutput values.
+// You can construct a concrete instance of `UptimeCheckMonitoredResourcePtrInput` via:
 //
-//	        StatuscakeUptimeCheckMonitoredResourceArgs{...}
+//	        UptimeCheckMonitoredResourceArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckMonitoredResourcePtrInput interface {
+type UptimeCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckMonitoredResourcePtrOutput() StatuscakeUptimeCheckMonitoredResourcePtrOutput
-	ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(context.Context) StatuscakeUptimeCheckMonitoredResourcePtrOutput
+	ToUptimeCheckMonitoredResourcePtrOutput() UptimeCheckMonitoredResourcePtrOutput
+	ToUptimeCheckMonitoredResourcePtrOutputWithContext(context.Context) UptimeCheckMonitoredResourcePtrOutput
 }
 
-type statuscakeUptimeCheckMonitoredResourcePtrType StatuscakeUptimeCheckMonitoredResourceArgs
+type uptimeCheckMonitoredResourcePtrType UptimeCheckMonitoredResourceArgs
 
-func StatuscakeUptimeCheckMonitoredResourcePtr(v *StatuscakeUptimeCheckMonitoredResourceArgs) StatuscakeUptimeCheckMonitoredResourcePtrInput {
-	return (*statuscakeUptimeCheckMonitoredResourcePtrType)(v)
+func UptimeCheckMonitoredResourcePtr(v *UptimeCheckMonitoredResourceArgs) UptimeCheckMonitoredResourcePtrInput {
+	return (*uptimeCheckMonitoredResourcePtrType)(v)
 }
 
-func (*statuscakeUptimeCheckMonitoredResourcePtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckMonitoredResource)(nil)).Elem()
+func (*uptimeCheckMonitoredResourcePtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckMonitoredResource)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckMonitoredResourcePtrType) ToStatuscakeUptimeCheckMonitoredResourcePtrOutput() StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return i.ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (i *uptimeCheckMonitoredResourcePtrType) ToUptimeCheckMonitoredResourcePtrOutput() UptimeCheckMonitoredResourcePtrOutput {
+	return i.ToUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckMonitoredResourcePtrType) ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckMonitoredResourcePtrOutput)
+func (i *uptimeCheckMonitoredResourcePtrType) ToUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourcePtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckMonitoredResourcePtrOutput)
 }
 
-type StatuscakeUptimeCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
+type UptimeCheckMonitoredResourceOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckMonitoredResourceOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckMonitoredResource)(nil)).Elem()
+func (UptimeCheckMonitoredResourceOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) ToStatuscakeUptimeCheckMonitoredResourceOutput() StatuscakeUptimeCheckMonitoredResourceOutput {
+func (o UptimeCheckMonitoredResourceOutput) ToUptimeCheckMonitoredResourceOutput() UptimeCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) ToStatuscakeUptimeCheckMonitoredResourceOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourceOutput {
+func (o UptimeCheckMonitoredResourceOutput) ToUptimeCheckMonitoredResourceOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourceOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) ToStatuscakeUptimeCheckMonitoredResourcePtrOutput() StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return o.ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
+func (o UptimeCheckMonitoredResourceOutput) ToUptimeCheckMonitoredResourcePtrOutput() UptimeCheckMonitoredResourcePtrOutput {
+	return o.ToUptimeCheckMonitoredResourcePtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourcePtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckMonitoredResource) *StatuscakeUptimeCheckMonitoredResource {
+func (o UptimeCheckMonitoredResourceOutput) ToUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourcePtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckMonitoredResource) *UptimeCheckMonitoredResource {
 		return &v
-	}).(StatuscakeUptimeCheckMonitoredResourcePtrOutput)
+	}).(UptimeCheckMonitoredResourcePtrOutput)
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
+func (o UptimeCheckMonitoredResourceOutput) Address() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckMonitoredResource) string { return v.Address }).(pulumi.StringOutput)
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourceOutput) Host() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckMonitoredResource) *string { return v.Host }).(pulumi.StringPtrOutput)
+func (o UptimeCheckMonitoredResourceOutput) Host() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckMonitoredResource) *string { return v.Host }).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckMonitoredResourcePtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckMonitoredResource)(nil)).Elem()
+func (UptimeCheckMonitoredResourcePtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckMonitoredResource)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) ToStatuscakeUptimeCheckMonitoredResourcePtrOutput() StatuscakeUptimeCheckMonitoredResourcePtrOutput {
+func (o UptimeCheckMonitoredResourcePtrOutput) ToUptimeCheckMonitoredResourcePtrOutput() UptimeCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) ToStatuscakeUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckMonitoredResourcePtrOutput {
+func (o UptimeCheckMonitoredResourcePtrOutput) ToUptimeCheckMonitoredResourcePtrOutputWithContext(ctx context.Context) UptimeCheckMonitoredResourcePtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) Elem() StatuscakeUptimeCheckMonitoredResourceOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckMonitoredResource) StatuscakeUptimeCheckMonitoredResource {
+func (o UptimeCheckMonitoredResourcePtrOutput) Elem() UptimeCheckMonitoredResourceOutput {
+	return o.ApplyT(func(v *UptimeCheckMonitoredResource) UptimeCheckMonitoredResource {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckMonitoredResource
+		var ret UptimeCheckMonitoredResource
 		return ret
-	}).(StatuscakeUptimeCheckMonitoredResourceOutput)
+	}).(UptimeCheckMonitoredResourceOutput)
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckMonitoredResource) *string {
+func (o UptimeCheckMonitoredResourcePtrOutput) Address() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckMonitoredResource) *string {
 		if v == nil {
 			return nil
 		}
@@ -1819,8 +1815,8 @@ func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) Address() pulumi.String
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) Host() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckMonitoredResource) *string {
+func (o UptimeCheckMonitoredResourcePtrOutput) Host() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckMonitoredResource) *string {
 		if v == nil {
 			return nil
 		}
@@ -1828,161 +1824,159 @@ func (o StatuscakeUptimeCheckMonitoredResourcePtrOutput) Host() pulumi.StringPtr
 	}).(pulumi.StringPtrOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheck struct {
-	Authentication *StatuscakeUptimeCheckTcpCheckAuthentication `pulumi:"authentication"`
-	Port           int                                          `pulumi:"port"`
-	Protocol       *string                                      `pulumi:"protocol"`
-	Timeout        *int                                         `pulumi:"timeout"`
+type UptimeCheckTcpCheck struct {
+	Authentication *UptimeCheckTcpCheckAuthentication `pulumi:"authentication"`
+	Port           int                                `pulumi:"port"`
+	Protocol       *string                            `pulumi:"protocol"`
+	Timeout        *int                               `pulumi:"timeout"`
 }
 
-// StatuscakeUptimeCheckTcpCheckInput is an input type that accepts StatuscakeUptimeCheckTcpCheckArgs and StatuscakeUptimeCheckTcpCheckOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckTcpCheckInput` via:
+// UptimeCheckTcpCheckInput is an input type that accepts UptimeCheckTcpCheckArgs and UptimeCheckTcpCheckOutput values.
+// You can construct a concrete instance of `UptimeCheckTcpCheckInput` via:
 //
-//	StatuscakeUptimeCheckTcpCheckArgs{...}
-type StatuscakeUptimeCheckTcpCheckInput interface {
+//	UptimeCheckTcpCheckArgs{...}
+type UptimeCheckTcpCheckInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckTcpCheckOutput() StatuscakeUptimeCheckTcpCheckOutput
-	ToStatuscakeUptimeCheckTcpCheckOutputWithContext(context.Context) StatuscakeUptimeCheckTcpCheckOutput
+	ToUptimeCheckTcpCheckOutput() UptimeCheckTcpCheckOutput
+	ToUptimeCheckTcpCheckOutputWithContext(context.Context) UptimeCheckTcpCheckOutput
 }
 
-type StatuscakeUptimeCheckTcpCheckArgs struct {
-	Authentication StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput `pulumi:"authentication"`
-	Port           pulumi.IntInput                                     `pulumi:"port"`
-	Protocol       pulumi.StringPtrInput                               `pulumi:"protocol"`
-	Timeout        pulumi.IntPtrInput                                  `pulumi:"timeout"`
+type UptimeCheckTcpCheckArgs struct {
+	Authentication UptimeCheckTcpCheckAuthenticationPtrInput `pulumi:"authentication"`
+	Port           pulumi.IntInput                           `pulumi:"port"`
+	Protocol       pulumi.StringPtrInput                     `pulumi:"protocol"`
+	Timeout        pulumi.IntPtrInput                        `pulumi:"timeout"`
 }
 
-func (StatuscakeUptimeCheckTcpCheckArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckTcpCheck)(nil)).Elem()
+func (UptimeCheckTcpCheckArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckTcpCheck)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckTcpCheckArgs) ToStatuscakeUptimeCheckTcpCheckOutput() StatuscakeUptimeCheckTcpCheckOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckOutputWithContext(context.Background())
+func (i UptimeCheckTcpCheckArgs) ToUptimeCheckTcpCheckOutput() UptimeCheckTcpCheckOutput {
+	return i.ToUptimeCheckTcpCheckOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckTcpCheckArgs) ToStatuscakeUptimeCheckTcpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckOutput)
+func (i UptimeCheckTcpCheckArgs) ToUptimeCheckTcpCheckOutputWithContext(ctx context.Context) UptimeCheckTcpCheckOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckOutput)
 }
 
-func (i StatuscakeUptimeCheckTcpCheckArgs) ToStatuscakeUptimeCheckTcpCheckPtrOutput() StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
+func (i UptimeCheckTcpCheckArgs) ToUptimeCheckTcpCheckPtrOutput() UptimeCheckTcpCheckPtrOutput {
+	return i.ToUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckTcpCheckArgs) ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckOutput).ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(ctx)
+func (i UptimeCheckTcpCheckArgs) ToUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckOutput).ToUptimeCheckTcpCheckPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckTcpCheckPtrInput is an input type that accepts StatuscakeUptimeCheckTcpCheckArgs, StatuscakeUptimeCheckTcpCheckPtr and StatuscakeUptimeCheckTcpCheckPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckTcpCheckPtrInput` via:
+// UptimeCheckTcpCheckPtrInput is an input type that accepts UptimeCheckTcpCheckArgs, UptimeCheckTcpCheckPtr and UptimeCheckTcpCheckPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckTcpCheckPtrInput` via:
 //
-//	        StatuscakeUptimeCheckTcpCheckArgs{...}
+//	        UptimeCheckTcpCheckArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckTcpCheckPtrInput interface {
+type UptimeCheckTcpCheckPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckTcpCheckPtrOutput() StatuscakeUptimeCheckTcpCheckPtrOutput
-	ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(context.Context) StatuscakeUptimeCheckTcpCheckPtrOutput
+	ToUptimeCheckTcpCheckPtrOutput() UptimeCheckTcpCheckPtrOutput
+	ToUptimeCheckTcpCheckPtrOutputWithContext(context.Context) UptimeCheckTcpCheckPtrOutput
 }
 
-type statuscakeUptimeCheckTcpCheckPtrType StatuscakeUptimeCheckTcpCheckArgs
+type uptimeCheckTcpCheckPtrType UptimeCheckTcpCheckArgs
 
-func StatuscakeUptimeCheckTcpCheckPtr(v *StatuscakeUptimeCheckTcpCheckArgs) StatuscakeUptimeCheckTcpCheckPtrInput {
-	return (*statuscakeUptimeCheckTcpCheckPtrType)(v)
+func UptimeCheckTcpCheckPtr(v *UptimeCheckTcpCheckArgs) UptimeCheckTcpCheckPtrInput {
+	return (*uptimeCheckTcpCheckPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckTcpCheckPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckTcpCheck)(nil)).Elem()
+func (*uptimeCheckTcpCheckPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckTcpCheck)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckTcpCheckPtrType) ToStatuscakeUptimeCheckTcpCheckPtrOutput() StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
+func (i *uptimeCheckTcpCheckPtrType) ToUptimeCheckTcpCheckPtrOutput() UptimeCheckTcpCheckPtrOutput {
+	return i.ToUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckTcpCheckPtrType) ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckPtrOutput)
+func (i *uptimeCheckTcpCheckPtrType) ToUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckPtrOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheckOutput struct{ *pulumi.OutputState }
+type UptimeCheckTcpCheckOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckTcpCheckOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckTcpCheck)(nil)).Elem()
+func (UptimeCheckTcpCheckOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckTcpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) ToStatuscakeUptimeCheckTcpCheckOutput() StatuscakeUptimeCheckTcpCheckOutput {
+func (o UptimeCheckTcpCheckOutput) ToUptimeCheckTcpCheckOutput() UptimeCheckTcpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) ToStatuscakeUptimeCheckTcpCheckOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckOutput {
+func (o UptimeCheckTcpCheckOutput) ToUptimeCheckTcpCheckOutputWithContext(ctx context.Context) UptimeCheckTcpCheckOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) ToStatuscakeUptimeCheckTcpCheckPtrOutput() StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return o.ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
+func (o UptimeCheckTcpCheckOutput) ToUptimeCheckTcpCheckPtrOutput() UptimeCheckTcpCheckPtrOutput {
+	return o.ToUptimeCheckTcpCheckPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckTcpCheck) *StatuscakeUptimeCheckTcpCheck {
+func (o UptimeCheckTcpCheckOutput) ToUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckTcpCheck) *UptimeCheckTcpCheck {
 		return &v
-	}).(StatuscakeUptimeCheckTcpCheckPtrOutput)
+	}).(UptimeCheckTcpCheckPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) Authentication() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheck) *StatuscakeUptimeCheckTcpCheckAuthentication {
-		return v.Authentication
-	}).(StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput)
+func (o UptimeCheckTcpCheckOutput) Authentication() UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheck) *UptimeCheckTcpCheckAuthentication { return v.Authentication }).(UptimeCheckTcpCheckAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) Port() pulumi.IntOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheck) int { return v.Port }).(pulumi.IntOutput)
+func (o UptimeCheckTcpCheckOutput) Port() pulumi.IntOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheck) int { return v.Port }).(pulumi.IntOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) Protocol() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheck) *string { return v.Protocol }).(pulumi.StringPtrOutput)
+func (o UptimeCheckTcpCheckOutput) Protocol() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheck) *string { return v.Protocol }).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckOutput) Timeout() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheck) *int { return v.Timeout }).(pulumi.IntPtrOutput)
+func (o UptimeCheckTcpCheckOutput) Timeout() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheck) *int { return v.Timeout }).(pulumi.IntPtrOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheckPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckTcpCheckPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckTcpCheckPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckTcpCheck)(nil)).Elem()
+func (UptimeCheckTcpCheckPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckTcpCheck)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) ToStatuscakeUptimeCheckTcpCheckPtrOutput() StatuscakeUptimeCheckTcpCheckPtrOutput {
+func (o UptimeCheckTcpCheckPtrOutput) ToUptimeCheckTcpCheckPtrOutput() UptimeCheckTcpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) ToStatuscakeUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckPtrOutput {
+func (o UptimeCheckTcpCheckPtrOutput) ToUptimeCheckTcpCheckPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Elem() StatuscakeUptimeCheckTcpCheckOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheck) StatuscakeUptimeCheckTcpCheck {
+func (o UptimeCheckTcpCheckPtrOutput) Elem() UptimeCheckTcpCheckOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheck) UptimeCheckTcpCheck {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckTcpCheck
+		var ret UptimeCheckTcpCheck
 		return ret
-	}).(StatuscakeUptimeCheckTcpCheckOutput)
+	}).(UptimeCheckTcpCheckOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Authentication() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheck) *StatuscakeUptimeCheckTcpCheckAuthentication {
+func (o UptimeCheckTcpCheckPtrOutput) Authentication() UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheck) *UptimeCheckTcpCheckAuthentication {
 		if v == nil {
 			return nil
 		}
 		return v.Authentication
-	}).(StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput)
+	}).(UptimeCheckTcpCheckAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Port() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheck) *int {
+func (o UptimeCheckTcpCheckPtrOutput) Port() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheck) *int {
 		if v == nil {
 			return nil
 		}
@@ -1990,8 +1984,8 @@ func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Port() pulumi.IntPtrOutput {
 	}).(pulumi.IntPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Protocol() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheck) *string {
+func (o UptimeCheckTcpCheckPtrOutput) Protocol() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheck) *string {
 		if v == nil {
 			return nil
 		}
@@ -1999,8 +1993,8 @@ func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Protocol() pulumi.StringPtrOutpu
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheck) *int {
+func (o UptimeCheckTcpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheck) *int {
 		if v == nil {
 			return nil
 		}
@@ -2008,138 +2002,138 @@ func (o StatuscakeUptimeCheckTcpCheckPtrOutput) Timeout() pulumi.IntPtrOutput {
 	}).(pulumi.IntPtrOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheckAuthentication struct {
+type UptimeCheckTcpCheckAuthentication struct {
 	Password string `pulumi:"password"`
 	Username string `pulumi:"username"`
 }
 
-// StatuscakeUptimeCheckTcpCheckAuthenticationInput is an input type that accepts StatuscakeUptimeCheckTcpCheckAuthenticationArgs and StatuscakeUptimeCheckTcpCheckAuthenticationOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckTcpCheckAuthenticationInput` via:
+// UptimeCheckTcpCheckAuthenticationInput is an input type that accepts UptimeCheckTcpCheckAuthenticationArgs and UptimeCheckTcpCheckAuthenticationOutput values.
+// You can construct a concrete instance of `UptimeCheckTcpCheckAuthenticationInput` via:
 //
-//	StatuscakeUptimeCheckTcpCheckAuthenticationArgs{...}
-type StatuscakeUptimeCheckTcpCheckAuthenticationInput interface {
+//	UptimeCheckTcpCheckAuthenticationArgs{...}
+type UptimeCheckTcpCheckAuthenticationInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckTcpCheckAuthenticationOutput() StatuscakeUptimeCheckTcpCheckAuthenticationOutput
-	ToStatuscakeUptimeCheckTcpCheckAuthenticationOutputWithContext(context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationOutput
+	ToUptimeCheckTcpCheckAuthenticationOutput() UptimeCheckTcpCheckAuthenticationOutput
+	ToUptimeCheckTcpCheckAuthenticationOutputWithContext(context.Context) UptimeCheckTcpCheckAuthenticationOutput
 }
 
-type StatuscakeUptimeCheckTcpCheckAuthenticationArgs struct {
+type UptimeCheckTcpCheckAuthenticationArgs struct {
 	Password pulumi.StringInput `pulumi:"password"`
 	Username pulumi.StringInput `pulumi:"username"`
 }
 
-func (StatuscakeUptimeCheckTcpCheckAuthenticationArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckAuthentication)(nil)).Elem()
+func (UptimeCheckTcpCheckAuthenticationArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckTcpCheckAuthentication)(nil)).Elem()
 }
 
-func (i StatuscakeUptimeCheckTcpCheckAuthenticationArgs) ToStatuscakeUptimeCheckTcpCheckAuthenticationOutput() StatuscakeUptimeCheckTcpCheckAuthenticationOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckAuthenticationOutputWithContext(context.Background())
+func (i UptimeCheckTcpCheckAuthenticationArgs) ToUptimeCheckTcpCheckAuthenticationOutput() UptimeCheckTcpCheckAuthenticationOutput {
+	return i.ToUptimeCheckTcpCheckAuthenticationOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckTcpCheckAuthenticationArgs) ToStatuscakeUptimeCheckTcpCheckAuthenticationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckAuthenticationOutput)
+func (i UptimeCheckTcpCheckAuthenticationArgs) ToUptimeCheckTcpCheckAuthenticationOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckAuthenticationOutput)
 }
 
-func (i StatuscakeUptimeCheckTcpCheckAuthenticationArgs) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
+func (i UptimeCheckTcpCheckAuthenticationArgs) ToUptimeCheckTcpCheckAuthenticationPtrOutput() UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return i.ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (i StatuscakeUptimeCheckTcpCheckAuthenticationArgs) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckAuthenticationOutput).ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx)
+func (i UptimeCheckTcpCheckAuthenticationArgs) ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckAuthenticationOutput).ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx)
 }
 
-// StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput is an input type that accepts StatuscakeUptimeCheckTcpCheckAuthenticationArgs, StatuscakeUptimeCheckTcpCheckAuthenticationPtr and StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput values.
-// You can construct a concrete instance of `StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput` via:
+// UptimeCheckTcpCheckAuthenticationPtrInput is an input type that accepts UptimeCheckTcpCheckAuthenticationArgs, UptimeCheckTcpCheckAuthenticationPtr and UptimeCheckTcpCheckAuthenticationPtrOutput values.
+// You can construct a concrete instance of `UptimeCheckTcpCheckAuthenticationPtrInput` via:
 //
-//	        StatuscakeUptimeCheckTcpCheckAuthenticationArgs{...}
+//	        UptimeCheckTcpCheckAuthenticationArgs{...}
 //
 //	or:
 //
 //	        nil
-type StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput interface {
+type UptimeCheckTcpCheckAuthenticationPtrInput interface {
 	pulumi.Input
 
-	ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput
-	ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput
+	ToUptimeCheckTcpCheckAuthenticationPtrOutput() UptimeCheckTcpCheckAuthenticationPtrOutput
+	ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Context) UptimeCheckTcpCheckAuthenticationPtrOutput
 }
 
-type statuscakeUptimeCheckTcpCheckAuthenticationPtrType StatuscakeUptimeCheckTcpCheckAuthenticationArgs
+type uptimeCheckTcpCheckAuthenticationPtrType UptimeCheckTcpCheckAuthenticationArgs
 
-func StatuscakeUptimeCheckTcpCheckAuthenticationPtr(v *StatuscakeUptimeCheckTcpCheckAuthenticationArgs) StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput {
-	return (*statuscakeUptimeCheckTcpCheckAuthenticationPtrType)(v)
+func UptimeCheckTcpCheckAuthenticationPtr(v *UptimeCheckTcpCheckAuthenticationArgs) UptimeCheckTcpCheckAuthenticationPtrInput {
+	return (*uptimeCheckTcpCheckAuthenticationPtrType)(v)
 }
 
-func (*statuscakeUptimeCheckTcpCheckAuthenticationPtrType) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckTcpCheckAuthentication)(nil)).Elem()
+func (*uptimeCheckTcpCheckAuthenticationPtrType) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckTcpCheckAuthentication)(nil)).Elem()
 }
 
-func (i *statuscakeUptimeCheckTcpCheckAuthenticationPtrType) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return i.ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
+func (i *uptimeCheckTcpCheckAuthenticationPtrType) ToUptimeCheckTcpCheckAuthenticationPtrOutput() UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return i.ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (i *statuscakeUptimeCheckTcpCheckAuthenticationPtrType) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput)
+func (i *uptimeCheckTcpCheckAuthenticationPtrType) ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(UptimeCheckTcpCheckAuthenticationPtrOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheckAuthenticationOutput struct{ *pulumi.OutputState }
+type UptimeCheckTcpCheckAuthenticationOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckTcpCheckAuthenticationOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckAuthentication)(nil)).Elem()
+func (UptimeCheckTcpCheckAuthenticationOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*UptimeCheckTcpCheckAuthentication)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationOutput() StatuscakeUptimeCheckTcpCheckAuthenticationOutput {
+func (o UptimeCheckTcpCheckAuthenticationOutput) ToUptimeCheckTcpCheckAuthenticationOutput() UptimeCheckTcpCheckAuthenticationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationOutput {
+func (o UptimeCheckTcpCheckAuthenticationOutput) ToUptimeCheckTcpCheckAuthenticationOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return o.ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
+func (o UptimeCheckTcpCheckAuthenticationOutput) ToUptimeCheckTcpCheckAuthenticationPtrOutput() UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return o.ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(context.Background())
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
-	return o.ApplyTWithContext(ctx, func(_ context.Context, v StatuscakeUptimeCheckTcpCheckAuthentication) *StatuscakeUptimeCheckTcpCheckAuthentication {
+func (o UptimeCheckTcpCheckAuthenticationOutput) ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationPtrOutput {
+	return o.ApplyTWithContext(ctx, func(_ context.Context, v UptimeCheckTcpCheckAuthentication) *UptimeCheckTcpCheckAuthentication {
 		return &v
-	}).(StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput)
+	}).(UptimeCheckTcpCheckAuthenticationPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) Password() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheckAuthentication) string { return v.Password }).(pulumi.StringOutput)
+func (o UptimeCheckTcpCheckAuthenticationOutput) Password() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheckAuthentication) string { return v.Password }).(pulumi.StringOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationOutput) Username() pulumi.StringOutput {
-	return o.ApplyT(func(v StatuscakeUptimeCheckTcpCheckAuthentication) string { return v.Username }).(pulumi.StringOutput)
+func (o UptimeCheckTcpCheckAuthenticationOutput) Username() pulumi.StringOutput {
+	return o.ApplyT(func(v UptimeCheckTcpCheckAuthentication) string { return v.Username }).(pulumi.StringOutput)
 }
 
-type StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput struct{ *pulumi.OutputState }
+type UptimeCheckTcpCheckAuthenticationPtrOutput struct{ *pulumi.OutputState }
 
-func (StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((**StatuscakeUptimeCheckTcpCheckAuthentication)(nil)).Elem()
+func (UptimeCheckTcpCheckAuthenticationPtrOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((**UptimeCheckTcpCheckAuthentication)(nil)).Elem()
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput() StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
+func (o UptimeCheckTcpCheckAuthenticationPtrOutput) ToUptimeCheckTcpCheckAuthenticationPtrOutput() UptimeCheckTcpCheckAuthenticationPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) ToStatuscakeUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput {
+func (o UptimeCheckTcpCheckAuthenticationPtrOutput) ToUptimeCheckTcpCheckAuthenticationPtrOutputWithContext(ctx context.Context) UptimeCheckTcpCheckAuthenticationPtrOutput {
 	return o
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) Elem() StatuscakeUptimeCheckTcpCheckAuthenticationOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheckAuthentication) StatuscakeUptimeCheckTcpCheckAuthentication {
+func (o UptimeCheckTcpCheckAuthenticationPtrOutput) Elem() UptimeCheckTcpCheckAuthenticationOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheckAuthentication) UptimeCheckTcpCheckAuthentication {
 		if v != nil {
 			return *v
 		}
-		var ret StatuscakeUptimeCheckTcpCheckAuthentication
+		var ret UptimeCheckTcpCheckAuthentication
 		return ret
-	}).(StatuscakeUptimeCheckTcpCheckAuthenticationOutput)
+	}).(UptimeCheckTcpCheckAuthenticationOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) Password() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheckAuthentication) *string {
+func (o UptimeCheckTcpCheckAuthenticationPtrOutput) Password() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheckAuthentication) *string {
 		if v == nil {
 			return nil
 		}
@@ -2147,8 +2141,8 @@ func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) Password() pulumi.
 	}).(pulumi.StringPtrOutput)
 }
 
-func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) Username() pulumi.StringPtrOutput {
-	return o.ApplyT(func(v *StatuscakeUptimeCheckTcpCheckAuthentication) *string {
+func (o UptimeCheckTcpCheckAuthenticationPtrOutput) Username() pulumi.StringPtrOutput {
+	return o.ApplyT(func(v *UptimeCheckTcpCheckAuthentication) *string {
 		if v == nil {
 			return nil
 		}
@@ -2156,7 +2150,7 @@ func (o StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput) Username() pulumi.
 	}).(pulumi.StringPtrOutput)
 }
 
-type GetStatuscakePagespeedMonitoringLocationsLocation struct {
+type GetPagespeedMonitoringLocationsLocation struct {
 	Description string `pulumi:"description"`
 	Ipv4        string `pulumi:"ipv4"`
 	Ipv6        string `pulumi:"ipv6"`
@@ -2165,18 +2159,18 @@ type GetStatuscakePagespeedMonitoringLocationsLocation struct {
 	Status      string `pulumi:"status"`
 }
 
-// GetStatuscakePagespeedMonitoringLocationsLocationInput is an input type that accepts GetStatuscakePagespeedMonitoringLocationsLocationArgs and GetStatuscakePagespeedMonitoringLocationsLocationOutput values.
-// You can construct a concrete instance of `GetStatuscakePagespeedMonitoringLocationsLocationInput` via:
+// GetPagespeedMonitoringLocationsLocationInput is an input type that accepts GetPagespeedMonitoringLocationsLocationArgs and GetPagespeedMonitoringLocationsLocationOutput values.
+// You can construct a concrete instance of `GetPagespeedMonitoringLocationsLocationInput` via:
 //
-//	GetStatuscakePagespeedMonitoringLocationsLocationArgs{...}
-type GetStatuscakePagespeedMonitoringLocationsLocationInput interface {
+//	GetPagespeedMonitoringLocationsLocationArgs{...}
+type GetPagespeedMonitoringLocationsLocationInput interface {
 	pulumi.Input
 
-	ToGetStatuscakePagespeedMonitoringLocationsLocationOutput() GetStatuscakePagespeedMonitoringLocationsLocationOutput
-	ToGetStatuscakePagespeedMonitoringLocationsLocationOutputWithContext(context.Context) GetStatuscakePagespeedMonitoringLocationsLocationOutput
+	ToGetPagespeedMonitoringLocationsLocationOutput() GetPagespeedMonitoringLocationsLocationOutput
+	ToGetPagespeedMonitoringLocationsLocationOutputWithContext(context.Context) GetPagespeedMonitoringLocationsLocationOutput
 }
 
-type GetStatuscakePagespeedMonitoringLocationsLocationArgs struct {
+type GetPagespeedMonitoringLocationsLocationArgs struct {
 	Description pulumi.StringInput `pulumi:"description"`
 	Ipv4        pulumi.StringInput `pulumi:"ipv4"`
 	Ipv6        pulumi.StringInput `pulumi:"ipv6"`
@@ -2185,102 +2179,102 @@ type GetStatuscakePagespeedMonitoringLocationsLocationArgs struct {
 	Status      pulumi.StringInput `pulumi:"status"`
 }
 
-func (GetStatuscakePagespeedMonitoringLocationsLocationArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*GetStatuscakePagespeedMonitoringLocationsLocation)(nil)).Elem()
+func (GetPagespeedMonitoringLocationsLocationArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*GetPagespeedMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (i GetStatuscakePagespeedMonitoringLocationsLocationArgs) ToGetStatuscakePagespeedMonitoringLocationsLocationOutput() GetStatuscakePagespeedMonitoringLocationsLocationOutput {
-	return i.ToGetStatuscakePagespeedMonitoringLocationsLocationOutputWithContext(context.Background())
+func (i GetPagespeedMonitoringLocationsLocationArgs) ToGetPagespeedMonitoringLocationsLocationOutput() GetPagespeedMonitoringLocationsLocationOutput {
+	return i.ToGetPagespeedMonitoringLocationsLocationOutputWithContext(context.Background())
 }
 
-func (i GetStatuscakePagespeedMonitoringLocationsLocationArgs) ToGetStatuscakePagespeedMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetStatuscakePagespeedMonitoringLocationsLocationOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(GetStatuscakePagespeedMonitoringLocationsLocationOutput)
+func (i GetPagespeedMonitoringLocationsLocationArgs) ToGetPagespeedMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetPagespeedMonitoringLocationsLocationOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(GetPagespeedMonitoringLocationsLocationOutput)
 }
 
-// GetStatuscakePagespeedMonitoringLocationsLocationArrayInput is an input type that accepts GetStatuscakePagespeedMonitoringLocationsLocationArray and GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput values.
-// You can construct a concrete instance of `GetStatuscakePagespeedMonitoringLocationsLocationArrayInput` via:
+// GetPagespeedMonitoringLocationsLocationArrayInput is an input type that accepts GetPagespeedMonitoringLocationsLocationArray and GetPagespeedMonitoringLocationsLocationArrayOutput values.
+// You can construct a concrete instance of `GetPagespeedMonitoringLocationsLocationArrayInput` via:
 //
-//	GetStatuscakePagespeedMonitoringLocationsLocationArray{ GetStatuscakePagespeedMonitoringLocationsLocationArgs{...} }
-type GetStatuscakePagespeedMonitoringLocationsLocationArrayInput interface {
+//	GetPagespeedMonitoringLocationsLocationArray{ GetPagespeedMonitoringLocationsLocationArgs{...} }
+type GetPagespeedMonitoringLocationsLocationArrayInput interface {
 	pulumi.Input
 
-	ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutput() GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput
-	ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutputWithContext(context.Context) GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput
+	ToGetPagespeedMonitoringLocationsLocationArrayOutput() GetPagespeedMonitoringLocationsLocationArrayOutput
+	ToGetPagespeedMonitoringLocationsLocationArrayOutputWithContext(context.Context) GetPagespeedMonitoringLocationsLocationArrayOutput
 }
 
-type GetStatuscakePagespeedMonitoringLocationsLocationArray []GetStatuscakePagespeedMonitoringLocationsLocationInput
+type GetPagespeedMonitoringLocationsLocationArray []GetPagespeedMonitoringLocationsLocationInput
 
-func (GetStatuscakePagespeedMonitoringLocationsLocationArray) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]GetStatuscakePagespeedMonitoringLocationsLocation)(nil)).Elem()
+func (GetPagespeedMonitoringLocationsLocationArray) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]GetPagespeedMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (i GetStatuscakePagespeedMonitoringLocationsLocationArray) ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutput() GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput {
-	return i.ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutputWithContext(context.Background())
+func (i GetPagespeedMonitoringLocationsLocationArray) ToGetPagespeedMonitoringLocationsLocationArrayOutput() GetPagespeedMonitoringLocationsLocationArrayOutput {
+	return i.ToGetPagespeedMonitoringLocationsLocationArrayOutputWithContext(context.Background())
 }
 
-func (i GetStatuscakePagespeedMonitoringLocationsLocationArray) ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput)
+func (i GetPagespeedMonitoringLocationsLocationArray) ToGetPagespeedMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetPagespeedMonitoringLocationsLocationArrayOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(GetPagespeedMonitoringLocationsLocationArrayOutput)
 }
 
-type GetStatuscakePagespeedMonitoringLocationsLocationOutput struct{ *pulumi.OutputState }
+type GetPagespeedMonitoringLocationsLocationOutput struct{ *pulumi.OutputState }
 
-func (GetStatuscakePagespeedMonitoringLocationsLocationOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*GetStatuscakePagespeedMonitoringLocationsLocation)(nil)).Elem()
+func (GetPagespeedMonitoringLocationsLocationOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*GetPagespeedMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) ToGetStatuscakePagespeedMonitoringLocationsLocationOutput() GetStatuscakePagespeedMonitoringLocationsLocationOutput {
+func (o GetPagespeedMonitoringLocationsLocationOutput) ToGetPagespeedMonitoringLocationsLocationOutput() GetPagespeedMonitoringLocationsLocationOutput {
 	return o
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) ToGetStatuscakePagespeedMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetStatuscakePagespeedMonitoringLocationsLocationOutput {
+func (o GetPagespeedMonitoringLocationsLocationOutput) ToGetPagespeedMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetPagespeedMonitoringLocationsLocationOutput {
 	return o
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) Description() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.Description }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) Description() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.Description }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) Ipv4() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.Ipv4 }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) Ipv4() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.Ipv4 }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) Ipv6() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.Ipv6 }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) Ipv6() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.Ipv6 }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) Region() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.Region }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) Region() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.Region }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) RegionCode() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.RegionCode }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) RegionCode() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.RegionCode }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationOutput) Status() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakePagespeedMonitoringLocationsLocation) string { return v.Status }).(pulumi.StringOutput)
+func (o GetPagespeedMonitoringLocationsLocationOutput) Status() pulumi.StringOutput {
+	return o.ApplyT(func(v GetPagespeedMonitoringLocationsLocation) string { return v.Status }).(pulumi.StringOutput)
 }
 
-type GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput struct{ *pulumi.OutputState }
+type GetPagespeedMonitoringLocationsLocationArrayOutput struct{ *pulumi.OutputState }
 
-func (GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]GetStatuscakePagespeedMonitoringLocationsLocation)(nil)).Elem()
+func (GetPagespeedMonitoringLocationsLocationArrayOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]GetPagespeedMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput) ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutput() GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput {
+func (o GetPagespeedMonitoringLocationsLocationArrayOutput) ToGetPagespeedMonitoringLocationsLocationArrayOutput() GetPagespeedMonitoringLocationsLocationArrayOutput {
 	return o
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput) ToGetStatuscakePagespeedMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput {
+func (o GetPagespeedMonitoringLocationsLocationArrayOutput) ToGetPagespeedMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetPagespeedMonitoringLocationsLocationArrayOutput {
 	return o
 }
 
-func (o GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput) Index(i pulumi.IntInput) GetStatuscakePagespeedMonitoringLocationsLocationOutput {
-	return pulumi.All(o, i).ApplyT(func(vs []interface{}) GetStatuscakePagespeedMonitoringLocationsLocation {
-		return vs[0].([]GetStatuscakePagespeedMonitoringLocationsLocation)[vs[1].(int)]
-	}).(GetStatuscakePagespeedMonitoringLocationsLocationOutput)
+func (o GetPagespeedMonitoringLocationsLocationArrayOutput) Index(i pulumi.IntInput) GetPagespeedMonitoringLocationsLocationOutput {
+	return pulumi.All(o, i).ApplyT(func(vs []interface{}) GetPagespeedMonitoringLocationsLocation {
+		return vs[0].([]GetPagespeedMonitoringLocationsLocation)[vs[1].(int)]
+	}).(GetPagespeedMonitoringLocationsLocationOutput)
 }
 
-type GetStatuscakeUptimeMonitoringLocationsLocation struct {
+type GetUptimeMonitoringLocationsLocation struct {
 	Description string `pulumi:"description"`
 	Ipv4        string `pulumi:"ipv4"`
 	Ipv6        string `pulumi:"ipv6"`
@@ -2289,18 +2283,18 @@ type GetStatuscakeUptimeMonitoringLocationsLocation struct {
 	Status      string `pulumi:"status"`
 }
 
-// GetStatuscakeUptimeMonitoringLocationsLocationInput is an input type that accepts GetStatuscakeUptimeMonitoringLocationsLocationArgs and GetStatuscakeUptimeMonitoringLocationsLocationOutput values.
-// You can construct a concrete instance of `GetStatuscakeUptimeMonitoringLocationsLocationInput` via:
+// GetUptimeMonitoringLocationsLocationInput is an input type that accepts GetUptimeMonitoringLocationsLocationArgs and GetUptimeMonitoringLocationsLocationOutput values.
+// You can construct a concrete instance of `GetUptimeMonitoringLocationsLocationInput` via:
 //
-//	GetStatuscakeUptimeMonitoringLocationsLocationArgs{...}
-type GetStatuscakeUptimeMonitoringLocationsLocationInput interface {
+//	GetUptimeMonitoringLocationsLocationArgs{...}
+type GetUptimeMonitoringLocationsLocationInput interface {
 	pulumi.Input
 
-	ToGetStatuscakeUptimeMonitoringLocationsLocationOutput() GetStatuscakeUptimeMonitoringLocationsLocationOutput
-	ToGetStatuscakeUptimeMonitoringLocationsLocationOutputWithContext(context.Context) GetStatuscakeUptimeMonitoringLocationsLocationOutput
+	ToGetUptimeMonitoringLocationsLocationOutput() GetUptimeMonitoringLocationsLocationOutput
+	ToGetUptimeMonitoringLocationsLocationOutputWithContext(context.Context) GetUptimeMonitoringLocationsLocationOutput
 }
 
-type GetStatuscakeUptimeMonitoringLocationsLocationArgs struct {
+type GetUptimeMonitoringLocationsLocationArgs struct {
 	Description pulumi.StringInput `pulumi:"description"`
 	Ipv4        pulumi.StringInput `pulumi:"ipv4"`
 	Ipv6        pulumi.StringInput `pulumi:"ipv6"`
@@ -2309,160 +2303,160 @@ type GetStatuscakeUptimeMonitoringLocationsLocationArgs struct {
 	Status      pulumi.StringInput `pulumi:"status"`
 }
 
-func (GetStatuscakeUptimeMonitoringLocationsLocationArgs) ElementType() reflect.Type {
-	return reflect.TypeOf((*GetStatuscakeUptimeMonitoringLocationsLocation)(nil)).Elem()
+func (GetUptimeMonitoringLocationsLocationArgs) ElementType() reflect.Type {
+	return reflect.TypeOf((*GetUptimeMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (i GetStatuscakeUptimeMonitoringLocationsLocationArgs) ToGetStatuscakeUptimeMonitoringLocationsLocationOutput() GetStatuscakeUptimeMonitoringLocationsLocationOutput {
-	return i.ToGetStatuscakeUptimeMonitoringLocationsLocationOutputWithContext(context.Background())
+func (i GetUptimeMonitoringLocationsLocationArgs) ToGetUptimeMonitoringLocationsLocationOutput() GetUptimeMonitoringLocationsLocationOutput {
+	return i.ToGetUptimeMonitoringLocationsLocationOutputWithContext(context.Background())
 }
 
-func (i GetStatuscakeUptimeMonitoringLocationsLocationArgs) ToGetStatuscakeUptimeMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetStatuscakeUptimeMonitoringLocationsLocationOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(GetStatuscakeUptimeMonitoringLocationsLocationOutput)
+func (i GetUptimeMonitoringLocationsLocationArgs) ToGetUptimeMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetUptimeMonitoringLocationsLocationOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(GetUptimeMonitoringLocationsLocationOutput)
 }
 
-// GetStatuscakeUptimeMonitoringLocationsLocationArrayInput is an input type that accepts GetStatuscakeUptimeMonitoringLocationsLocationArray and GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput values.
-// You can construct a concrete instance of `GetStatuscakeUptimeMonitoringLocationsLocationArrayInput` via:
+// GetUptimeMonitoringLocationsLocationArrayInput is an input type that accepts GetUptimeMonitoringLocationsLocationArray and GetUptimeMonitoringLocationsLocationArrayOutput values.
+// You can construct a concrete instance of `GetUptimeMonitoringLocationsLocationArrayInput` via:
 //
-//	GetStatuscakeUptimeMonitoringLocationsLocationArray{ GetStatuscakeUptimeMonitoringLocationsLocationArgs{...} }
-type GetStatuscakeUptimeMonitoringLocationsLocationArrayInput interface {
+//	GetUptimeMonitoringLocationsLocationArray{ GetUptimeMonitoringLocationsLocationArgs{...} }
+type GetUptimeMonitoringLocationsLocationArrayInput interface {
 	pulumi.Input
 
-	ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutput() GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput
-	ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutputWithContext(context.Context) GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput
+	ToGetUptimeMonitoringLocationsLocationArrayOutput() GetUptimeMonitoringLocationsLocationArrayOutput
+	ToGetUptimeMonitoringLocationsLocationArrayOutputWithContext(context.Context) GetUptimeMonitoringLocationsLocationArrayOutput
 }
 
-type GetStatuscakeUptimeMonitoringLocationsLocationArray []GetStatuscakeUptimeMonitoringLocationsLocationInput
+type GetUptimeMonitoringLocationsLocationArray []GetUptimeMonitoringLocationsLocationInput
 
-func (GetStatuscakeUptimeMonitoringLocationsLocationArray) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]GetStatuscakeUptimeMonitoringLocationsLocation)(nil)).Elem()
+func (GetUptimeMonitoringLocationsLocationArray) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]GetUptimeMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (i GetStatuscakeUptimeMonitoringLocationsLocationArray) ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutput() GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput {
-	return i.ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutputWithContext(context.Background())
+func (i GetUptimeMonitoringLocationsLocationArray) ToGetUptimeMonitoringLocationsLocationArrayOutput() GetUptimeMonitoringLocationsLocationArrayOutput {
+	return i.ToGetUptimeMonitoringLocationsLocationArrayOutputWithContext(context.Background())
 }
 
-func (i GetStatuscakeUptimeMonitoringLocationsLocationArray) ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput {
-	return pulumi.ToOutputWithContext(ctx, i).(GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput)
+func (i GetUptimeMonitoringLocationsLocationArray) ToGetUptimeMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetUptimeMonitoringLocationsLocationArrayOutput {
+	return pulumi.ToOutputWithContext(ctx, i).(GetUptimeMonitoringLocationsLocationArrayOutput)
 }
 
-type GetStatuscakeUptimeMonitoringLocationsLocationOutput struct{ *pulumi.OutputState }
+type GetUptimeMonitoringLocationsLocationOutput struct{ *pulumi.OutputState }
 
-func (GetStatuscakeUptimeMonitoringLocationsLocationOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*GetStatuscakeUptimeMonitoringLocationsLocation)(nil)).Elem()
+func (GetUptimeMonitoringLocationsLocationOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*GetUptimeMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) ToGetStatuscakeUptimeMonitoringLocationsLocationOutput() GetStatuscakeUptimeMonitoringLocationsLocationOutput {
+func (o GetUptimeMonitoringLocationsLocationOutput) ToGetUptimeMonitoringLocationsLocationOutput() GetUptimeMonitoringLocationsLocationOutput {
 	return o
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) ToGetStatuscakeUptimeMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetStatuscakeUptimeMonitoringLocationsLocationOutput {
+func (o GetUptimeMonitoringLocationsLocationOutput) ToGetUptimeMonitoringLocationsLocationOutputWithContext(ctx context.Context) GetUptimeMonitoringLocationsLocationOutput {
 	return o
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) Description() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.Description }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) Description() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.Description }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) Ipv4() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.Ipv4 }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) Ipv4() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.Ipv4 }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) Ipv6() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.Ipv6 }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) Ipv6() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.Ipv6 }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) Region() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.Region }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) Region() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.Region }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) RegionCode() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.RegionCode }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) RegionCode() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.RegionCode }).(pulumi.StringOutput)
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationOutput) Status() pulumi.StringOutput {
-	return o.ApplyT(func(v GetStatuscakeUptimeMonitoringLocationsLocation) string { return v.Status }).(pulumi.StringOutput)
+func (o GetUptimeMonitoringLocationsLocationOutput) Status() pulumi.StringOutput {
+	return o.ApplyT(func(v GetUptimeMonitoringLocationsLocation) string { return v.Status }).(pulumi.StringOutput)
 }
 
-type GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput struct{ *pulumi.OutputState }
+type GetUptimeMonitoringLocationsLocationArrayOutput struct{ *pulumi.OutputState }
 
-func (GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput) ElementType() reflect.Type {
-	return reflect.TypeOf((*[]GetStatuscakeUptimeMonitoringLocationsLocation)(nil)).Elem()
+func (GetUptimeMonitoringLocationsLocationArrayOutput) ElementType() reflect.Type {
+	return reflect.TypeOf((*[]GetUptimeMonitoringLocationsLocation)(nil)).Elem()
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput) ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutput() GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput {
+func (o GetUptimeMonitoringLocationsLocationArrayOutput) ToGetUptimeMonitoringLocationsLocationArrayOutput() GetUptimeMonitoringLocationsLocationArrayOutput {
 	return o
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput) ToGetStatuscakeUptimeMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput {
+func (o GetUptimeMonitoringLocationsLocationArrayOutput) ToGetUptimeMonitoringLocationsLocationArrayOutputWithContext(ctx context.Context) GetUptimeMonitoringLocationsLocationArrayOutput {
 	return o
 }
 
-func (o GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput) Index(i pulumi.IntInput) GetStatuscakeUptimeMonitoringLocationsLocationOutput {
-	return pulumi.All(o, i).ApplyT(func(vs []interface{}) GetStatuscakeUptimeMonitoringLocationsLocation {
-		return vs[0].([]GetStatuscakeUptimeMonitoringLocationsLocation)[vs[1].(int)]
-	}).(GetStatuscakeUptimeMonitoringLocationsLocationOutput)
+func (o GetUptimeMonitoringLocationsLocationArrayOutput) Index(i pulumi.IntInput) GetUptimeMonitoringLocationsLocationOutput {
+	return pulumi.All(o, i).ApplyT(func(vs []interface{}) GetUptimeMonitoringLocationsLocation {
+		return vs[0].([]GetUptimeMonitoringLocationsLocation)[vs[1].(int)]
+	}).(GetUptimeMonitoringLocationsLocationOutput)
 }
 
 func init() {
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakePagespeedCheckAlertConfigInput)(nil)).Elem(), StatuscakePagespeedCheckAlertConfigArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakePagespeedCheckAlertConfigPtrInput)(nil)).Elem(), StatuscakePagespeedCheckAlertConfigArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakePagespeedCheckMonitoredResourceInput)(nil)).Elem(), StatuscakePagespeedCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakePagespeedCheckMonitoredResourcePtrInput)(nil)).Elem(), StatuscakePagespeedCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeSslCheckAlertConfigInput)(nil)).Elem(), StatuscakeSslCheckAlertConfigArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeSslCheckAlertConfigPtrInput)(nil)).Elem(), StatuscakeSslCheckAlertConfigArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeSslCheckMonitoredResourceInput)(nil)).Elem(), StatuscakeSslCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeSslCheckMonitoredResourcePtrInput)(nil)).Elem(), StatuscakeSslCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckDnsCheckInput)(nil)).Elem(), StatuscakeUptimeCheckDnsCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckDnsCheckPtrInput)(nil)).Elem(), StatuscakeUptimeCheckDnsCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckPtrInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckBasicAuthenticationInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckBasicAuthenticationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckContentMatchersInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckContentMatchersArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckHttpCheckContentMatchersPtrInput)(nil)).Elem(), StatuscakeUptimeCheckHttpCheckContentMatchersArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckIcmpCheckInput)(nil)).Elem(), StatuscakeUptimeCheckIcmpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckIcmpCheckPtrInput)(nil)).Elem(), StatuscakeUptimeCheckIcmpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckLocationInput)(nil)).Elem(), StatuscakeUptimeCheckLocationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckLocationArrayInput)(nil)).Elem(), StatuscakeUptimeCheckLocationArray{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckMonitoredResourceInput)(nil)).Elem(), StatuscakeUptimeCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckMonitoredResourcePtrInput)(nil)).Elem(), StatuscakeUptimeCheckMonitoredResourceArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckInput)(nil)).Elem(), StatuscakeUptimeCheckTcpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckPtrInput)(nil)).Elem(), StatuscakeUptimeCheckTcpCheckArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckAuthenticationInput)(nil)).Elem(), StatuscakeUptimeCheckTcpCheckAuthenticationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*StatuscakeUptimeCheckTcpCheckAuthenticationPtrInput)(nil)).Elem(), StatuscakeUptimeCheckTcpCheckAuthenticationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*GetStatuscakePagespeedMonitoringLocationsLocationInput)(nil)).Elem(), GetStatuscakePagespeedMonitoringLocationsLocationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*GetStatuscakePagespeedMonitoringLocationsLocationArrayInput)(nil)).Elem(), GetStatuscakePagespeedMonitoringLocationsLocationArray{})
-	pulumi.RegisterInputType(reflect.TypeOf((*GetStatuscakeUptimeMonitoringLocationsLocationInput)(nil)).Elem(), GetStatuscakeUptimeMonitoringLocationsLocationArgs{})
-	pulumi.RegisterInputType(reflect.TypeOf((*GetStatuscakeUptimeMonitoringLocationsLocationArrayInput)(nil)).Elem(), GetStatuscakeUptimeMonitoringLocationsLocationArray{})
-	pulumi.RegisterOutputType(StatuscakePagespeedCheckAlertConfigOutput{})
-	pulumi.RegisterOutputType(StatuscakePagespeedCheckAlertConfigPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakePagespeedCheckMonitoredResourceOutput{})
-	pulumi.RegisterOutputType(StatuscakePagespeedCheckMonitoredResourcePtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeSslCheckAlertConfigOutput{})
-	pulumi.RegisterOutputType(StatuscakeSslCheckAlertConfigPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeSslCheckMonitoredResourceOutput{})
-	pulumi.RegisterOutputType(StatuscakeSslCheckMonitoredResourcePtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckDnsCheckOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckDnsCheckPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckBasicAuthenticationOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckBasicAuthenticationPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckContentMatchersOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckHttpCheckContentMatchersPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckIcmpCheckOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckIcmpCheckPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckLocationOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckLocationArrayOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckMonitoredResourceOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckMonitoredResourcePtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckTcpCheckOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckTcpCheckPtrOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckTcpCheckAuthenticationOutput{})
-	pulumi.RegisterOutputType(StatuscakeUptimeCheckTcpCheckAuthenticationPtrOutput{})
-	pulumi.RegisterOutputType(GetStatuscakePagespeedMonitoringLocationsLocationOutput{})
-	pulumi.RegisterOutputType(GetStatuscakePagespeedMonitoringLocationsLocationArrayOutput{})
-	pulumi.RegisterOutputType(GetStatuscakeUptimeMonitoringLocationsLocationOutput{})
-	pulumi.RegisterOutputType(GetStatuscakeUptimeMonitoringLocationsLocationArrayOutput{})
+	pulumi.RegisterInputType(reflect.TypeOf((*PagespeedCheckAlertConfigInput)(nil)).Elem(), PagespeedCheckAlertConfigArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*PagespeedCheckAlertConfigPtrInput)(nil)).Elem(), PagespeedCheckAlertConfigArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*PagespeedCheckMonitoredResourceInput)(nil)).Elem(), PagespeedCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*PagespeedCheckMonitoredResourcePtrInput)(nil)).Elem(), PagespeedCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*SslCheckAlertConfigInput)(nil)).Elem(), SslCheckAlertConfigArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*SslCheckAlertConfigPtrInput)(nil)).Elem(), SslCheckAlertConfigArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*SslCheckMonitoredResourceInput)(nil)).Elem(), SslCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*SslCheckMonitoredResourcePtrInput)(nil)).Elem(), SslCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckDnsCheckInput)(nil)).Elem(), UptimeCheckDnsCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckDnsCheckPtrInput)(nil)).Elem(), UptimeCheckDnsCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckInput)(nil)).Elem(), UptimeCheckHttpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckPtrInput)(nil)).Elem(), UptimeCheckHttpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckBasicAuthenticationInput)(nil)).Elem(), UptimeCheckHttpCheckBasicAuthenticationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckBasicAuthenticationPtrInput)(nil)).Elem(), UptimeCheckHttpCheckBasicAuthenticationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckContentMatchersInput)(nil)).Elem(), UptimeCheckHttpCheckContentMatchersArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckHttpCheckContentMatchersPtrInput)(nil)).Elem(), UptimeCheckHttpCheckContentMatchersArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckIcmpCheckInput)(nil)).Elem(), UptimeCheckIcmpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckIcmpCheckPtrInput)(nil)).Elem(), UptimeCheckIcmpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckLocationInput)(nil)).Elem(), UptimeCheckLocationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckLocationArrayInput)(nil)).Elem(), UptimeCheckLocationArray{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckMonitoredResourceInput)(nil)).Elem(), UptimeCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckMonitoredResourcePtrInput)(nil)).Elem(), UptimeCheckMonitoredResourceArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckTcpCheckInput)(nil)).Elem(), UptimeCheckTcpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckTcpCheckPtrInput)(nil)).Elem(), UptimeCheckTcpCheckArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckTcpCheckAuthenticationInput)(nil)).Elem(), UptimeCheckTcpCheckAuthenticationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*UptimeCheckTcpCheckAuthenticationPtrInput)(nil)).Elem(), UptimeCheckTcpCheckAuthenticationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*GetPagespeedMonitoringLocationsLocationInput)(nil)).Elem(), GetPagespeedMonitoringLocationsLocationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*GetPagespeedMonitoringLocationsLocationArrayInput)(nil)).Elem(), GetPagespeedMonitoringLocationsLocationArray{})
+	pulumi.RegisterInputType(reflect.TypeOf((*GetUptimeMonitoringLocationsLocationInput)(nil)).Elem(), GetUptimeMonitoringLocationsLocationArgs{})
+	pulumi.RegisterInputType(reflect.TypeOf((*GetUptimeMonitoringLocationsLocationArrayInput)(nil)).Elem(), GetUptimeMonitoringLocationsLocationArray{})
+	pulumi.RegisterOutputType(PagespeedCheckAlertConfigOutput{})
+	pulumi.RegisterOutputType(PagespeedCheckAlertConfigPtrOutput{})
+	pulumi.RegisterOutputType(PagespeedCheckMonitoredResourceOutput{})
+	pulumi.RegisterOutputType(PagespeedCheckMonitoredResourcePtrOutput{})
+	pulumi.RegisterOutputType(SslCheckAlertConfigOutput{})
+	pulumi.RegisterOutputType(SslCheckAlertConfigPtrOutput{})
+	pulumi.RegisterOutputType(SslCheckMonitoredResourceOutput{})
+	pulumi.RegisterOutputType(SslCheckMonitoredResourcePtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckDnsCheckOutput{})
+	pulumi.RegisterOutputType(UptimeCheckDnsCheckPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckBasicAuthenticationOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckBasicAuthenticationPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckContentMatchersOutput{})
+	pulumi.RegisterOutputType(UptimeCheckHttpCheckContentMatchersPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckIcmpCheckOutput{})
+	pulumi.RegisterOutputType(UptimeCheckIcmpCheckPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckLocationOutput{})
+	pulumi.RegisterOutputType(UptimeCheckLocationArrayOutput{})
+	pulumi.RegisterOutputType(UptimeCheckMonitoredResourceOutput{})
+	pulumi.RegisterOutputType(UptimeCheckMonitoredResourcePtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckTcpCheckOutput{})
+	pulumi.RegisterOutputType(UptimeCheckTcpCheckPtrOutput{})
+	pulumi.RegisterOutputType(UptimeCheckTcpCheckAuthenticationOutput{})
+	pulumi.RegisterOutputType(UptimeCheckTcpCheckAuthenticationPtrOutput{})
+	pulumi.RegisterOutputType(GetPagespeedMonitoringLocationsLocationOutput{})
+	pulumi.RegisterOutputType(GetPagespeedMonitoringLocationsLocationArrayOutput{})
+	pulumi.RegisterOutputType(GetUptimeMonitoringLocationsLocationOutput{})
+	pulumi.RegisterOutputType(GetUptimeMonitoringLocationsLocationArrayOutput{})
 }

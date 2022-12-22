@@ -4,17 +4,17 @@
 import * as pulumi from "@pulumi/pulumi";
 import { input as inputs, output as outputs } from "../types";
 
-export interface StatuscakePagespeedCheckAlertConfig {
+export interface PagespeedCheckAlertConfig {
     alertBigger?: pulumi.Input<number>;
     alertSlower?: pulumi.Input<number>;
     alertSmaller?: pulumi.Input<number>;
 }
 
-export interface StatuscakePagespeedCheckMonitoredResource {
+export interface PagespeedCheckMonitoredResource {
     address: pulumi.Input<string>;
 }
 
-export interface StatuscakeSslCheckAlertConfig {
+export interface SslCheckAlertConfig {
     alertAts: pulumi.Input<pulumi.Input<number>[]>;
     onBroken?: pulumi.Input<boolean>;
     onExpiry?: pulumi.Input<boolean>;
@@ -22,19 +22,19 @@ export interface StatuscakeSslCheckAlertConfig {
     onReminder?: pulumi.Input<boolean>;
 }
 
-export interface StatuscakeSslCheckMonitoredResource {
+export interface SslCheckMonitoredResource {
     address: pulumi.Input<string>;
     hostname?: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckDnsCheck {
+export interface UptimeCheckDnsCheck {
     dnsIps: pulumi.Input<pulumi.Input<string>[]>;
     dnsServer?: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckHttpCheck {
-    basicAuthentication?: pulumi.Input<inputs.StatuscakeUptimeCheckHttpCheckBasicAuthentication>;
-    contentMatchers?: pulumi.Input<inputs.StatuscakeUptimeCheckHttpCheckContentMatchers>;
+export interface UptimeCheckHttpCheck {
+    basicAuthentication?: pulumi.Input<inputs.UptimeCheckHttpCheckBasicAuthentication>;
+    contentMatchers?: pulumi.Input<inputs.UptimeCheckHttpCheckContentMatchers>;
     enableCookies?: pulumi.Input<boolean>;
     finalEndpoint?: pulumi.Input<string>;
     followRedirects?: pulumi.Input<boolean>;
@@ -48,22 +48,22 @@ export interface StatuscakeUptimeCheckHttpCheck {
     validateSsl?: pulumi.Input<boolean>;
 }
 
-export interface StatuscakeUptimeCheckHttpCheckBasicAuthentication {
+export interface UptimeCheckHttpCheckBasicAuthentication {
     password: pulumi.Input<string>;
     username: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckHttpCheckContentMatchers {
+export interface UptimeCheckHttpCheckContentMatchers {
     content: pulumi.Input<string>;
     includeHeaders?: pulumi.Input<boolean>;
     matcher?: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckIcmpCheck {
+export interface UptimeCheckIcmpCheck {
     enabled?: pulumi.Input<boolean>;
 }
 
-export interface StatuscakeUptimeCheckLocation {
+export interface UptimeCheckLocation {
     description?: pulumi.Input<string>;
     ipv4?: pulumi.Input<string>;
     ipv6?: pulumi.Input<string>;
@@ -72,19 +72,19 @@ export interface StatuscakeUptimeCheckLocation {
     status?: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckMonitoredResource {
+export interface UptimeCheckMonitoredResource {
     address: pulumi.Input<string>;
     host?: pulumi.Input<string>;
 }
 
-export interface StatuscakeUptimeCheckTcpCheck {
-    authentication?: pulumi.Input<inputs.StatuscakeUptimeCheckTcpCheckAuthentication>;
+export interface UptimeCheckTcpCheck {
+    authentication?: pulumi.Input<inputs.UptimeCheckTcpCheckAuthentication>;
     port: pulumi.Input<number>;
     protocol?: pulumi.Input<string>;
     timeout?: pulumi.Input<number>;
 }
 
-export interface StatuscakeUptimeCheckTcpCheckAuthentication {
+export interface UptimeCheckTcpCheckAuthentication {
     password: pulumi.Input<string>;
     username: pulumi.Input<string>;
 }

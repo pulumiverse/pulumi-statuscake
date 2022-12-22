@@ -15,19 +15,19 @@
     "files": [
         "config/index.ts",
         "config/vars.ts",
-        "getStatuscakeContactGroup.ts",
-        "getStatuscakePagespeedMonitoringLocations.ts",
-        "getStatuscakeUptimeMonitoringLocations.ts",
+        "contactGroup.ts",
+        "getContactGroup.ts",
+        "getPagespeedMonitoringLocations.ts",
+        "getUptimeMonitoringLocations.ts",
         "index.ts",
+        "maintenanceWindow.ts",
+        "pagespeedCheck.ts",
         "provider.ts",
-        "statuscakeContactGroup.ts",
-        "statuscakeMaintenanceWindow.ts",
-        "statuscakePagespeedCheck.ts",
-        "statuscakeSslCheck.ts",
-        "statuscakeUptimeCheck.ts",
+        "sslCheck.ts",
         "types/index.ts",
         "types/input.ts",
         "types/output.ts",
+        "uptimeCheck.ts",
         "utilities.ts"
     ]
 }

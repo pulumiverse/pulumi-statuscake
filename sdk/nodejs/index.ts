@@ -5,15 +5,15 @@ import * as pulumi from "@pulumi/pulumi";
 import * as utilities from "./utilities";
 
 // Export members:
-export * from "./getStatuscakeContactGroup";
-export * from "./getStatuscakePagespeedMonitoringLocations";
-export * from "./getStatuscakeUptimeMonitoringLocations";
+export * from "./contactGroup";
+export * from "./getContactGroup";
+export * from "./getPagespeedMonitoringLocations";
+export * from "./getUptimeMonitoringLocations";
+export * from "./maintenanceWindow";
+export * from "./pagespeedCheck";
 export * from "./provider";
-export * from "./statuscakeContactGroup";
-export * from "./statuscakeMaintenanceWindow";
-export * from "./statuscakePagespeedCheck";
-export * from "./statuscakeSslCheck";
-export * from "./statuscakeUptimeCheck";
+export * from "./sslCheck";
+export * from "./uptimeCheck";
 
 // Export sub-modules:
 import * as config from "./config";
@@ -25,36 +25,36 @@ export {
 };
 
 // Import resources to register:
-import { StatuscakeContactGroup } from "./statuscakeContactGroup";
-import { StatuscakeMaintenanceWindow } from "./statuscakeMaintenanceWindow";
-import { StatuscakePagespeedCheck } from "./statuscakePagespeedCheck";
-import { StatuscakeSslCheck } from "./statuscakeSslCheck";
-import { StatuscakeUptimeCheck } from "./statuscakeUptimeCheck";
+import { ContactGroup } from "./contactGroup";
+import { MaintenanceWindow } from "./maintenanceWindow";
+import { PagespeedCheck } from "./pagespeedCheck";
+import { SslCheck } from "./sslCheck";
+import { UptimeCheck } from "./uptimeCheck";
 
 const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "statuscake:index/statuscakeContactGroup:StatuscakeContactGroup":
-                return new StatuscakeContactGroup(name, <any>undefined, { urn })
-            case "statuscake:index/statuscakeMaintenanceWindow:StatuscakeMaintenanceWindow":
-                return new StatuscakeMaintenanceWindow(name, <any>undefined, { urn })
-            case "statuscake:index/statuscakePagespeedCheck:StatuscakePagespeedCheck":
-                return new StatuscakePagespeedCheck(name, <any>undefined, { urn })
-            case "statuscake:index/statuscakeSslCheck:StatuscakeSslCheck":
-                return new StatuscakeSslCheck(name, <any>undefined, { urn })
-            case "statuscake:index/statuscakeUptimeCheck:StatuscakeUptimeCheck":
-                return new StatuscakeUptimeCheck(name, <any>undefined, { urn })
+            case "statuscake:index/contactGroup:ContactGroup":
+                return new ContactGroup(name, <any>undefined, { urn })
+            case "statuscake:index/maintenanceWindow:MaintenanceWindow":
+                return new MaintenanceWindow(name, <any>undefined, { urn })
+            case "statuscake:index/pagespeedCheck:PagespeedCheck":
+                return new PagespeedCheck(name, <any>undefined, { urn })
+            case "statuscake:index/sslCheck:SslCheck":
+                return new SslCheck(name, <any>undefined, { urn })
+            case "statuscake:index/uptimeCheck:UptimeCheck":
+                return new UptimeCheck(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("statuscake", "index/statuscakeContactGroup", _module)
-pulumi.runtime.registerResourceModule("statuscake", "index/statuscakeMaintenanceWindow", _module)
-pulumi.runtime.registerResourceModule("statuscake", "index/statuscakePagespeedCheck", _module)
-pulumi.runtime.registerResourceModule("statuscake", "index/statuscakeSslCheck", _module)
-pulumi.runtime.registerResourceModule("statuscake", "index/statuscakeUptimeCheck", _module)
+pulumi.runtime.registerResourceModule("statuscake", "index/contactGroup", _module)
+pulumi.runtime.registerResourceModule("statuscake", "index/maintenanceWindow", _module)
+pulumi.runtime.registerResourceModule("statuscake", "index/pagespeedCheck", _module)
+pulumi.runtime.registerResourceModule("statuscake", "index/sslCheck", _module)
+pulumi.runtime.registerResourceModule("statuscake", "index/uptimeCheck", _module)
 
 import { Provider } from "./provider";
 

@@ -4,7 +4,7 @@
 import * as pulumi from "@pulumi/pulumi";
 import { input as inputs, output as outputs } from "../types";
 
-export interface GetStatuscakePagespeedMonitoringLocationsLocation {
+export interface GetPagespeedMonitoringLocationsLocation {
     description: string;
     ipv4: string;
     ipv6: string;
@@ -13,7 +13,7 @@ export interface GetStatuscakePagespeedMonitoringLocationsLocation {
     status: string;
 }
 
-export interface GetStatuscakeUptimeMonitoringLocationsLocation {
+export interface GetUptimeMonitoringLocationsLocation {
     description: string;
     ipv4: string;
     ipv6: string;
@@ -22,17 +22,17 @@ export interface GetStatuscakeUptimeMonitoringLocationsLocation {
     status: string;
 }
 
-export interface StatuscakePagespeedCheckAlertConfig {
+export interface PagespeedCheckAlertConfig {
     alertBigger?: number;
     alertSlower?: number;
     alertSmaller?: number;
 }
 
-export interface StatuscakePagespeedCheckMonitoredResource {
+export interface PagespeedCheckMonitoredResource {
     address: string;
 }
 
-export interface StatuscakeSslCheckAlertConfig {
+export interface SslCheckAlertConfig {
     alertAts: number[];
     onBroken?: boolean;
     onExpiry?: boolean;
@@ -40,19 +40,19 @@ export interface StatuscakeSslCheckAlertConfig {
     onReminder?: boolean;
 }
 
-export interface StatuscakeSslCheckMonitoredResource {
+export interface SslCheckMonitoredResource {
     address: string;
     hostname?: string;
 }
 
-export interface StatuscakeUptimeCheckDnsCheck {
+export interface UptimeCheckDnsCheck {
     dnsIps: string[];
     dnsServer?: string;
 }
 
-export interface StatuscakeUptimeCheckHttpCheck {
-    basicAuthentication?: outputs.StatuscakeUptimeCheckHttpCheckBasicAuthentication;
-    contentMatchers?: outputs.StatuscakeUptimeCheckHttpCheckContentMatchers;
+export interface UptimeCheckHttpCheck {
+    basicAuthentication?: outputs.UptimeCheckHttpCheckBasicAuthentication;
+    contentMatchers?: outputs.UptimeCheckHttpCheckContentMatchers;
     enableCookies?: boolean;
     finalEndpoint?: string;
     followRedirects?: boolean;
@@ -66,22 +66,22 @@ export interface StatuscakeUptimeCheckHttpCheck {
     validateSsl?: boolean;
 }
 
-export interface StatuscakeUptimeCheckHttpCheckBasicAuthentication {
+export interface UptimeCheckHttpCheckBasicAuthentication {
     password: string;
     username: string;
 }
 
-export interface StatuscakeUptimeCheckHttpCheckContentMatchers {
+export interface UptimeCheckHttpCheckContentMatchers {
     content: string;
     includeHeaders?: boolean;
     matcher?: string;
 }
 
-export interface StatuscakeUptimeCheckIcmpCheck {
+export interface UptimeCheckIcmpCheck {
     enabled?: boolean;
 }
 
-export interface StatuscakeUptimeCheckLocation {
+export interface UptimeCheckLocation {
     description: string;
     ipv4: string;
     ipv6: string;
@@ -90,19 +90,19 @@ export interface StatuscakeUptimeCheckLocation {
     status: string;
 }
 
-export interface StatuscakeUptimeCheckMonitoredResource {
+export interface UptimeCheckMonitoredResource {
     address: string;
     host?: string;
 }
 
-export interface StatuscakeUptimeCheckTcpCheck {
-    authentication?: outputs.StatuscakeUptimeCheckTcpCheckAuthentication;
+export interface UptimeCheckTcpCheck {
+    authentication?: outputs.UptimeCheckTcpCheckAuthentication;
     port: number;
     protocol?: string;
     timeout?: number;
 }
 
-export interface StatuscakeUptimeCheckTcpCheckAuthentication {
+export interface UptimeCheckTcpCheckAuthentication {
     password: string;
     username: string;
 }

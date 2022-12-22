@@ -16,7 +16,7 @@ The Statuscake provider must be configured with credentials to create and update
 ```typescript
 import * as statuscake from "@pulumiverse/statuscake";
 
-export const uptimeCheck = new statuscake.StatuscakeUptimeCheck("example", {
+export const uptimeCheck = new statuscake.UptimeCheck("example", {
   checkInterval: 60,
   monitoredResource: { address: "https://www.pulumi.com" },
 });
@@ -28,7 +28,7 @@ export const uptimeCheck = new statuscake.StatuscakeUptimeCheck("example", {
 ```python
 import pulumiverse_statuscake as statuscake
 
-uptimeCheck = statuscake.StatuscakeUptimeCheck("example",
+uptimeCheck = statuscake.UptimeCheck("example",
     checkInterval=60
     monitoredResource={
         address="https://www.pulumi.com"
@@ -48,9 +48,9 @@ import (
 
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
-		project, err := statuscake.StatuscakeUptimeCheck(ctx, "example", &statuscake.StatuscakeUptimeCheckArgs{
+		project, err := statuscake.UptimeCheck(ctx, "example", &statuscake.UptimeCheckArgs{
             CheckInterval: 60,
-            MonitoredResource: statuscake.StatuscakeUptimeCheckMonitoredResource{
+            MonitoredResource: statuscake.UptimeCheckMonitoredResource{
                 Address: "https://www.pulumi.com",
             },
 		})
@@ -69,13 +69,13 @@ func main() {
 
 ```csharp
 using Pulumi;
-using Pulumiverse.statuscake;
+using Pulumiverse.Statuscake;
 
 class statusCakeUptimeCheck : Stack
 {
     public uptimeCheck()
     {
-        var project = new StatuscakeUptimeCheck("example", new StatuscakeUptimeCheckArgs{
+        var project = new UptimeCheck("example", new UptimeCheckArgs{
             CheckInterval: 60,
             MonitoredResource: {
                 Address: "https://www.pulumi.com",

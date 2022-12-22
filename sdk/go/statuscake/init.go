@@ -20,16 +20,16 @@ func (m *module) Version() semver.Version {
 
 func (m *module) Construct(ctx *pulumi.Context, name, typ, urn string) (r pulumi.Resource, err error) {
 	switch typ {
-	case "statuscake:index/statuscakeContactGroup:StatuscakeContactGroup":
-		r = &StatuscakeContactGroup{}
-	case "statuscake:index/statuscakeMaintenanceWindow:StatuscakeMaintenanceWindow":
-		r = &StatuscakeMaintenanceWindow{}
-	case "statuscake:index/statuscakePagespeedCheck:StatuscakePagespeedCheck":
-		r = &StatuscakePagespeedCheck{}
-	case "statuscake:index/statuscakeSslCheck:StatuscakeSslCheck":
-		r = &StatuscakeSslCheck{}
-	case "statuscake:index/statuscakeUptimeCheck:StatuscakeUptimeCheck":
-		r = &StatuscakeUptimeCheck{}
+	case "statuscake:index/contactGroup:ContactGroup":
+		r = &ContactGroup{}
+	case "statuscake:index/maintenanceWindow:MaintenanceWindow":
+		r = &MaintenanceWindow{}
+	case "statuscake:index/pagespeedCheck:PagespeedCheck":
+		r = &PagespeedCheck{}
+	case "statuscake:index/sslCheck:SslCheck":
+		r = &SslCheck{}
+	case "statuscake:index/uptimeCheck:UptimeCheck":
+		r = &UptimeCheck{}
 	default:
 		return nil, fmt.Errorf("unknown resource type: %s", typ)
 	}
@@ -60,27 +60,27 @@ func init() {
 	version, _ := PkgVersion()
 	pulumi.RegisterResourceModule(
 		"statuscake",
-		"index/statuscakeContactGroup",
+		"index/contactGroup",
 		&module{version},
 	)
 	pulumi.RegisterResourceModule(
 		"statuscake",
-		"index/statuscakeMaintenanceWindow",
+		"index/maintenanceWindow",
 		&module{version},
 	)
 	pulumi.RegisterResourceModule(
 		"statuscake",
-		"index/statuscakePagespeedCheck",
+		"index/pagespeedCheck",
 		&module{version},
 	)
 	pulumi.RegisterResourceModule(
 		"statuscake",
-		"index/statuscakeSslCheck",
+		"index/sslCheck",
 		&module{version},
 	)
 	pulumi.RegisterResourceModule(
 		"statuscake",
-		"index/statuscakeUptimeCheck",
+		"index/uptimeCheck",
 		&module{version},
 	)
 	pulumi.RegisterResourcePackage(

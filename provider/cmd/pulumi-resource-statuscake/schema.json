@@ -93,7 +93,7 @@
         ]
     },
     "types": {
-        "statuscake:index/StatuscakePagespeedCheckAlertConfig:StatuscakePagespeedCheckAlertConfig": {
+        "statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig": {
             "properties": {
                 "alertBigger": {
                     "type": "integer",
@@ -122,7 +122,7 @@
             },
             "type": "object"
         },
-        "statuscake:index/StatuscakePagespeedCheckMonitoredResource:StatuscakePagespeedCheckMonitoredResource": {
+        "statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource": {
             "properties": {
                 "address": {
                     "type": "string",
@@ -139,7 +139,7 @@
                 "address"
             ]
         },
-        "statuscake:index/StatuscakeSslCheckAlertConfig:StatuscakeSslCheckAlertConfig": {
+        "statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig": {
             "properties": {
                 "alertAts": {
                     "type": "array",
@@ -190,7 +190,7 @@
                 "alertAts"
             ]
         },
-        "statuscake:index/StatuscakeSslCheckMonitoredResource:StatuscakeSslCheckMonitoredResource": {
+        "statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource": {
             "properties": {
                 "address": {
                     "type": "string",
@@ -215,7 +215,7 @@
                 "address"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckDnsCheck:StatuscakeUptimeCheckDnsCheck": {
+        "statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck": {
             "properties": {
                 "dnsIps": {
                     "type": "array",
@@ -242,10 +242,10 @@
                 "dnsIps"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckHttpCheck:StatuscakeUptimeCheckHttpCheck": {
+        "statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck": {
             "properties": {
                 "basicAuthentication": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckHttpCheckBasicAuthentication:StatuscakeUptimeCheckHttpCheckBasicAuthentication",
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheckBasicAuthentication:UptimeCheckHttpCheckBasicAuthentication",
                     "language": {
                         "python": {
                             "mapCase": false
@@ -253,7 +253,7 @@
                     }
                 },
                 "contentMatchers": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckHttpCheckContentMatchers:StatuscakeUptimeCheckHttpCheckContentMatchers",
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheckContentMatchers:UptimeCheckHttpCheckContentMatchers",
                     "language": {
                         "python": {
                             "mapCase": false
@@ -364,7 +364,7 @@
                 "statusCodes"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckHttpCheckBasicAuthentication:StatuscakeUptimeCheckHttpCheckBasicAuthentication": {
+        "statuscake:index/UptimeCheckHttpCheckBasicAuthentication:UptimeCheckHttpCheckBasicAuthentication": {
             "properties": {
                 "password": {
                     "type": "string",
@@ -389,7 +389,7 @@
                 "username"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckHttpCheckContentMatchers:StatuscakeUptimeCheckHttpCheckContentMatchers": {
+        "statuscake:index/UptimeCheckHttpCheckContentMatchers:UptimeCheckHttpCheckContentMatchers": {
             "properties": {
                 "content": {
                     "type": "string",
@@ -421,7 +421,7 @@
                 "content"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckIcmpCheck:StatuscakeUptimeCheckIcmpCheck": {
+        "statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck": {
             "properties": {
                 "enabled": {
                     "type": "boolean",
@@ -434,7 +434,7 @@
             },
             "type": "object"
         },
-        "statuscake:index/StatuscakeUptimeCheckLocation:StatuscakeUptimeCheckLocation": {
+        "statuscake:index/UptimeCheckLocation:UptimeCheckLocation": {
             "properties": {
                 "description": {
                     "type": "string",
@@ -499,7 +499,7 @@
                 }
             }
         },
-        "statuscake:index/StatuscakeUptimeCheckMonitoredResource:StatuscakeUptimeCheckMonitoredResource": {
+        "statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource": {
             "properties": {
                 "address": {
                     "type": "string",
@@ -524,10 +524,10 @@
                 "address"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckTcpCheck:StatuscakeUptimeCheckTcpCheck": {
+        "statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck": {
             "properties": {
                 "authentication": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckTcpCheckAuthentication:StatuscakeUptimeCheckTcpCheckAuthentication",
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheckAuthentication:UptimeCheckTcpCheckAuthentication",
                     "language": {
                         "python": {
                             "mapCase": false
@@ -565,7 +565,7 @@
                 "port"
             ]
         },
-        "statuscake:index/StatuscakeUptimeCheckTcpCheckAuthentication:StatuscakeUptimeCheckTcpCheckAuthentication": {
+        "statuscake:index/UptimeCheckTcpCheckAuthentication:UptimeCheckTcpCheckAuthentication": {
             "properties": {
                 "password": {
                     "type": "string",
@@ -590,7 +590,7 @@
                 "username"
             ]
         },
-        "statuscake:index/getStatuscakePagespeedMonitoringLocationsLocation:getStatuscakePagespeedMonitoringLocationsLocation": {
+        "statuscake:index/getPagespeedMonitoringLocationsLocation:getPagespeedMonitoringLocationsLocation": {
             "properties": {
                 "description": {
                     "type": "string",
@@ -656,7 +656,7 @@
                 }
             }
         },
-        "statuscake:index/getStatuscakeUptimeMonitoringLocationsLocation:getStatuscakeUptimeMonitoringLocationsLocation": {
+        "statuscake:index/getUptimeMonitoringLocationsLocation:getUptimeMonitoringLocationsLocation": {
             "properties": {
                 "description": {
                     "type": "string",
@@ -786,7 +786,7 @@
         }
     },
     "resources": {
-        "statuscake:index/statuscakeContactGroup:StatuscakeContactGroup": {
+        "statuscake:index/contactGroup:ContactGroup": {
             "properties": {
                 "emailAddresses": {
                     "type": "array",
@@ -853,7 +853,7 @@
                 }
             },
             "stateInputs": {
-                "description": "Input properties used for looking up and filtering StatuscakeContactGroup resources.\n",
+                "description": "Input properties used for looking up and filtering ContactGroup resources.\n",
                 "properties": {
                     "emailAddresses": {
                         "type": "array",
@@ -888,7 +888,7 @@
                 "type": "object"
             }
         },
-        "statuscake:index/statuscakeMaintenanceWindow:StatuscakeMaintenanceWindow": {
+        "statuscake:index/maintenanceWindow:MaintenanceWindow": {
             "properties": {
                 "end": {
                     "type": "string",
@@ -973,7 +973,7 @@
                 "timezone"
             ],
             "stateInputs": {
-                "description": "Input properties used for looking up and filtering StatuscakeMaintenanceWindow resources.\n",
+                "description": "Input properties used for looking up and filtering MaintenanceWindow resources.\n",
                 "properties": {
                     "end": {
                         "type": "string",
@@ -1013,10 +1013,10 @@
                 "type": "object"
             }
         },
-        "statuscake:index/statuscakePagespeedCheck:StatuscakePagespeedCheck": {
+        "statuscake:index/pagespeedCheck:PagespeedCheck": {
             "properties": {
                 "alertConfig": {
-                    "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckAlertConfig:StatuscakePagespeedCheckAlertConfig",
+                    "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
                     "description": "Alert configuration block. Omitting this block disabled all alerts\n"
                 },
                 "checkInterval": {
@@ -1035,7 +1035,7 @@
                     "description": "Assigned monitoring location on which checks will be run\n"
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckMonitoredResource:StatuscakePagespeedCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "name": {
@@ -1061,7 +1061,7 @@
             ],
             "inputProperties": {
                 "alertConfig": {
-                    "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckAlertConfig:StatuscakePagespeedCheckAlertConfig",
+                    "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
                     "description": "Alert configuration block. Omitting this block disabled all alerts\n"
                 },
                 "checkInterval": {
@@ -1076,7 +1076,7 @@
                     "description": "List of contact group IDs\n"
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckMonitoredResource:StatuscakePagespeedCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "name": {
@@ -1099,10 +1099,10 @@
                 "region"
             ],
             "stateInputs": {
-                "description": "Input properties used for looking up and filtering StatuscakePagespeedCheck resources.\n",
+                "description": "Input properties used for looking up and filtering PagespeedCheck resources.\n",
                 "properties": {
                     "alertConfig": {
-                        "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckAlertConfig:StatuscakePagespeedCheckAlertConfig",
+                        "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
                         "description": "Alert configuration block. Omitting this block disabled all alerts\n"
                     },
                     "checkInterval": {
@@ -1121,7 +1121,7 @@
                         "description": "Assigned monitoring location on which checks will be run\n"
                     },
                     "monitoredResource": {
-                        "$ref": "#/types/statuscake:index/StatuscakePagespeedCheckMonitoredResource:StatuscakePagespeedCheckMonitoredResource",
+                        "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
                         "description": "Monitored resource configuration block. The describes server under test\n"
                     },
                     "name": {
@@ -1140,10 +1140,10 @@
                 "type": "object"
             }
         },
-        "statuscake:index/statuscakeSslCheck:StatuscakeSslCheck": {
+        "statuscake:index/sslCheck:SslCheck": {
             "properties": {
                 "alertConfig": {
-                    "$ref": "#/types/statuscake:index/StatuscakeSslCheckAlertConfig:StatuscakeSslCheckAlertConfig",
+                    "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
                     "description": "Alert configuration block\n"
                 },
                 "checkInterval": {
@@ -1162,7 +1162,7 @@
                     "description": "Whether to follow redirects when testing. Disabled by default\n"
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakeSslCheckMonitoredResource:StatuscakeSslCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "paused": {
@@ -1181,7 +1181,7 @@
             ],
             "inputProperties": {
                 "alertConfig": {
-                    "$ref": "#/types/statuscake:index/StatuscakeSslCheckAlertConfig:StatuscakeSslCheckAlertConfig",
+                    "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
                     "description": "Alert configuration block\n"
                 },
                 "checkInterval": {
@@ -1200,7 +1200,7 @@
                     "description": "Whether to follow redirects when testing. Disabled by default\n"
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakeSslCheckMonitoredResource:StatuscakeSslCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "paused": {
@@ -1218,10 +1218,10 @@
                 "monitoredResource"
             ],
             "stateInputs": {
-                "description": "Input properties used for looking up and filtering StatuscakeSslCheck resources.\n",
+                "description": "Input properties used for looking up and filtering SslCheck resources.\n",
                 "properties": {
                     "alertConfig": {
-                        "$ref": "#/types/statuscake:index/StatuscakeSslCheckAlertConfig:StatuscakeSslCheckAlertConfig",
+                        "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
                         "description": "Alert configuration block\n"
                     },
                     "checkInterval": {
@@ -1240,7 +1240,7 @@
                         "description": "Whether to follow redirects when testing. Disabled by default\n"
                     },
                     "monitoredResource": {
-                        "$ref": "#/types/statuscake:index/StatuscakeSslCheckMonitoredResource:StatuscakeSslCheckMonitoredResource",
+                        "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
                         "description": "Monitored resource configuration block. The describes server under test\n"
                     },
                     "paused": {
@@ -1255,7 +1255,7 @@
                 "type": "object"
             }
         },
-        "statuscake:index/statuscakeUptimeCheck:StatuscakeUptimeCheck": {
+        "statuscake:index/uptimeCheck:UptimeCheck": {
             "properties": {
                 "checkInterval": {
                     "type": "integer",
@@ -1273,26 +1273,26 @@
                     "description": "List of contact group IDs\n"
                 },
                 "dnsCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckDnsCheck:StatuscakeUptimeCheckDnsCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
                     "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
                 },
                 "httpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckHttpCheck:StatuscakeUptimeCheckHttpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
                     "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
                 },
                 "icmpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckIcmpCheck:StatuscakeUptimeCheckIcmpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
                     "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
                 },
                 "locations": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckLocation:StatuscakeUptimeCheckLocation"
+                        "$ref": "#/types/statuscake:index/UptimeCheckLocation:UptimeCheckLocation"
                     },
                     "description": "List of assigned monitoring locations on which to run checks\n"
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckMonitoredResource:StatuscakeUptimeCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "name": {
@@ -1318,7 +1318,7 @@
                     "description": "List of tags\n"
                 },
                 "tcpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckTcpCheck:StatuscakeUptimeCheckTcpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
                     "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
                 },
                 "triggerRate": {
@@ -1349,22 +1349,22 @@
                     "description": "List of contact group IDs\n"
                 },
                 "dnsCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckDnsCheck:StatuscakeUptimeCheckDnsCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
                     "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                     "willReplaceOnChanges": true
                 },
                 "httpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckHttpCheck:StatuscakeUptimeCheckHttpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
                     "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                     "willReplaceOnChanges": true
                 },
                 "icmpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckIcmpCheck:StatuscakeUptimeCheckIcmpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
                     "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                     "willReplaceOnChanges": true
                 },
                 "monitoredResource": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckMonitoredResource:StatuscakeUptimeCheckMonitoredResource",
+                    "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
                     "description": "Monitored resource configuration block. The describes server under test\n"
                 },
                 "name": {
@@ -1390,7 +1390,7 @@
                     "description": "List of tags\n"
                 },
                 "tcpCheck": {
-                    "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckTcpCheck:StatuscakeUptimeCheckTcpCheck",
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
                     "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                     "willReplaceOnChanges": true
                 },
@@ -1404,7 +1404,7 @@
                 "monitoredResource"
             ],
             "stateInputs": {
-                "description": "Input properties used for looking up and filtering StatuscakeUptimeCheck resources.\n",
+                "description": "Input properties used for looking up and filtering UptimeCheck resources.\n",
                 "properties": {
                     "checkInterval": {
                         "type": "integer",
@@ -1422,29 +1422,29 @@
                         "description": "List of contact group IDs\n"
                     },
                     "dnsCheck": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckDnsCheck:StatuscakeUptimeCheckDnsCheck",
+                        "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
                         "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                         "willReplaceOnChanges": true
                     },
                     "httpCheck": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckHttpCheck:StatuscakeUptimeCheckHttpCheck",
+                        "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
                         "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                         "willReplaceOnChanges": true
                     },
                     "icmpCheck": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckIcmpCheck:StatuscakeUptimeCheckIcmpCheck",
+                        "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
                         "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                         "willReplaceOnChanges": true
                     },
                     "locations": {
                         "type": "array",
                         "items": {
-                            "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckLocation:StatuscakeUptimeCheckLocation"
+                            "$ref": "#/types/statuscake:index/UptimeCheckLocation:UptimeCheckLocation"
                         },
                         "description": "List of assigned monitoring locations on which to run checks\n"
                     },
                     "monitoredResource": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckMonitoredResource:StatuscakeUptimeCheckMonitoredResource",
+                        "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
                         "description": "Monitored resource configuration block. The describes server under test\n"
                     },
                     "name": {
@@ -1470,7 +1470,7 @@
                         "description": "List of tags\n"
                     },
                     "tcpCheck": {
-                        "$ref": "#/types/statuscake:index/StatuscakeUptimeCheckTcpCheck:StatuscakeUptimeCheckTcpCheck",
+                        "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
                         "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
                         "willReplaceOnChanges": true
                     },
@@ -1484,9 +1484,9 @@
         }
     },
     "functions": {
-        "statuscake:index/getStatuscakeContactGroup:getStatuscakeContactGroup": {
+        "statuscake:index/getContactGroup:getContactGroup": {
             "inputs": {
-                "description": "A collection of arguments for invoking getStatuscakeContactGroup.\n",
+                "description": "A collection of arguments for invoking getContactGroup.\n",
                 "properties": {
                     "id": {
                         "type": "string"
@@ -1498,7 +1498,7 @@
                 ]
             },
             "outputs": {
-                "description": "A collection of values returned by getStatuscakeContactGroup.\n",
+                "description": "A collection of values returned by getContactGroup.\n",
                 "properties": {
                     "emailAddresses": {
                         "type": "array",
@@ -1539,9 +1539,9 @@
                 ]
             }
         },
-        "statuscake:index/getStatuscakePagespeedMonitoringLocations:getStatuscakePagespeedMonitoringLocations": {
+        "statuscake:index/getPagespeedMonitoringLocations:getPagespeedMonitoringLocations": {
             "inputs": {
-                "description": "A collection of arguments for invoking getStatuscakePagespeedMonitoringLocations.\n",
+                "description": "A collection of arguments for invoking getPagespeedMonitoringLocations.\n",
                 "properties": {
                     "regionCode": {
                         "type": "string"
@@ -1550,7 +1550,7 @@
                 "type": "object"
             },
             "outputs": {
-                "description": "A collection of values returned by getStatuscakePagespeedMonitoringLocations.\n",
+                "description": "A collection of values returned by getPagespeedMonitoringLocations.\n",
                 "properties": {
                     "id": {
                         "type": "string",
@@ -1559,7 +1559,7 @@
                     "locations": {
                         "type": "array",
                         "items": {
-                            "$ref": "#/types/statuscake:index/getStatuscakePagespeedMonitoringLocationsLocation:getStatuscakePagespeedMonitoringLocationsLocation"
+                            "$ref": "#/types/statuscake:index/getPagespeedMonitoringLocationsLocation:getPagespeedMonitoringLocationsLocation"
                         }
                     },
                     "regionCode": {
@@ -1573,9 +1573,9 @@
                 ]
             }
         },
-        "statuscake:index/getStatuscakeUptimeMonitoringLocations:getStatuscakeUptimeMonitoringLocations": {
+        "statuscake:index/getUptimeMonitoringLocations:getUptimeMonitoringLocations": {
             "inputs": {
-                "description": "A collection of arguments for invoking getStatuscakeUptimeMonitoringLocations.\n",
+                "description": "A collection of arguments for invoking getUptimeMonitoringLocations.\n",
                 "properties": {
                     "regionCode": {
                         "type": "string"
@@ -1584,7 +1584,7 @@
                 "type": "object"
             },
             "outputs": {
-                "description": "A collection of values returned by getStatuscakeUptimeMonitoringLocations.\n",
+                "description": "A collection of values returned by getUptimeMonitoringLocations.\n",
                 "properties": {
                     "id": {
                         "type": "string",
@@ -1593,7 +1593,7 @@
                     "locations": {
                         "type": "array",
                         "items": {
-                            "$ref": "#/types/statuscake:index/getStatuscakeUptimeMonitoringLocationsLocation:getStatuscakeUptimeMonitoringLocationsLocation"
+                            "$ref": "#/types/statuscake:index/getUptimeMonitoringLocationsLocation:getUptimeMonitoringLocationsLocation"
                         }
                     },
                     "regionCode": {

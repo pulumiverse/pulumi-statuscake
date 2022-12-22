@@ -11,25 +11,25 @@ from . import _utilities
 from . import outputs
 
 __all__ = [
-    'StatuscakePagespeedCheckAlertConfig',
-    'StatuscakePagespeedCheckMonitoredResource',
-    'StatuscakeSslCheckAlertConfig',
-    'StatuscakeSslCheckMonitoredResource',
-    'StatuscakeUptimeCheckDnsCheck',
-    'StatuscakeUptimeCheckHttpCheck',
-    'StatuscakeUptimeCheckHttpCheckBasicAuthentication',
-    'StatuscakeUptimeCheckHttpCheckContentMatchers',
-    'StatuscakeUptimeCheckIcmpCheck',
-    'StatuscakeUptimeCheckLocation',
-    'StatuscakeUptimeCheckMonitoredResource',
-    'StatuscakeUptimeCheckTcpCheck',
-    'StatuscakeUptimeCheckTcpCheckAuthentication',
-    'GetStatuscakePagespeedMonitoringLocationsLocationResult',
-    'GetStatuscakeUptimeMonitoringLocationsLocationResult',
+    'PagespeedCheckAlertConfig',
+    'PagespeedCheckMonitoredResource',
+    'SslCheckAlertConfig',
+    'SslCheckMonitoredResource',
+    'UptimeCheckDnsCheck',
+    'UptimeCheckHttpCheck',
+    'UptimeCheckHttpCheckBasicAuthentication',
+    'UptimeCheckHttpCheckContentMatchers',
+    'UptimeCheckIcmpCheck',
+    'UptimeCheckLocation',
+    'UptimeCheckMonitoredResource',
+    'UptimeCheckTcpCheck',
+    'UptimeCheckTcpCheckAuthentication',
+    'GetPagespeedMonitoringLocationsLocationResult',
+    'GetUptimeMonitoringLocationsLocationResult',
 ]
 
 @pulumi.output_type
-class StatuscakePagespeedCheckAlertConfig(dict):
+class PagespeedCheckAlertConfig(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -41,14 +41,14 @@ class StatuscakePagespeedCheckAlertConfig(dict):
             suggest = "alert_smaller"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakePagespeedCheckAlertConfig. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in PagespeedCheckAlertConfig. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakePagespeedCheckAlertConfig.__key_warning(key)
+        PagespeedCheckAlertConfig.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakePagespeedCheckAlertConfig.__key_warning(key)
+        PagespeedCheckAlertConfig.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
@@ -79,7 +79,7 @@ class StatuscakePagespeedCheckAlertConfig(dict):
 
 
 @pulumi.output_type
-class StatuscakePagespeedCheckMonitoredResource(dict):
+class PagespeedCheckMonitoredResource(dict):
     def __init__(__self__, *,
                  address: str):
         pulumi.set(__self__, "address", address)
@@ -91,7 +91,7 @@ class StatuscakePagespeedCheckMonitoredResource(dict):
 
 
 @pulumi.output_type
-class StatuscakeSslCheckAlertConfig(dict):
+class SslCheckAlertConfig(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -107,14 +107,14 @@ class StatuscakeSslCheckAlertConfig(dict):
             suggest = "on_reminder"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakeSslCheckAlertConfig. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in SslCheckAlertConfig. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakeSslCheckAlertConfig.__key_warning(key)
+        SslCheckAlertConfig.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakeSslCheckAlertConfig.__key_warning(key)
+        SslCheckAlertConfig.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
@@ -160,7 +160,7 @@ class StatuscakeSslCheckAlertConfig(dict):
 
 
 @pulumi.output_type
-class StatuscakeSslCheckMonitoredResource(dict):
+class SslCheckMonitoredResource(dict):
     def __init__(__self__, *,
                  address: str,
                  hostname: Optional[str] = None):
@@ -180,7 +180,7 @@ class StatuscakeSslCheckMonitoredResource(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckDnsCheck(dict):
+class UptimeCheckDnsCheck(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -190,14 +190,14 @@ class StatuscakeUptimeCheckDnsCheck(dict):
             suggest = "dns_server"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakeUptimeCheckDnsCheck. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in UptimeCheckDnsCheck. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakeUptimeCheckDnsCheck.__key_warning(key)
+        UptimeCheckDnsCheck.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakeUptimeCheckDnsCheck.__key_warning(key)
+        UptimeCheckDnsCheck.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
@@ -219,7 +219,7 @@ class StatuscakeUptimeCheckDnsCheck(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckHttpCheck(dict):
+class UptimeCheckHttpCheck(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -249,20 +249,20 @@ class StatuscakeUptimeCheckHttpCheck(dict):
             suggest = "validate_ssl"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakeUptimeCheckHttpCheck. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in UptimeCheckHttpCheck. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakeUptimeCheckHttpCheck.__key_warning(key)
+        UptimeCheckHttpCheck.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakeUptimeCheckHttpCheck.__key_warning(key)
+        UptimeCheckHttpCheck.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
                  status_codes: Sequence[str],
-                 basic_authentication: Optional['outputs.StatuscakeUptimeCheckHttpCheckBasicAuthentication'] = None,
-                 content_matchers: Optional['outputs.StatuscakeUptimeCheckHttpCheckContentMatchers'] = None,
+                 basic_authentication: Optional['outputs.UptimeCheckHttpCheckBasicAuthentication'] = None,
+                 content_matchers: Optional['outputs.UptimeCheckHttpCheckContentMatchers'] = None,
                  enable_cookies: Optional[bool] = None,
                  final_endpoint: Optional[str] = None,
                  follow_redirects: Optional[bool] = None,
@@ -306,12 +306,12 @@ class StatuscakeUptimeCheckHttpCheck(dict):
 
     @property
     @pulumi.getter(name="basicAuthentication")
-    def basic_authentication(self) -> Optional['outputs.StatuscakeUptimeCheckHttpCheckBasicAuthentication']:
+    def basic_authentication(self) -> Optional['outputs.UptimeCheckHttpCheckBasicAuthentication']:
         return pulumi.get(self, "basic_authentication")
 
     @property
     @pulumi.getter(name="contentMatchers")
-    def content_matchers(self) -> Optional['outputs.StatuscakeUptimeCheckHttpCheckContentMatchers']:
+    def content_matchers(self) -> Optional['outputs.UptimeCheckHttpCheckContentMatchers']:
         return pulumi.get(self, "content_matchers")
 
     @property
@@ -366,7 +366,7 @@ class StatuscakeUptimeCheckHttpCheck(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckHttpCheckBasicAuthentication(dict):
+class UptimeCheckHttpCheckBasicAuthentication(dict):
     def __init__(__self__, *,
                  password: str,
                  username: str):
@@ -385,7 +385,7 @@ class StatuscakeUptimeCheckHttpCheckBasicAuthentication(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckHttpCheckContentMatchers(dict):
+class UptimeCheckHttpCheckContentMatchers(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -393,14 +393,14 @@ class StatuscakeUptimeCheckHttpCheckContentMatchers(dict):
             suggest = "include_headers"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakeUptimeCheckHttpCheckContentMatchers. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in UptimeCheckHttpCheckContentMatchers. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakeUptimeCheckHttpCheckContentMatchers.__key_warning(key)
+        UptimeCheckHttpCheckContentMatchers.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakeUptimeCheckHttpCheckContentMatchers.__key_warning(key)
+        UptimeCheckHttpCheckContentMatchers.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
@@ -430,7 +430,7 @@ class StatuscakeUptimeCheckHttpCheckContentMatchers(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckIcmpCheck(dict):
+class UptimeCheckIcmpCheck(dict):
     def __init__(__self__, *,
                  enabled: Optional[bool] = None):
         if enabled is not None:
@@ -443,7 +443,7 @@ class StatuscakeUptimeCheckIcmpCheck(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckLocation(dict):
+class UptimeCheckLocation(dict):
     @staticmethod
     def __key_warning(key: str):
         suggest = None
@@ -451,14 +451,14 @@ class StatuscakeUptimeCheckLocation(dict):
             suggest = "region_code"
 
         if suggest:
-            pulumi.log.warn(f"Key '{key}' not found in StatuscakeUptimeCheckLocation. Access the value via the '{suggest}' property getter instead.")
+            pulumi.log.warn(f"Key '{key}' not found in UptimeCheckLocation. Access the value via the '{suggest}' property getter instead.")
 
     def __getitem__(self, key: str) -> Any:
-        StatuscakeUptimeCheckLocation.__key_warning(key)
+        UptimeCheckLocation.__key_warning(key)
         return super().__getitem__(key)
 
     def get(self, key: str, default = None) -> Any:
-        StatuscakeUptimeCheckLocation.__key_warning(key)
+        UptimeCheckLocation.__key_warning(key)
         return super().get(key, default)
 
     def __init__(__self__, *,
@@ -513,7 +513,7 @@ class StatuscakeUptimeCheckLocation(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckMonitoredResource(dict):
+class UptimeCheckMonitoredResource(dict):
     def __init__(__self__, *,
                  address: str,
                  host: Optional[str] = None):
@@ -533,10 +533,10 @@ class StatuscakeUptimeCheckMonitoredResource(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckTcpCheck(dict):
+class UptimeCheckTcpCheck(dict):
     def __init__(__self__, *,
                  port: int,
-                 authentication: Optional['outputs.StatuscakeUptimeCheckTcpCheckAuthentication'] = None,
+                 authentication: Optional['outputs.UptimeCheckTcpCheckAuthentication'] = None,
                  protocol: Optional[str] = None,
                  timeout: Optional[int] = None):
         pulumi.set(__self__, "port", port)
@@ -554,7 +554,7 @@ class StatuscakeUptimeCheckTcpCheck(dict):
 
     @property
     @pulumi.getter
-    def authentication(self) -> Optional['outputs.StatuscakeUptimeCheckTcpCheckAuthentication']:
+    def authentication(self) -> Optional['outputs.UptimeCheckTcpCheckAuthentication']:
         return pulumi.get(self, "authentication")
 
     @property
@@ -569,7 +569,7 @@ class StatuscakeUptimeCheckTcpCheck(dict):
 
 
 @pulumi.output_type
-class StatuscakeUptimeCheckTcpCheckAuthentication(dict):
+class UptimeCheckTcpCheckAuthentication(dict):
     def __init__(__self__, *,
                  password: str,
                  username: str):
@@ -588,7 +588,7 @@ class StatuscakeUptimeCheckTcpCheckAuthentication(dict):
 
 
 @pulumi.output_type
-class GetStatuscakePagespeedMonitoringLocationsLocationResult(dict):
+class GetPagespeedMonitoringLocationsLocationResult(dict):
     def __init__(__self__, *,
                  description: str,
                  ipv4: str,
@@ -635,7 +635,7 @@ class GetStatuscakePagespeedMonitoringLocationsLocationResult(dict):
 
 
 @pulumi.output_type
-class GetStatuscakeUptimeMonitoringLocationsLocationResult(dict):
+class GetUptimeMonitoringLocationsLocationResult(dict):
     def __init__(__self__, *,
                  description: str,
                  ipv4: str,
