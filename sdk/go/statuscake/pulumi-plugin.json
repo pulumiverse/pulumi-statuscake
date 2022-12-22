@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "statuscake",
+  "server": "github://api.github.com/pulumiverse"
+}

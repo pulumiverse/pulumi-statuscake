@@ -1,0 +1,1611 @@
+{
+    "name": "statuscake",
+    "displayName": "Statuscake",
+    "description": "A Pulumi package for creating and managing Statuscake resources.",
+    "keywords": [
+        "pulumi",
+        "statuscake",
+        "category/cloud"
+    ],
+    "homepage": "https://github.com/pulumiverse",
+    "license": "Apache-2.0",
+    "attribution": "This Pulumi package is based on the [`statuscake` Terraform Provider](https://github.com/pulumiverse/terraform-provider-statuscake).",
+    "repository": "https://github.com/pulumiverse/pulumi-statuscake",
+    "logoUrl": "https://raw.githubusercontent.com/pulumiverse/pulumi-statuscake/main/statuscake.svg",
+    "pluginDownloadURL": "github://api.github.com/pulumiverse",
+    "publisher": "Pulumiverse",
+    "meta": {
+        "moduleFormat": "(.*)(?:/[^/]*)"
+    },
+    "language": {
+        "csharp": {
+            "compatibility": "tfbridge20",
+            "namespaces": null,
+            "packageReferences": {
+                "Pulumi": "3.*"
+            },
+            "rootNamespace": "Pulumiverse"
+        },
+        "go": {
+            "generateExtraInputTypes": true,
+            "generateResourceContainerTypes": true,
+            "importBasePath": "github.com/pulumiverse/pulumi-statuscake/sdk/go/statuscake"
+        },
+        "nodejs": {
+            "compatibility": "tfbridge20",
+            "dependencies": {
+                "@pulumi/pulumi": "^3.0.0"
+            },
+            "devDependencies": {
+                "@types/mime": "^2.0.0",
+                "@types/node": "^10.0.0"
+            },
+            "disableUnionOutputTypes": true,
+            "packageDescription": "A Pulumi package for creating and managing Statuscake resources.",
+            "packageName": "@pulumiverse/statuscake",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/pulumiverse/terraform-provider-statuscake)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi/pulumi-statuscake` repo](https://github.com/pulumi/pulumi-statuscake/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`pulumiverse/terraform-provider-statuscake` repo](https://github.com/pulumiverse/terraform-provider-statuscake/issues).",
+            "typescriptVersion": ""
+        },
+        "python": {
+            "compatibility": "tfbridge20",
+            "packageName": "pulumiverse_statuscake",
+            "readme": "\u003e This provider is a derived work of the [Terraform Provider](https://github.com/pulumiverse/terraform-provider-statuscake)\n\u003e distributed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/). If you encounter a bug or missing feature,\n\u003e first check the [`pulumi/pulumi-statuscake` repo](https://github.com/pulumi/pulumi-statuscake/issues); however, if that doesn't turn up anything,\n\u003e please consult the source [`pulumiverse/terraform-provider-statuscake` repo](https://github.com/pulumiverse/terraform-provider-statuscake/issues).",
+            "requires": {
+                "pulumi": "\u003e=3.0.0,\u003c4.0.0"
+            }
+        }
+    },
+    "config": {
+        "variables": {
+            "apiToken": {
+                "type": "string",
+                "description": "The API token for operations. This can also be provided as an environment variable `STATUSCAKE_API_TOKEN`\n",
+                "defaultInfo": {
+                    "environment": [
+                        "STATUSCAKE_API_TOKEN"
+                    ]
+                },
+                "secret": true
+            },
+            "maxBackoff": {
+                "type": "integer",
+                "description": "Maximum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MAX_BACKOFF`\n"
+            },
+            "minBackoff": {
+                "type": "integer",
+                "description": "Minimum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MIN_BACKOFF`\n"
+            },
+            "retries": {
+                "type": "integer",
+                "description": "Maximum number of retries to perform when an API request fails. This can also be provided as an environment variable\n`STATUSCAKE_RETRIES`\n"
+            },
+            "rps": {
+                "type": "integer",
+                "description": "RPS limit to apply when making calls to the API. This can also be provided as an environment variable `STATUSCAKE_RPS`\n"
+            },
+            "statuscakeCustomEndpoint": {
+                "type": "string",
+                "description": "Custom endpoint to which request will be made. This can also be provided as an environment variable\n`STATUCAKE_CUSTOM_ENDPOINT`\n"
+            }
+        },
+        "defaults": [
+            "apiToken"
+        ]
+    },
+    "types": {
+        "statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig": {
+            "properties": {
+                "alertBigger": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "alertSlower": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "alertSmaller": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object"
+        },
+        "statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource": {
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    },
+                    "willReplaceOnChanges": true
+                }
+            },
+            "type": "object",
+            "required": [
+                "address"
+            ]
+        },
+        "statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig": {
+            "properties": {
+                "alertAts": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "onBroken": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "onExpiry": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "onMixed": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "onReminder": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "alertAts"
+            ]
+        },
+        "statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource": {
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    },
+                    "willReplaceOnChanges": true
+                },
+                "hostname": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "address"
+            ]
+        },
+        "statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck": {
+            "properties": {
+                "dnsIps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "dnsServer": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "dnsIps"
+            ]
+        },
+        "statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck": {
+            "properties": {
+                "basicAuthentication": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheckBasicAuthentication:UptimeCheckHttpCheckBasicAuthentication",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "contentMatchers": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheckContentMatchers:UptimeCheckHttpCheckContentMatchers",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "enableCookies": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "finalEndpoint": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "followRedirects": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "requestHeaders": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "requestMethod": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    },
+                    "willReplaceOnChanges": true
+                },
+                "requestPayload": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "requestPayloadRaw": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "statusCodes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "timeout": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "userAgent": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "validateSsl": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "statusCodes"
+            ]
+        },
+        "statuscake:index/UptimeCheckHttpCheckBasicAuthentication:UptimeCheckHttpCheckBasicAuthentication": {
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "username": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "password",
+                "username"
+            ]
+        },
+        "statuscake:index/UptimeCheckHttpCheckContentMatchers:UptimeCheckHttpCheckContentMatchers": {
+            "properties": {
+                "content": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "includeHeaders": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "matcher": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "content"
+            ]
+        },
+        "statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck": {
+            "properties": {
+                "enabled": {
+                    "type": "boolean",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object"
+        },
+        "statuscake:index/UptimeCheckLocation:UptimeCheckLocation": {
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv4": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv6": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "region": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "regionCode": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "status": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "language": {
+                "nodejs": {
+                    "requiredOutputs": [
+                        "description",
+                        "ipv4",
+                        "ipv6",
+                        "region",
+                        "regionCode",
+                        "status"
+                    ]
+                }
+            }
+        },
+        "statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource": {
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    },
+                    "willReplaceOnChanges": true
+                },
+                "host": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "address"
+            ]
+        },
+        "statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck": {
+            "properties": {
+                "authentication": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheckAuthentication:UptimeCheckTcpCheckAuthentication",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "port": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "protocol": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    },
+                    "willReplaceOnChanges": true
+                },
+                "timeout": {
+                    "type": "integer",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "port"
+            ]
+        },
+        "statuscake:index/UptimeCheckTcpCheckAuthentication:UptimeCheckTcpCheckAuthentication": {
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "username": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "password",
+                "username"
+            ]
+        },
+        "statuscake:index/getPagespeedMonitoringLocationsLocation:getPagespeedMonitoringLocationsLocation": {
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv4": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv6": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "region": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "regionCode": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "status": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "description",
+                "ipv4",
+                "ipv6",
+                "region",
+                "regionCode",
+                "status"
+            ],
+            "language": {
+                "nodejs": {
+                    "requiredInputs": []
+                }
+            }
+        },
+        "statuscake:index/getUptimeMonitoringLocationsLocation:getUptimeMonitoringLocationsLocation": {
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv4": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "ipv6": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "region": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "regionCode": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                },
+                "status": {
+                    "type": "string",
+                    "language": {
+                        "python": {
+                            "mapCase": false
+                        }
+                    }
+                }
+            },
+            "type": "object",
+            "required": [
+                "description",
+                "ipv4",
+                "ipv6",
+                "region",
+                "regionCode",
+                "status"
+            ],
+            "language": {
+                "nodejs": {
+                    "requiredInputs": []
+                }
+            }
+        }
+    },
+    "provider": {
+        "description": "The provider type for the statuscake package. By default, resources use package-wide configuration\nsettings, however an explicit `Provider` instance may be created and passed during resource\nconstruction to achieve fine-grained programmatic control over provider settings. See the\n[documentation](https://www.pulumi.com/docs/reference/programming-model/#providers) for more information.\n",
+        "properties": {
+            "apiToken": {
+                "type": "string",
+                "description": "The API token for operations. This can also be provided as an environment variable `STATUSCAKE_API_TOKEN`\n",
+                "secret": true
+            },
+            "maxBackoff": {
+                "type": "integer",
+                "description": "Maximum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MAX_BACKOFF`\n"
+            },
+            "minBackoff": {
+                "type": "integer",
+                "description": "Minimum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MIN_BACKOFF`\n"
+            },
+            "retries": {
+                "type": "integer",
+                "description": "Maximum number of retries to perform when an API request fails. This can also be provided as an environment variable\n`STATUSCAKE_RETRIES`\n"
+            },
+            "rps": {
+                "type": "integer",
+                "description": "RPS limit to apply when making calls to the API. This can also be provided as an environment variable `STATUSCAKE_RPS`\n"
+            },
+            "statuscakeCustomEndpoint": {
+                "type": "string",
+                "description": "Custom endpoint to which request will be made. This can also be provided as an environment variable\n`STATUCAKE_CUSTOM_ENDPOINT`\n"
+            }
+        },
+        "inputProperties": {
+            "apiToken": {
+                "type": "string",
+                "description": "The API token for operations. This can also be provided as an environment variable `STATUSCAKE_API_TOKEN`\n",
+                "defaultInfo": {
+                    "environment": [
+                        "STATUSCAKE_API_TOKEN"
+                    ]
+                },
+                "secret": true
+            },
+            "maxBackoff": {
+                "type": "integer",
+                "description": "Maximum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MAX_BACKOFF`\n"
+            },
+            "minBackoff": {
+                "type": "integer",
+                "description": "Minimum backoff period in seconds after failed API calls. This can also be provided as an environment variable\n`STATUSCAKE_MIN_BACKOFF`\n"
+            },
+            "retries": {
+                "type": "integer",
+                "description": "Maximum number of retries to perform when an API request fails. This can also be provided as an environment variable\n`STATUSCAKE_RETRIES`\n"
+            },
+            "rps": {
+                "type": "integer",
+                "description": "RPS limit to apply when making calls to the API. This can also be provided as an environment variable `STATUSCAKE_RPS`\n"
+            },
+            "statuscakeCustomEndpoint": {
+                "type": "string",
+                "description": "Custom endpoint to which request will be made. This can also be provided as an environment variable\n`STATUCAKE_CUSTOM_ENDPOINT`\n"
+            }
+        }
+    },
+    "resources": {
+        "statuscake:index/contactGroup:ContactGroup": {
+            "properties": {
+                "emailAddresses": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of email addresses\n"
+                },
+                "integrations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of integration IDs\n"
+                },
+                "mobileNumbers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of international format mobile phone numbers\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the contact group\n"
+                },
+                "pingUrl": {
+                    "type": "string",
+                    "description": "URL or IP address of an endpoint to push uptime events. Currently this only supports HTTP GET endpoints\n"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "inputProperties": {
+                "emailAddresses": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of email addresses\n"
+                },
+                "integrations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of integration IDs\n"
+                },
+                "mobileNumbers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of international format mobile phone numbers\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the contact group\n"
+                },
+                "pingUrl": {
+                    "type": "string",
+                    "description": "URL or IP address of an endpoint to push uptime events. Currently this only supports HTTP GET endpoints\n"
+                }
+            },
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering ContactGroup resources.\n",
+                "properties": {
+                    "emailAddresses": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of email addresses\n"
+                    },
+                    "integrations": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of integration IDs\n"
+                    },
+                    "mobileNumbers": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of international format mobile phone numbers\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the contact group\n"
+                    },
+                    "pingUrl": {
+                        "type": "string",
+                        "description": "URL or IP address of an endpoint to push uptime events. Currently this only supports HTTP GET endpoints\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "statuscake:index/maintenanceWindow:MaintenanceWindow": {
+            "properties": {
+                "end": {
+                    "type": "string",
+                    "description": "End of the maintenance window (RFC3339 format)\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the maintenance window\n"
+                },
+                "repeatInterval": {
+                    "type": "string",
+                    "description": "How often the maintenance window should occur\n"
+                },
+                "start": {
+                    "type": "string",
+                    "description": "Start of the maintenance window (RFC3339 format)\n"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of tags used to include matching uptime checks in this maintenance window\n"
+                },
+                "tests": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of uptime check IDs explicitly included in this maintenance window\n"
+                },
+                "timezone": {
+                    "type": "string",
+                    "description": "Standard timezone associated with this maintenance window\n"
+                }
+            },
+            "required": [
+                "end",
+                "name",
+                "start",
+                "timezone"
+            ],
+            "inputProperties": {
+                "end": {
+                    "type": "string",
+                    "description": "End of the maintenance window (RFC3339 format)\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the maintenance window\n"
+                },
+                "repeatInterval": {
+                    "type": "string",
+                    "description": "How often the maintenance window should occur\n"
+                },
+                "start": {
+                    "type": "string",
+                    "description": "Start of the maintenance window (RFC3339 format)\n"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of tags used to include matching uptime checks in this maintenance window\n"
+                },
+                "tests": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of uptime check IDs explicitly included in this maintenance window\n"
+                },
+                "timezone": {
+                    "type": "string",
+                    "description": "Standard timezone associated with this maintenance window\n"
+                }
+            },
+            "requiredInputs": [
+                "end",
+                "start",
+                "timezone"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering MaintenanceWindow resources.\n",
+                "properties": {
+                    "end": {
+                        "type": "string",
+                        "description": "End of the maintenance window (RFC3339 format)\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the maintenance window\n"
+                    },
+                    "repeatInterval": {
+                        "type": "string",
+                        "description": "How often the maintenance window should occur\n"
+                    },
+                    "start": {
+                        "type": "string",
+                        "description": "Start of the maintenance window (RFC3339 format)\n"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of tags used to include matching uptime checks in this maintenance window\n"
+                    },
+                    "tests": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of uptime check IDs explicitly included in this maintenance window\n"
+                    },
+                    "timezone": {
+                        "type": "string",
+                        "description": "Standard timezone associated with this maintenance window\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "statuscake:index/pagespeedCheck:PagespeedCheck": {
+            "properties": {
+                "alertConfig": {
+                    "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
+                    "description": "Alert configuration block. Omitting this block disabled all alerts\n"
+                },
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "location": {
+                    "type": "string",
+                    "description": "Assigned monitoring location on which checks will be run\n"
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the check\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Region on which to run checks\n"
+                }
+            },
+            "required": [
+                "alertConfig",
+                "checkInterval",
+                "location",
+                "monitoredResource",
+                "name",
+                "region"
+            ],
+            "inputProperties": {
+                "alertConfig": {
+                    "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
+                    "description": "Alert configuration block. Omitting this block disabled all alerts\n"
+                },
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the check\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Region on which to run checks\n"
+                }
+            },
+            "requiredInputs": [
+                "alertConfig",
+                "checkInterval",
+                "monitoredResource",
+                "region"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering PagespeedCheck resources.\n",
+                "properties": {
+                    "alertConfig": {
+                        "$ref": "#/types/statuscake:index/PagespeedCheckAlertConfig:PagespeedCheckAlertConfig",
+                        "description": "Alert configuration block. Omitting this block disabled all alerts\n"
+                    },
+                    "checkInterval": {
+                        "type": "integer",
+                        "description": "Number of seconds between checks\n"
+                    },
+                    "contactGroups": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of contact group IDs\n"
+                    },
+                    "location": {
+                        "type": "string",
+                        "description": "Assigned monitoring location on which checks will be run\n"
+                    },
+                    "monitoredResource": {
+                        "$ref": "#/types/statuscake:index/PagespeedCheckMonitoredResource:PagespeedCheckMonitoredResource",
+                        "description": "Monitored resource configuration block. The describes server under test\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the check\n"
+                    },
+                    "paused": {
+                        "type": "boolean",
+                        "description": "Whether the check should be run\n"
+                    },
+                    "region": {
+                        "type": "string",
+                        "description": "Region on which to run checks\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "statuscake:index/sslCheck:SslCheck": {
+            "properties": {
+                "alertConfig": {
+                    "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
+                    "description": "Alert configuration block\n"
+                },
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "followRedirects": {
+                    "type": "boolean",
+                    "description": "Whether to follow redirects when testing. Disabled by default\n"
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "userAgent": {
+                    "type": "string",
+                    "description": "Custom user agent string set when testing\n"
+                }
+            },
+            "required": [
+                "alertConfig",
+                "checkInterval",
+                "monitoredResource"
+            ],
+            "inputProperties": {
+                "alertConfig": {
+                    "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
+                    "description": "Alert configuration block\n"
+                },
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "followRedirects": {
+                    "type": "boolean",
+                    "description": "Whether to follow redirects when testing. Disabled by default\n"
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "userAgent": {
+                    "type": "string",
+                    "description": "Custom user agent string set when testing\n"
+                }
+            },
+            "requiredInputs": [
+                "alertConfig",
+                "checkInterval",
+                "monitoredResource"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering SslCheck resources.\n",
+                "properties": {
+                    "alertConfig": {
+                        "$ref": "#/types/statuscake:index/SslCheckAlertConfig:SslCheckAlertConfig",
+                        "description": "Alert configuration block\n"
+                    },
+                    "checkInterval": {
+                        "type": "integer",
+                        "description": "Number of seconds between checks\n"
+                    },
+                    "contactGroups": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of contact group IDs\n"
+                    },
+                    "followRedirects": {
+                        "type": "boolean",
+                        "description": "Whether to follow redirects when testing. Disabled by default\n"
+                    },
+                    "monitoredResource": {
+                        "$ref": "#/types/statuscake:index/SslCheckMonitoredResource:SslCheckMonitoredResource",
+                        "description": "Monitored resource configuration block. The describes server under test\n"
+                    },
+                    "paused": {
+                        "type": "boolean",
+                        "description": "Whether the check should be run\n"
+                    },
+                    "userAgent": {
+                        "type": "string",
+                        "description": "Custom user agent string set when testing\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "statuscake:index/uptimeCheck:UptimeCheck": {
+            "properties": {
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "confirmation": {
+                    "type": "integer",
+                    "description": "Number of confirmation servers to confirm downtime before an alert is triggered\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "dnsCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
+                    "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
+                },
+                "httpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
+                    "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
+                },
+                "icmpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
+                    "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
+                },
+                "locations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckLocation:UptimeCheckLocation"
+                    },
+                    "description": "List of assigned monitoring locations on which to run checks\n"
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the check\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "regions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of regions on which to run checks. The values required for this parameter can be retrieved from the `GET\n/v1/uptime-locations` endpoint\n"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of tags\n"
+                },
+                "tcpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
+                    "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n"
+                },
+                "triggerRate": {
+                    "type": "integer",
+                    "description": "The number of minutes to wait before sending an alert\n"
+                }
+            },
+            "required": [
+                "checkInterval",
+                "locations",
+                "monitoredResource",
+                "name"
+            ],
+            "inputProperties": {
+                "checkInterval": {
+                    "type": "integer",
+                    "description": "Number of seconds between checks\n"
+                },
+                "confirmation": {
+                    "type": "integer",
+                    "description": "Number of confirmation servers to confirm downtime before an alert is triggered\n"
+                },
+                "contactGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of contact group IDs\n"
+                },
+                "dnsCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
+                    "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                    "willReplaceOnChanges": true
+                },
+                "httpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
+                    "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                    "willReplaceOnChanges": true
+                },
+                "icmpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
+                    "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                    "willReplaceOnChanges": true
+                },
+                "monitoredResource": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
+                    "description": "Monitored resource configuration block. The describes server under test\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the check\n"
+                },
+                "paused": {
+                    "type": "boolean",
+                    "description": "Whether the check should be run\n"
+                },
+                "regions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of regions on which to run checks. The values required for this parameter can be retrieved from the `GET\n/v1/uptime-locations` endpoint\n"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of tags\n"
+                },
+                "tcpCheck": {
+                    "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
+                    "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                    "willReplaceOnChanges": true
+                },
+                "triggerRate": {
+                    "type": "integer",
+                    "description": "The number of minutes to wait before sending an alert\n"
+                }
+            },
+            "requiredInputs": [
+                "checkInterval",
+                "monitoredResource"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering UptimeCheck resources.\n",
+                "properties": {
+                    "checkInterval": {
+                        "type": "integer",
+                        "description": "Number of seconds between checks\n"
+                    },
+                    "confirmation": {
+                        "type": "integer",
+                        "description": "Number of confirmation servers to confirm downtime before an alert is triggered\n"
+                    },
+                    "contactGroups": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of contact group IDs\n"
+                    },
+                    "dnsCheck": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckDnsCheck:UptimeCheckDnsCheck",
+                        "description": "DNS check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                        "willReplaceOnChanges": true
+                    },
+                    "httpCheck": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckHttpCheck:UptimeCheckHttpCheck",
+                        "description": "HTTP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                        "willReplaceOnChanges": true
+                    },
+                    "icmpCheck": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckIcmpCheck:UptimeCheckIcmpCheck",
+                        "description": "ICMP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                        "willReplaceOnChanges": true
+                    },
+                    "locations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/types/statuscake:index/UptimeCheckLocation:UptimeCheckLocation"
+                        },
+                        "description": "List of assigned monitoring locations on which to run checks\n"
+                    },
+                    "monitoredResource": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckMonitoredResource:UptimeCheckMonitoredResource",
+                        "description": "Monitored resource configuration block. The describes server under test\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the check\n"
+                    },
+                    "paused": {
+                        "type": "boolean",
+                        "description": "Whether the check should be run\n"
+                    },
+                    "regions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of regions on which to run checks. The values required for this parameter can be retrieved from the `GET\n/v1/uptime-locations` endpoint\n"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of tags\n"
+                    },
+                    "tcpCheck": {
+                        "$ref": "#/types/statuscake:index/UptimeCheckTcpCheck:UptimeCheckTcpCheck",
+                        "description": "TCP check configuration block. Only one of `dns_check`, `http_check`, `icmp_check`, and `tcp_check` may be specified\n",
+                        "willReplaceOnChanges": true
+                    },
+                    "triggerRate": {
+                        "type": "integer",
+                        "description": "The number of minutes to wait before sending an alert\n"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "functions": {
+        "statuscake:index/getContactGroup:getContactGroup": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getContactGroup.\n",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "id"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getContactGroup.\n",
+                "properties": {
+                    "emailAddresses": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "integrations": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "mobileNumbers": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "pingUrl": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "emailAddresses",
+                    "id",
+                    "integrations",
+                    "mobileNumbers",
+                    "name",
+                    "pingUrl"
+                ]
+            }
+        },
+        "statuscake:index/getPagespeedMonitoringLocations:getPagespeedMonitoringLocations": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getPagespeedMonitoringLocations.\n",
+                "properties": {
+                    "regionCode": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "outputs": {
+                "description": "A collection of values returned by getPagespeedMonitoringLocations.\n",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "locations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/types/statuscake:index/getPagespeedMonitoringLocationsLocation:getPagespeedMonitoringLocationsLocation"
+                        }
+                    },
+                    "regionCode": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "locations",
+                    "id"
+                ]
+            }
+        },
+        "statuscake:index/getUptimeMonitoringLocations:getUptimeMonitoringLocations": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getUptimeMonitoringLocations.\n",
+                "properties": {
+                    "regionCode": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "outputs": {
+                "description": "A collection of values returned by getUptimeMonitoringLocations.\n",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "locations": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/types/statuscake:index/getUptimeMonitoringLocationsLocation:getUptimeMonitoringLocationsLocation"
+                        }
+                    },
+                    "regionCode": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "locations",
+                    "id"
+                ]
+            }
+        }
+    }
+}
