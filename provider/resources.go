@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	statuscake "github.com/jgautheron/terraform-provider-statuscake/v2/provider"
+	providerShim "github.com/StatusCakeDev/terraform-provider-statuscake/v2/shim"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	shim "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim"
 	shimv2 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v2"
@@ -51,7 +51,7 @@ func boolRef(b bool) *bool {
 // Provider returns additional overlaid schema and metadata associated with the provider..
 func Provider() tfbridge.ProviderInfo {
 	// Instantiate the Terraform provider
-	p := shimv2.NewProvider(statuscake.Provider())
+	p := shimv2.NewProvider(providerShim.NewProvider(version.Version))
 
 	// Create a Pulumi provider mapping
 	prov := tfbridge.ProviderInfo{

@@ -3,6 +3,7 @@ module github.com/pulumiverse/pulumi-statuscake/provider
 go 1.18
 
 replace (
+	github.com/StatusCakeDev/terraform-provider-statuscake/v2/shim => ./shim
 	github.com/hashicorp/go-getter v1.5.0 => github.com/hashicorp/go-getter v1.4.0
 	github.com/hashicorp/terraform-plugin-log => github.com/hashicorp/terraform-plugin-log v0.5.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 => github.com/pulumi/terraform-plugin-sdk/v2 v2.0.0-20220505215311-795430389fa7
@@ -10,7 +11,7 @@ replace (
 )
 
 require (
-	github.com/jgautheron/terraform-provider-statuscake/v2 v2.1.0
+	github.com/StatusCakeDev/terraform-provider-statuscake/v2/shim v0.0.0
 	github.com/pulumi/pulumi-terraform-bridge/v3 v3.25.0
 	github.com/pulumi/pulumi/sdk/v3 v3.34.1
 )
@@ -41,6 +42,7 @@ require (
 	github.com/Masterminds/sprig/v3 v3.2.2 // indirect
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/StatusCakeDev/statuscake-go v1.1.0 // indirect
+	github.com/StatusCakeDev/terraform-provider-statuscake/v2 v2.0.6 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-cidr v1.1.0 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect

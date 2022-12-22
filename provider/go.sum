@@ -155,6 +155,8 @@ github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAE
 github.com/ProtonMail/go-crypto v0.0.0-20210428141323-04723f9f07d7/go.mod h1:z4/9nQmJSSwwds7ejkxaJwO37dru3geImFUdJlaLzQo=
 github.com/StatusCakeDev/statuscake-go v1.1.0 h1:LKetG6j/yiQQTyHbHvu/DGvrJaezLAdRYAOubtRXOn8=
 github.com/StatusCakeDev/statuscake-go v1.1.0/go.mod h1:YefpyhDUs1gLCKXG5F9pPcZAp3rk4JyNkb9dfHbgr1I=
+github.com/StatusCakeDev/terraform-provider-statuscake/v2 v2.0.6 h1:AlPVWAdnOoataOHrQhG4apSPKGhSkuNbyKsYOA3uR8Y=
+github.com/StatusCakeDev/terraform-provider-statuscake/v2 v2.0.6/go.mod h1:o9b4pm0NxareTOiPGQ4X5p5q7MvM0vXD1uOjeXmqnQ8=
 github.com/acomagu/bufpipe v1.0.3/go.mod h1:mxdxdup/WdsKVreO5GpW4+M/1CE2sMG4jeGJ2sYmHc4=
 github.com/agext/levenshtein v1.2.1/go.mod h1:JEDfjyjHDjOF/1e4FlBE/PkbqA9OfWu2ki2W0IB5558=
 github.com/agext/levenshtein v1.2.2/go.mod h1:JEDfjyjHDjOF/1e4FlBE/PkbqA9OfWu2ki2W0IB5558=
@@ -608,8 +610,6 @@ github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 h1:BQSFePA1RWJOl
 github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99/go.mod h1:1lJo3i6rXxKeerYnT8Nvf0QmHCRC1n8sfWVwXF2Frvo=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/jessevdk/go-flags v1.5.0/go.mod h1:Fw0T6WPc1dYxT4mKEZRfG5kJhaTDP9pj1c2EWnYs/m4=
-github.com/jgautheron/terraform-provider-statuscake/v2 v2.1.0 h1:5AOnq7K+7omD/AdJu6TptXm/Jf06En42lr9PrnxqBFM=
-github.com/jgautheron/terraform-provider-statuscake/v2 v2.1.0/go.mod h1:PdC72hOAnmqGEXXkwoTQa7HDUFQe/H4jbgqP2s3q3kU=
 github.com/jhump/protoreflect v1.6.0/go.mod h1:eaTn3RZAmMBcV0fifFvlm6VHNz3wSkYyXYWUh7ymB74=
 github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
