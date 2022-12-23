@@ -235,7 +235,7 @@ func (i *UptimeCheck) ToUptimeCheckOutputWithContext(ctx context.Context) Uptime
 // UptimeCheckArrayInput is an input type that accepts UptimeCheckArray and UptimeCheckArrayOutput values.
 // You can construct a concrete instance of `UptimeCheckArrayInput` via:
 //
-//	UptimeCheckArray{ UptimeCheckArgs{...} }
+//          UptimeCheckArray{ UptimeCheckArgs{...} }
 type UptimeCheckArrayInput interface {
 	pulumi.Input
 
@@ -260,7 +260,7 @@ func (i UptimeCheckArray) ToUptimeCheckArrayOutputWithContext(ctx context.Contex
 // UptimeCheckMapInput is an input type that accepts UptimeCheckMap and UptimeCheckMapOutput values.
 // You can construct a concrete instance of `UptimeCheckMapInput` via:
 //
-//	UptimeCheckMap{ "key": UptimeCheckArgs{...} }
+//          UptimeCheckMap{ "key": UptimeCheckArgs{...} }
 type UptimeCheckMapInput interface {
 	pulumi.Input
 
