@@ -167,7 +167,7 @@ func (i *SslCheck) ToSslCheckOutputWithContext(ctx context.Context) SslCheckOutp
 // SslCheckArrayInput is an input type that accepts SslCheckArray and SslCheckArrayOutput values.
 // You can construct a concrete instance of `SslCheckArrayInput` via:
 //
-//	SslCheckArray{ SslCheckArgs{...} }
+//          SslCheckArray{ SslCheckArgs{...} }
 type SslCheckArrayInput interface {
 	pulumi.Input
 
@@ -192,7 +192,7 @@ func (i SslCheckArray) ToSslCheckArrayOutputWithContext(ctx context.Context) Ssl
 // SslCheckMapInput is an input type that accepts SslCheckMap and SslCheckMapOutput values.
 // You can construct a concrete instance of `SslCheckMapInput` via:
 //
-//	SslCheckMap{ "key": SslCheckArgs{...} }
+//          SslCheckMap{ "key": SslCheckArgs{...} }
 type SslCheckMapInput interface {
 	pulumi.Input
 

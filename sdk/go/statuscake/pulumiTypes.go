@@ -19,7 +19,7 @@ type PagespeedCheckAlertConfig struct {
 // PagespeedCheckAlertConfigInput is an input type that accepts PagespeedCheckAlertConfigArgs and PagespeedCheckAlertConfigOutput values.
 // You can construct a concrete instance of `PagespeedCheckAlertConfigInput` via:
 //
-//	PagespeedCheckAlertConfigArgs{...}
+//          PagespeedCheckAlertConfigArgs{...}
 type PagespeedCheckAlertConfigInput interface {
 	pulumi.Input
 
@@ -56,11 +56,11 @@ func (i PagespeedCheckAlertConfigArgs) ToPagespeedCheckAlertConfigPtrOutputWithC
 // PagespeedCheckAlertConfigPtrInput is an input type that accepts PagespeedCheckAlertConfigArgs, PagespeedCheckAlertConfigPtr and PagespeedCheckAlertConfigPtrOutput values.
 // You can construct a concrete instance of `PagespeedCheckAlertConfigPtrInput` via:
 //
-//	        PagespeedCheckAlertConfigArgs{...}
+//          PagespeedCheckAlertConfigArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type PagespeedCheckAlertConfigPtrInput interface {
 	pulumi.Input
 
@@ -180,7 +180,7 @@ type PagespeedCheckMonitoredResource struct {
 // PagespeedCheckMonitoredResourceInput is an input type that accepts PagespeedCheckMonitoredResourceArgs and PagespeedCheckMonitoredResourceOutput values.
 // You can construct a concrete instance of `PagespeedCheckMonitoredResourceInput` via:
 //
-//	PagespeedCheckMonitoredResourceArgs{...}
+//          PagespeedCheckMonitoredResourceArgs{...}
 type PagespeedCheckMonitoredResourceInput interface {
 	pulumi.Input
 
@@ -215,11 +215,11 @@ func (i PagespeedCheckMonitoredResourceArgs) ToPagespeedCheckMonitoredResourcePt
 // PagespeedCheckMonitoredResourcePtrInput is an input type that accepts PagespeedCheckMonitoredResourceArgs, PagespeedCheckMonitoredResourcePtr and PagespeedCheckMonitoredResourcePtrOutput values.
 // You can construct a concrete instance of `PagespeedCheckMonitoredResourcePtrInput` via:
 //
-//	        PagespeedCheckMonitoredResourceArgs{...}
+//          PagespeedCheckMonitoredResourceArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type PagespeedCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
@@ -317,7 +317,7 @@ type SslCheckAlertConfig struct {
 // SslCheckAlertConfigInput is an input type that accepts SslCheckAlertConfigArgs and SslCheckAlertConfigOutput values.
 // You can construct a concrete instance of `SslCheckAlertConfigInput` via:
 //
-//	SslCheckAlertConfigArgs{...}
+//          SslCheckAlertConfigArgs{...}
 type SslCheckAlertConfigInput interface {
 	pulumi.Input
 
@@ -356,11 +356,11 @@ func (i SslCheckAlertConfigArgs) ToSslCheckAlertConfigPtrOutputWithContext(ctx c
 // SslCheckAlertConfigPtrInput is an input type that accepts SslCheckAlertConfigArgs, SslCheckAlertConfigPtr and SslCheckAlertConfigPtrOutput values.
 // You can construct a concrete instance of `SslCheckAlertConfigPtrInput` via:
 //
-//	        SslCheckAlertConfigArgs{...}
+//          SslCheckAlertConfigArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type SslCheckAlertConfigPtrInput interface {
 	pulumi.Input
 
@@ -507,7 +507,7 @@ type SslCheckMonitoredResource struct {
 // SslCheckMonitoredResourceInput is an input type that accepts SslCheckMonitoredResourceArgs and SslCheckMonitoredResourceOutput values.
 // You can construct a concrete instance of `SslCheckMonitoredResourceInput` via:
 //
-//	SslCheckMonitoredResourceArgs{...}
+//          SslCheckMonitoredResourceArgs{...}
 type SslCheckMonitoredResourceInput interface {
 	pulumi.Input
 
@@ -543,11 +543,11 @@ func (i SslCheckMonitoredResourceArgs) ToSslCheckMonitoredResourcePtrOutputWithC
 // SslCheckMonitoredResourcePtrInput is an input type that accepts SslCheckMonitoredResourceArgs, SslCheckMonitoredResourcePtr and SslCheckMonitoredResourcePtrOutput values.
 // You can construct a concrete instance of `SslCheckMonitoredResourcePtrInput` via:
 //
-//	        SslCheckMonitoredResourceArgs{...}
+//          SslCheckMonitoredResourceArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type SslCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
@@ -655,7 +655,7 @@ type UptimeCheckDnsCheck struct {
 // UptimeCheckDnsCheckInput is an input type that accepts UptimeCheckDnsCheckArgs and UptimeCheckDnsCheckOutput values.
 // You can construct a concrete instance of `UptimeCheckDnsCheckInput` via:
 //
-//	UptimeCheckDnsCheckArgs{...}
+//          UptimeCheckDnsCheckArgs{...}
 type UptimeCheckDnsCheckInput interface {
 	pulumi.Input
 
@@ -691,11 +691,11 @@ func (i UptimeCheckDnsCheckArgs) ToUptimeCheckDnsCheckPtrOutputWithContext(ctx c
 // UptimeCheckDnsCheckPtrInput is an input type that accepts UptimeCheckDnsCheckArgs, UptimeCheckDnsCheckPtr and UptimeCheckDnsCheckPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckDnsCheckPtrInput` via:
 //
-//	        UptimeCheckDnsCheckArgs{...}
+//          UptimeCheckDnsCheckArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckDnsCheckPtrInput interface {
 	pulumi.Input
 
@@ -814,7 +814,7 @@ type UptimeCheckHttpCheck struct {
 // UptimeCheckHttpCheckInput is an input type that accepts UptimeCheckHttpCheckArgs and UptimeCheckHttpCheckOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckInput` via:
 //
-//	UptimeCheckHttpCheckArgs{...}
+//          UptimeCheckHttpCheckArgs{...}
 type UptimeCheckHttpCheckInput interface {
 	pulumi.Input
 
@@ -861,11 +861,11 @@ func (i UptimeCheckHttpCheckArgs) ToUptimeCheckHttpCheckPtrOutputWithContext(ctx
 // UptimeCheckHttpCheckPtrInput is an input type that accepts UptimeCheckHttpCheckArgs, UptimeCheckHttpCheckPtr and UptimeCheckHttpCheckPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckPtrInput` via:
 //
-//	        UptimeCheckHttpCheckArgs{...}
+//          UptimeCheckHttpCheckArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckHttpCheckPtrInput interface {
 	pulumi.Input
 
@@ -1116,7 +1116,7 @@ type UptimeCheckHttpCheckBasicAuthentication struct {
 // UptimeCheckHttpCheckBasicAuthenticationInput is an input type that accepts UptimeCheckHttpCheckBasicAuthenticationArgs and UptimeCheckHttpCheckBasicAuthenticationOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckBasicAuthenticationInput` via:
 //
-//	UptimeCheckHttpCheckBasicAuthenticationArgs{...}
+//          UptimeCheckHttpCheckBasicAuthenticationArgs{...}
 type UptimeCheckHttpCheckBasicAuthenticationInput interface {
 	pulumi.Input
 
@@ -1152,11 +1152,11 @@ func (i UptimeCheckHttpCheckBasicAuthenticationArgs) ToUptimeCheckHttpCheckBasic
 // UptimeCheckHttpCheckBasicAuthenticationPtrInput is an input type that accepts UptimeCheckHttpCheckBasicAuthenticationArgs, UptimeCheckHttpCheckBasicAuthenticationPtr and UptimeCheckHttpCheckBasicAuthenticationPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckBasicAuthenticationPtrInput` via:
 //
-//	        UptimeCheckHttpCheckBasicAuthenticationArgs{...}
+//          UptimeCheckHttpCheckBasicAuthenticationArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckHttpCheckBasicAuthenticationPtrInput interface {
 	pulumi.Input
 
@@ -1265,7 +1265,7 @@ type UptimeCheckHttpCheckContentMatchers struct {
 // UptimeCheckHttpCheckContentMatchersInput is an input type that accepts UptimeCheckHttpCheckContentMatchersArgs and UptimeCheckHttpCheckContentMatchersOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckContentMatchersInput` via:
 //
-//	UptimeCheckHttpCheckContentMatchersArgs{...}
+//          UptimeCheckHttpCheckContentMatchersArgs{...}
 type UptimeCheckHttpCheckContentMatchersInput interface {
 	pulumi.Input
 
@@ -1302,11 +1302,11 @@ func (i UptimeCheckHttpCheckContentMatchersArgs) ToUptimeCheckHttpCheckContentMa
 // UptimeCheckHttpCheckContentMatchersPtrInput is an input type that accepts UptimeCheckHttpCheckContentMatchersArgs, UptimeCheckHttpCheckContentMatchersPtr and UptimeCheckHttpCheckContentMatchersPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckHttpCheckContentMatchersPtrInput` via:
 //
-//	        UptimeCheckHttpCheckContentMatchersArgs{...}
+//          UptimeCheckHttpCheckContentMatchersArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckHttpCheckContentMatchersPtrInput interface {
 	pulumi.Input
 
@@ -1426,7 +1426,7 @@ type UptimeCheckIcmpCheck struct {
 // UptimeCheckIcmpCheckInput is an input type that accepts UptimeCheckIcmpCheckArgs and UptimeCheckIcmpCheckOutput values.
 // You can construct a concrete instance of `UptimeCheckIcmpCheckInput` via:
 //
-//	UptimeCheckIcmpCheckArgs{...}
+//          UptimeCheckIcmpCheckArgs{...}
 type UptimeCheckIcmpCheckInput interface {
 	pulumi.Input
 
@@ -1461,11 +1461,11 @@ func (i UptimeCheckIcmpCheckArgs) ToUptimeCheckIcmpCheckPtrOutputWithContext(ctx
 // UptimeCheckIcmpCheckPtrInput is an input type that accepts UptimeCheckIcmpCheckArgs, UptimeCheckIcmpCheckPtr and UptimeCheckIcmpCheckPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckIcmpCheckPtrInput` via:
 //
-//	        UptimeCheckIcmpCheckArgs{...}
+//          UptimeCheckIcmpCheckArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckIcmpCheckPtrInput interface {
 	pulumi.Input
 
@@ -1564,7 +1564,7 @@ type UptimeCheckLocation struct {
 // UptimeCheckLocationInput is an input type that accepts UptimeCheckLocationArgs and UptimeCheckLocationOutput values.
 // You can construct a concrete instance of `UptimeCheckLocationInput` via:
 //
-//	UptimeCheckLocationArgs{...}
+//          UptimeCheckLocationArgs{...}
 type UptimeCheckLocationInput interface {
 	pulumi.Input
 
@@ -1596,7 +1596,7 @@ func (i UptimeCheckLocationArgs) ToUptimeCheckLocationOutputWithContext(ctx cont
 // UptimeCheckLocationArrayInput is an input type that accepts UptimeCheckLocationArray and UptimeCheckLocationArrayOutput values.
 // You can construct a concrete instance of `UptimeCheckLocationArrayInput` via:
 //
-//	UptimeCheckLocationArray{ UptimeCheckLocationArgs{...} }
+//          UptimeCheckLocationArray{ UptimeCheckLocationArgs{...} }
 type UptimeCheckLocationArrayInput interface {
 	pulumi.Input
 
@@ -1684,7 +1684,7 @@ type UptimeCheckMonitoredResource struct {
 // UptimeCheckMonitoredResourceInput is an input type that accepts UptimeCheckMonitoredResourceArgs and UptimeCheckMonitoredResourceOutput values.
 // You can construct a concrete instance of `UptimeCheckMonitoredResourceInput` via:
 //
-//	UptimeCheckMonitoredResourceArgs{...}
+//          UptimeCheckMonitoredResourceArgs{...}
 type UptimeCheckMonitoredResourceInput interface {
 	pulumi.Input
 
@@ -1720,11 +1720,11 @@ func (i UptimeCheckMonitoredResourceArgs) ToUptimeCheckMonitoredResourcePtrOutpu
 // UptimeCheckMonitoredResourcePtrInput is an input type that accepts UptimeCheckMonitoredResourceArgs, UptimeCheckMonitoredResourcePtr and UptimeCheckMonitoredResourcePtrOutput values.
 // You can construct a concrete instance of `UptimeCheckMonitoredResourcePtrInput` via:
 //
-//	        UptimeCheckMonitoredResourceArgs{...}
+//          UptimeCheckMonitoredResourceArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckMonitoredResourcePtrInput interface {
 	pulumi.Input
 
@@ -1834,7 +1834,7 @@ type UptimeCheckTcpCheck struct {
 // UptimeCheckTcpCheckInput is an input type that accepts UptimeCheckTcpCheckArgs and UptimeCheckTcpCheckOutput values.
 // You can construct a concrete instance of `UptimeCheckTcpCheckInput` via:
 //
-//	UptimeCheckTcpCheckArgs{...}
+//          UptimeCheckTcpCheckArgs{...}
 type UptimeCheckTcpCheckInput interface {
 	pulumi.Input
 
@@ -1872,11 +1872,11 @@ func (i UptimeCheckTcpCheckArgs) ToUptimeCheckTcpCheckPtrOutputWithContext(ctx c
 // UptimeCheckTcpCheckPtrInput is an input type that accepts UptimeCheckTcpCheckArgs, UptimeCheckTcpCheckPtr and UptimeCheckTcpCheckPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckTcpCheckPtrInput` via:
 //
-//	        UptimeCheckTcpCheckArgs{...}
+//          UptimeCheckTcpCheckArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckTcpCheckPtrInput interface {
 	pulumi.Input
 
@@ -2010,7 +2010,7 @@ type UptimeCheckTcpCheckAuthentication struct {
 // UptimeCheckTcpCheckAuthenticationInput is an input type that accepts UptimeCheckTcpCheckAuthenticationArgs and UptimeCheckTcpCheckAuthenticationOutput values.
 // You can construct a concrete instance of `UptimeCheckTcpCheckAuthenticationInput` via:
 //
-//	UptimeCheckTcpCheckAuthenticationArgs{...}
+//          UptimeCheckTcpCheckAuthenticationArgs{...}
 type UptimeCheckTcpCheckAuthenticationInput interface {
 	pulumi.Input
 
@@ -2046,11 +2046,11 @@ func (i UptimeCheckTcpCheckAuthenticationArgs) ToUptimeCheckTcpCheckAuthenticati
 // UptimeCheckTcpCheckAuthenticationPtrInput is an input type that accepts UptimeCheckTcpCheckAuthenticationArgs, UptimeCheckTcpCheckAuthenticationPtr and UptimeCheckTcpCheckAuthenticationPtrOutput values.
 // You can construct a concrete instance of `UptimeCheckTcpCheckAuthenticationPtrInput` via:
 //
-//	        UptimeCheckTcpCheckAuthenticationArgs{...}
+//          UptimeCheckTcpCheckAuthenticationArgs{...}
 //
-//	or:
+//  or:
 //
-//	        nil
+//          nil
 type UptimeCheckTcpCheckAuthenticationPtrInput interface {
 	pulumi.Input
 
@@ -2162,7 +2162,7 @@ type GetPagespeedMonitoringLocationsLocation struct {
 // GetPagespeedMonitoringLocationsLocationInput is an input type that accepts GetPagespeedMonitoringLocationsLocationArgs and GetPagespeedMonitoringLocationsLocationOutput values.
 // You can construct a concrete instance of `GetPagespeedMonitoringLocationsLocationInput` via:
 //
-//	GetPagespeedMonitoringLocationsLocationArgs{...}
+//          GetPagespeedMonitoringLocationsLocationArgs{...}
 type GetPagespeedMonitoringLocationsLocationInput interface {
 	pulumi.Input
 
@@ -2194,7 +2194,7 @@ func (i GetPagespeedMonitoringLocationsLocationArgs) ToGetPagespeedMonitoringLoc
 // GetPagespeedMonitoringLocationsLocationArrayInput is an input type that accepts GetPagespeedMonitoringLocationsLocationArray and GetPagespeedMonitoringLocationsLocationArrayOutput values.
 // You can construct a concrete instance of `GetPagespeedMonitoringLocationsLocationArrayInput` via:
 //
-//	GetPagespeedMonitoringLocationsLocationArray{ GetPagespeedMonitoringLocationsLocationArgs{...} }
+//          GetPagespeedMonitoringLocationsLocationArray{ GetPagespeedMonitoringLocationsLocationArgs{...} }
 type GetPagespeedMonitoringLocationsLocationArrayInput interface {
 	pulumi.Input
 
@@ -2286,7 +2286,7 @@ type GetUptimeMonitoringLocationsLocation struct {
 // GetUptimeMonitoringLocationsLocationInput is an input type that accepts GetUptimeMonitoringLocationsLocationArgs and GetUptimeMonitoringLocationsLocationOutput values.
 // You can construct a concrete instance of `GetUptimeMonitoringLocationsLocationInput` via:
 //
-//	GetUptimeMonitoringLocationsLocationArgs{...}
+//          GetUptimeMonitoringLocationsLocationArgs{...}
 type GetUptimeMonitoringLocationsLocationInput interface {
 	pulumi.Input
 
@@ -2318,7 +2318,7 @@ func (i GetUptimeMonitoringLocationsLocationArgs) ToGetUptimeMonitoringLocations
 // GetUptimeMonitoringLocationsLocationArrayInput is an input type that accepts GetUptimeMonitoringLocationsLocationArray and GetUptimeMonitoringLocationsLocationArrayOutput values.
 // You can construct a concrete instance of `GetUptimeMonitoringLocationsLocationArrayInput` via:
 //
-//	GetUptimeMonitoringLocationsLocationArray{ GetUptimeMonitoringLocationsLocationArgs{...} }
+//          GetUptimeMonitoringLocationsLocationArray{ GetUptimeMonitoringLocationsLocationArgs{...} }
 type GetUptimeMonitoringLocationsLocationArrayInput interface {
 	pulumi.Input
 

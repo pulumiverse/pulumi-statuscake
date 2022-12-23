@@ -137,7 +137,7 @@ func (i *ContactGroup) ToContactGroupOutputWithContext(ctx context.Context) Cont
 // ContactGroupArrayInput is an input type that accepts ContactGroupArray and ContactGroupArrayOutput values.
 // You can construct a concrete instance of `ContactGroupArrayInput` via:
 //
-//	ContactGroupArray{ ContactGroupArgs{...} }
+//          ContactGroupArray{ ContactGroupArgs{...} }
 type ContactGroupArrayInput interface {
 	pulumi.Input
 
@@ -162,7 +162,7 @@ func (i ContactGroupArray) ToContactGroupArrayOutputWithContext(ctx context.Cont
 // ContactGroupMapInput is an input type that accepts ContactGroupMap and ContactGroupMapOutput values.
 // You can construct a concrete instance of `ContactGroupMapInput` via:
 //
-//	ContactGroupMap{ "key": ContactGroupArgs{...} }
+//          ContactGroupMap{ "key": ContactGroupArgs{...} }
 type ContactGroupMapInput interface {
 	pulumi.Input
 

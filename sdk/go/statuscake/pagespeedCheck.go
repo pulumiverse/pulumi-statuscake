@@ -176,7 +176,7 @@ func (i *PagespeedCheck) ToPagespeedCheckOutputWithContext(ctx context.Context) 
 // PagespeedCheckArrayInput is an input type that accepts PagespeedCheckArray and PagespeedCheckArrayOutput values.
 // You can construct a concrete instance of `PagespeedCheckArrayInput` via:
 //
-//	PagespeedCheckArray{ PagespeedCheckArgs{...} }
+//          PagespeedCheckArray{ PagespeedCheckArgs{...} }
 type PagespeedCheckArrayInput interface {
 	pulumi.Input
 
@@ -201,7 +201,7 @@ func (i PagespeedCheckArray) ToPagespeedCheckArrayOutputWithContext(ctx context.
 // PagespeedCheckMapInput is an input type that accepts PagespeedCheckMap and PagespeedCheckMapOutput values.
 // You can construct a concrete instance of `PagespeedCheckMapInput` via:
 //
-//	PagespeedCheckMap{ "key": PagespeedCheckArgs{...} }
+//          PagespeedCheckMap{ "key": PagespeedCheckArgs{...} }
 type PagespeedCheckMapInput interface {
 	pulumi.Input
 
